@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+@media all and (max-width: 812px) {
+  /*************** header ****************/
+  .visual_box {
+    width: 50%;
+  }
+  .visual_tit {
+    margin-top: 5%;
+  }
+
+  .section_1 {
+    height: 1200px;
+  }
+  .product_prev,
+  .product_next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about_right {
+    height: 200px;
+  }
+
+  /*************** footer ****************/
+  .f_top_wrap_inner {
+    width: 100%;
+  }
+  .f_list li a {
+    font-size: 1.2rem;
+  }
+  .f_list li {
+    width: 32%;
+  }
+  .f_info,
+  .f_alert {
+    font-size: 1.1rem;
+  }
+}
+@media all and (max-width: 640px) {
+  /*************** header ****************/
+  .logo {
+    width: 25%;
+  }
+  .m_intro {
+    font-size: 1.4rem;
+    line-height: 16px;
+  }
+  .m_hamburger {
+    width: 16px;
+    height: 16px;
+  }
+  .m_lang_list li a::after {
+    bottom: -20%;
+    left: 25%;
+  }
+  .m_lang_list li.on a::after {
+    bottom: -20%;
+    left: 25%;
+  }
+  /*******************visual_wrap ***************/
+  .visual_box {
+    width: 57%;
+    height: 55%;
+  }
+  .visual_tit strong {
+    font-size: 3.4rem;
+  }
+  .visual_tit span {
+    font-size: 2.2rem;
+  }
+  .visual_txt {
+    font-size: 1.4rem;
+  }
+  /*******************bxslider**************8*/
+  .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    right: 18%;
+    bottom: 20%;
+  }
+  .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    bottom: 20%;
+  }
+
+  /**************container *******************/
+
+  .container .section_1 {
+    height: 850px;
+  }
+  .banner_box_3 .banner_txt {
+    width: 50%;
+    right: -10%;
+  }
+  .banner_category {
+    font-size: 1.4rem;
+  }
+
+  .banner_tit {
+    font-size: 2.4rem;
+  }
+
+  .news_list .date {
+    font-size: 1.6rem;
+  }
+  .news_list .orange_box,
+  .news_list .orange_border {
+    font-size: 1.6rem;
+  }
+
+  .news_list .news {
+    font-size: 1.8rem;
+  }
+  .news_wrap .news_btn {
+    font-size: 1.2rem;
+  }
+
+  .about_kwangdong {
+    font-size: 2.2rem;
+  }
+  .about_tit {
+    font-size: 3rem;
+  }
+  .about_txt {
+    font-size: 1.6rem;
+  }
+  .about_right {
+    height: 180px;
+  }
+  .icon_txt {
+    font-size: 1.8rem;
+  }
+}
+@media all and (max-width: 415px) {
+  /*********************header**************/
+  .logo {
+    height: 30%;
+  }
+  .language > a {
+    background: url(../images/arrow_down.png) no-repeat 95% 50%/ 7px 5px #fff;
+  }
+
+  /*****************container******************/
+  .visual_tit strong {
+    font-size: 2.6rem;
+  }
+  .visual_tit span {
+    font-size: 1.8rem;
+  }
+  .visual_tit_1 span {
+    margin: 4% 0 0 30%;
+  }
+
+  .visual_tit_3 span {
+    margin: 4% 0 0 8%;
+  }
+  .visual_txt {
+    font-size: 1.3rem;
+  }
+
+  .banner_box .banner_txt {
+    width: 60%;
+    top: 12%;
+    left: 8%;
+  }
+
+  .product_list .product_tit {
+    font-size: 2.8rem;
+  }
+  .product_list .product_txt {
+    font-size: 1.2rem;
+  }
+  .product_pager {
+    width: 30%;
+  }
+
+  .product_prev::before,
+  .product_next::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+  }
+  .section_2 .best_box,
+  .section_2 .search_box {
+    height: 500px;
+  }
+  .product_box {
+    height: 400px;
+  }
+  .form_box .form_tit {
+    font-size: 2rem;
+  }
+  .form_box .search_bar {
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  .search_box i {
+    top: 32px;
+    font-size: 2rem;
+  }
+  .frm_1 label {
+    font-size: 1.4rem;
+    margin-right: 0px;
+  }
+  .city {
+    height: 20px;
+    font-size: 1.4rem;
+  }
+  .frm_2 label {
+    width: 50%;
+    font-size: 1.4rem;
+    height: 20px;
+    line-height: 20px;
+  }
+  .location {
+    width: 20%;
+    height: 20px;
+    left: 65%;
+  }
+
+  h3.tit {
+    font-size: 3rem;
+  }
+  .news_box {
+    position: relative;
+    width: 100%;
+  }
+  .news_list .date {
+    font-size: 1.2rem;
+  }
+  .news_list .orange_box,
+  .news_list .orange_border {
+    font-size: 1.2rem;
+  }
+
+  .news_list .news {
+    font-size: 1.4rem;
+    letter-spacing: -0.05em;
+  }
+
+  .about_right {
+    height: 100px;
+  }
+
+  .about_kwangdong {
+    font-size: 1.8rem;
+  }
+  .about_tit {
+    font-size: 2.4rem;
+  }
+  .about_txt {
+    font-size: 1.2rem;
+  }
+
+  .icon_txt {
+    font-size: 1.2rem;
+    padding-top: 55px;
+    background-size: 35px;
+  }
+}

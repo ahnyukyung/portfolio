@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+body,
+div,
+a,
+ul,
+li,
+img,
+header,
+nav,
+section,
+footer,
+h1,
+h2,
+h3,
+p,
+span,
+strong,
+iframe,
+form,
+option,
+em,
+i,
+table,
+caption,
+col,
+colgroup,
+tbody,
+tr,
+th,
+td,
+label,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer,
+section,
+nav {
+  display: block;
+}
+body,
+select {
+  font-family: "NanumSquareRound", "나눔스퀘어라운드", Arial, "아리엘",
+    sans-serif;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+select {
+  border: none;
+  vertical-align: middle;
+}
+
+iframe {
+  overflow: hidden;
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+input[type="text"]::-ms-clear {
+  display: none;
+}
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+input,
+select,
+button {
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+input[type="checkbox"]::-ms-check {
+  display: none;
+}

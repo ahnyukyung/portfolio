@@ -1,0 +1,150 @@
+/** VARIABLES
+===================================*/
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper {
+  position: relative;
+  padding: 0;
+  *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  border: none;
+  box-shadow: none;
+}
+.bx-wrapper,
+.bx-viewport,
+.bx-wrapper img {
+  height: 100vh !important;
+}
+.bx-wrapper li {
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+.bxslider {
+  margin: 0;
+  padding: 0;
+}
+ul.bxslider {
+  list-style: none;
+}
+.bx-viewport {
+  /* fix other elements on the page moving (in Chrome) */
+  -webkit-transform: translateZ(0);
+}
+/** THEME
+===================================*/
+.bx-wrapper {
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  /* border: 5px solid #fff; */
+  background: #fff;
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+
+  width: 100%;
+}
+/* LOADER */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url("images/bx_loader.gif") center center no-repeat #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+/* PAGER */
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: 0.85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  position: absolute;
+  bottom: 15%;
+  right: 10.5%;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #fff;
+  text-indent: -9999em;
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 10px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  width: 22px;
+  height: 15px;
+  background: #ef4023;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager div .bx-pager-link {
+  position: relative;
+}
+
+.bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  vertical-align: bottom;
+  *zoom: 1;
+  *display: inline;
+}
+.bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {
+  text-align: center;
+  z-index: 99;
+}
+.bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 17px;
+  height: 17px;
+  outline: 0;
+  background: url(../images/control_play.png) -19px 0;
+  margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start.active {
+  background-position: 0 0;
+}
+.bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 12px;
+  height: 17px;
+  outline: 0;
+  background: url(../images/control_stop.png) -18px 0;
+  margin-left: 5px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+  background-position: 0 0;
+}
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 82px;
+  height: 15px;
+}
+.bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  position: absolute;
+  right: 8%;
+  bottom: 15%;
+  width: 40px;
+}

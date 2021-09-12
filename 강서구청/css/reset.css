@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+body,
+div,
+a,
+p,
+ul,
+li,
+form,
+select,
+option,
+h1,
+h2,
+h3,
+span,
+img,
+input,
+dl,
+dt,
+dd,
+button,
+strong,
+address {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  border: none;
+}
+
+body,
+input,
+select,
+button {
+  font-family: "Noto Sans KR", "노토 산스", "Nanum Gothic", "나눔 고딕",
+    "Apple SD Gothic Neo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #282828;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+button:active {
+  outline: 1px dotted #d9d9d9;
+}
+input,
+img,
+button,
+select {
+  vertical-align: middle;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #282828;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: #282828;
+}
