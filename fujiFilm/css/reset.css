@@ -1,0 +1,84 @@
+@charset "utf-8";
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+footer,
+header,
+section,
+nav,
+p,
+form,
+input,
+ul,
+li,
+img,
+span,
+a,
+form,
+select,
+option,
+strong,
+label,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+  color: #333;
+}
+body {
+  line-height: 1.5;
+  -webkit-text-size-adjust: none;
+}
+header,
+section,
+nav,
+footer {
+  display: block;
+}
+img {
+  border: none;
+}
+ul {
+  list-style: none;
+}
+
+body,
+input,
+button,
+img,
+select {
+  font-size: 10px;
+  font-family: "NanumSquare", "나눔스퀘어", "Apple SD Gothic Neo", sans-serif;
+  vertical-align: middle;
+}
+select,
+textarea,
+button {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+input[type="text"]::-ms-clear {
+  display: none;
+}
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+select::-ms-expand {
+  display: none;
+}
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
