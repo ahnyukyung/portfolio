@@ -43,11 +43,9 @@ input,
 button,
 select,
 table {
-  font-family: "NanumSquareRound", "나눔스퀘어라운드", Arial, "아리엘",
-    sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #707070;
+  font-size: 16px;
+  font-family: "Noto Sans JP", "Apple SD Gothic Neo", sans-serif;
+  vertical-align: middle;
 }
 
 a {
@@ -57,6 +55,6 @@ a {
 }
 button {
   cursor: pointer;
-  background: red;
+  background: none;
   border: none;
 }

@@ -8,117 +8,162 @@
     <title>Fuji Film</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/layout.css">
     <script src="js/jquery-3.6.0.min.js"></script>
-
 </head>
 
 <body>
     <div id="wrap">
-        <header id="header" class="clearfix">
-            <h1 class="logo">
-                <a href="index.html"><img src="images/fujifilm_corporate_logo.svg" alt="ロゴ"></a>
-            </h1>
-            <div class="gnb_wrap">
-                <div class="depth1">
-                    <a class="depth1_tit" href="#">個人のお客さま</a>
-                    <ul class="depth2">
-                        <li class="m-footer-sitemap__group">
-                            <a href="#">製品情報</a>
-                            <ul class="depth3">
-                                <li><a href="#">デジタルカメラ</a></li>
-                                <li><a href="#">チェキ</a></li>
-                                <li><a href="#">写真プリント</a></li>
-                                <li><a href="#">フィルム／写ルンです</a></li>
-                                <li><a href="#">化粧品</a></li>
-                                <li><a href="#">サプリメント</a></li>
-                                <li><a href="#">双眼鏡</a></li>
-                                <li><a href="#">抗菌用品</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">サポート</a></li>
-                        <li><a href="#">イベント・キャンペーン</a></li>
-                        <li><a href="#">オンラインショップ</a></li>
-                    </ul>
-                </div>
-                <div class="depth1">
-                    <a class="depth1_tit" href="#">医療関係の皆さま</a>
-                    <ul class="depth2">
-                        <li class="m-footer-sitemap__group">
-                            <a href="#">製品情報</a>
-                            <ul class="depth3">
-                                <li><a href="#">ヘルスケアITソリューション</a></li>
-                                <li><a href="#">MRI・CTシステム</a></li>
-                                <li><a href="#">X線画像診断システム</a></li>
-                                <li><a href="#">マンモグラフィ</a></li>
-                                <li><a href="#">内視鏡システム</a></li>
-                                <li><a href="#">超音波診断装置</a></li>
-                                <li><a href="#">IVD・臨床検査</a></li>
-                                <li><a href="#">検査・測定</a></li>
-                                <li><a href="#">外科治療支援</a></li>
-                                <li><a href="#">電子カルテ・レセプト</a></li>
-                                <li><a href="#">医薬品</a></li>
-                                <li><a href="#">再生医療</a></li>
-                                <li><a href="#">バイオCDMO</a></li>
-                                <li><a href="#">薬局・健康支援</a></li>
-                                <li><a href="#">動物医療</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">医療ライブラリ</a></li>
-                        <li><a href="#">学会・セミナー</a></li>
-                    </ul>
-                </div>
-                <div class="depth1">
-                    <a class="depth1_tit" href="#">ビジネスのお客さま</a>
-                    <ul class="depth2">
-                        <li class="m-footer-sitemap__group">
-                            <a href="#">製品情報</a>
-                            <ul class="depth3">
-                                <li><a href="#">印刷</a></li>
-                                <li><a href="#">写真</a></li>
-                                <li><a href="#">光学デバイス</a></li>
-                                <li><a href="#">放送・映画</a></li>
-                                <li><a href="#">広告・ディスプレイ</a></li>
-                                <li><a href="#">オフィス</a></li>
-                                <li><a href="#">セキュリティ</a></li>
-                                <li><a href="#">製造・生産</a></li>
-                                <li><a href="#">検査・測定</a></li>
-                                <li><a href="#">データ管理</a></li>
-                                <li><a href="#">素材・材料</a></li>
-                                <li><a href="#">開発・製造受託</a></li>
-                                <li><a href="#">特定産業支援</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">イベント・セミナー</a></li>
-                    </ul>
-                </div>
-                <div class="depth1">
-                    <a class="depth1_tit" href="#">企業情報</a>
-                    <ul class="depth2">
-                        <li><a href="#">富士フイルムについて</a></li>
-                        <li><a href="#">ブランド</a></li>
-                        <li><a href="#">サステナビリティ</a></li>
-                        <li><a href="#">研究開発</a></li>
-                        <li><a href="#">採用</a></li>
-                        <li><a href="#">広告・スポンサー活動</a></li>
-                        <li><a href="#">資材・購買</a></li>
-                    </ul>
-                </div>
-                <div class="depth1">
-                    <a class="depth1_tit" href="#">お知らせ</a>
+        <header id="header">
+            <div class="header_inner">
+                <h1 class="logo">
+                    <a href="index.html"><img src="images/fujifilm_corporate_logo.svg" alt="ロゴ"></a>
+                </h1>
+                <nav class="gnb_wrap">
+                    <div class="depth1">
+                        <a class="depth1_tit" href="#">個人のお客さま</a>
+                        <ul class="depth2">
+                            <li class="m-footer-sitemap__group">
+                                <a href="#">製品情報</a>
+                                <ul class="depth3">
+                                    <li><a href="#">デジタルカメラ</a></li>
+                                    <li><a href="#">チェキ</a></li>
+                                    <li><a href="#">写真プリント</a></li>
+                                    <li><a href="#">フィルム／写ルンです</a></li>
+                                    <li><a href="#">化粧品</a></li>
+                                    <li><a href="#">サプリメント</a></li>
+                                    <li><a href="#">双眼鏡</a></li>
+                                    <li><a href="#">抗菌用品</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">サポート</a></li>
+                            <li><a href="#">イベント・キャンペーン</a></li>
+                            <li><a href="#">オンラインショップ</a></li>
+                        </ul>
+                    </div>
+                    <div class="depth1">
+                        <a class="depth1_tit" href="#">医療関係の皆さま</a>
+                        <ul class="depth2 medical_info">
+                            <li class="m-footer-sitemap__group">
+                                <a href="#">製品情報</a>
+                                <ul class="depth3">
+                                    <li><a href="#">ヘルスケアITソリューション</a></li>
+                                    <li><a href="#">MRI・CTシステム</a></li>
+                                    <li><a href="#">X線画像診断システム</a></li>
+                                    <li><a href="#">マンモグラフィ</a></li>
+                                    <li><a href="#">内視鏡システム</a></li>
+                                    <li><a href="#">超音波診断装置</a></li>
+                                    <li><a href="#">IVD・臨床検査</a></li>
+                                    <li><a href="#">検査・測定</a></li>
+                                    <li><a href="#">外科治療支援</a></li>
+                                    <li><a href="#">電子カルテ・レセプト</a></li>
+                                    <li><a href="#">医薬品</a></li>
+                                    <li><a href="#">再生医療</a></li>
+                                    <li><a href="#">バイオCDMO</a></li>
+                                    <li><a href="#">薬局・健康支援</a></li>
+                                    <li><a href="#">動物医療</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">医療ライブラリ</a></li>
+                            <li><a href="#">学会・セミナー</a></li>
+                        </ul>
+                    </div>
+                    <div class="depth1">
+                        <a class="depth1_tit" href="#">ビジネスのお客さま</a>
+                        <ul class="depth2 business_info">
+                            <li class="m-footer-sitemap__group">
+                                <a href="#">製品情報</a>
+                                <ul class="depth3">
+                                    <li><a href="#">印刷</a></li>
+                                    <li><a href="#">写真</a></li>
+                                    <li><a href="#">光学デバイス</a></li>
+                                    <li><a href="#">放送・映画</a></li>
+                                    <li><a href="#">広告・ディスプレイ</a></li>
+                                    <li><a href="#">オフィス</a></li>
+                                    <li><a href="#">セキュリティ</a></li>
+                                    <li><a href="#">製造・生産</a></li>
+                                    <li><a href="#">検査・測定</a></li>
+                                    <li><a href="#">データ管理</a></li>
+                                    <li><a href="#">素材・材料</a></li>
+                                    <li><a href="#">開発・製造受託</a></li>
+                                    <li><a href="#">特定産業支援</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">イベント・セミナー</a></li>
+                        </ul>
+                    </div>
+                    <div class="depth1">
+                        <a class="depth1_tit" href="#">企業情報</a>
+                        <ul class="depth2 company_info">
+                            <li><a href="#">富士フイルムについて</a></li>
+                            <li><a href="#">ブランド</a></li>
+                            <li><a href="#">サステナビリティ</a></li>
+                            <li><a href="#">研究開発</a></li>
+                            <li><a href="#">採用</a></li>
+                            <li><a href="#">広告・スポンサー活動</a></li>
+                            <li><a href="#">資材・購買</a></li>
+                        </ul>
+                    </div>
+                    <div class="depth1">
+                        <a class="depth1_tit" href="#">お知らせ</a>
+                    </div>
+                </nav>
+                <div class="intro">
+                    <a href="#">Global</a>
+                    <button type="submit" class="search">검색</button>
                 </div>
             </div>
-            <a href="">global</a>
-            <button type="button" class="search"></button>
         </header>
         <main id="container">
+            <section class="section01">
+                <div class="swiper main_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="main_img"><img src="images/main_banner01.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main_img"><img src="images/main_banner02.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main_img"><img src="images/main_banner03.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main_img"><img src="images/main_banner04.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main_img"><img src="images/main_banner05.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
 
+            </section>
+            <div class="main_quick_box">
+                <a href="#" class="quick_box">
+                    <dl>
+                        <dt>Consumer</dt>
+                        <dd>個人のお客さま</dd>
+                    </dl>
+                </a>
+                <a href="#" class="quick_box">
+                    <dl>
+                        <dt>Healthcare</dt>
+                        <dd>医療関係の皆さま</dd>
+                    </dl>
+                </a>
+                <a href="#" class="quick_box">
+                    <dl>
+                        <dt>business</dt>
+                        <dd>ビジネスのお客さま</dd>
+                    </dl>
+                </a>
+            </div>
         </main>
     </div>
-    <script src="js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

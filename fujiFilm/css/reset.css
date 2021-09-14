@@ -9,6 +9,7 @@ footer,
 header,
 section,
 nav,
+main,
 p,
 form,
 input,
@@ -23,14 +24,14 @@ option,
 strong,
 label,
 input,
-button {
+button,
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
 }
-html {
-  font-size: 10px;
-  color: #333;
-}
+
 body {
   line-height: 1.5;
   -webkit-text-size-adjust: none;
@@ -38,6 +39,7 @@ body {
 header,
 section,
 nav,
+main,
 footer {
   display: block;
 }
@@ -48,15 +50,6 @@ ul {
   list-style: none;
 }
 
-body,
-input,
-button,
-img,
-select {
-  font-size: 10px;
-  font-family: "Noto Sans JP", "Apple SD Gothic Neo", sans-serif;
-  vertical-align: middle;
-}
 select,
 textarea,
 button {
