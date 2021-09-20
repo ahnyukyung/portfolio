@@ -25,12 +25,10 @@ $(function () {
     mouseenter: function () {
       $(".depth_2").stop().slideDown(550);
       $(".gnb_bg").stop().slideDown(400);
-      // $(".lang").css("backgroundColor", "rgba(3,3,3,0.04)");
     },
     mouseleave: function () {
       $(".depth_2").stop().slideUp(400);
       $(".gnb_bg").stop().slideUp(550);
-      // $(".lang").css("backgroundColor", "#fff");
       $(this).find(">a").addClass("change_color");
 
       var _this = $(this).find(">a");
