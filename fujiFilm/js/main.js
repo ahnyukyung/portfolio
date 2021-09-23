@@ -1,14 +1,15 @@
 // main_slider
 const mainSlider = new Swiper(".main_slider", {
   autoplay: {
-    delay: 10000,
+    delay: 3000,
   },
-  speed: 400,
+  speed: 1000,
   spaceBetween: 0,
   loop: true,
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
+    clickable: true,
   },
 });
 $(function () {
@@ -58,4 +59,24 @@ $(function () {
       $(this).next().hide();
       $("#header").removeClass("on");
     });
+
+  // banner
+  $(".banner_prev,.banner_next").on("click", function () {
+    $(".never_stop").fadeToggle();
+  });
+
+  // section03
+  $(".indi_box").hide();
+  $(".indi_tab").on("click", function () {
+    $(".indi_box").show();
+    $(".corp_box").hide();
+    $(this).addClass("on");
+    $(".corp_tab").removeClass("on");
+  });
+  $(".corp_tab").on("click", function () {
+    $(".corp_box").show();
+    $(".indi_box").hide();
+    $(this).addClass("on");
+    $(".indi_tab").removeClass("on");
+  });
 });
