@@ -79,4 +79,23 @@ $(function () {
     $(this).addClass("on");
     $(".indi_tab").removeClass("on");
   });
+
+  // pickup_slider
+  var pickupSlider = new Swiper(".pickup_slider", {
+    autoplay: {
+      delay: 0,
+    },
+    speed: 3000,
+    loop: true,
+    // centeredSlides 사용시 루프를 걸어야 양옆이 비지 않음
+    centeredSlides: true,
+    spaceBetween: 15,
+    // css에 지정한 크기로 잡을 경우 slidesPerView
+    slidesPerView: "auto",
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
 });
