@@ -18,7 +18,6 @@
 .header_intro {
   float: right;
 }
-
 .header_intro li {
   float: left;
   line-height: 50px;
@@ -95,9 +94,6 @@
   height: 400px;
   z-index: 100;
 }
-.gnb .our_beers {
-}
-
 .gnb_depth2 li a {
   display: block;
   line-height: 40px;

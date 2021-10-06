@@ -8,7 +8,7 @@
   height: 800px;
   margin: 0 auto;
   display: flex;
-   position: relative;
+  position: relative;
 }
 .section_1 .color_box {
   width: calc(100% / 3);
@@ -128,7 +128,6 @@
   transform: translateX(150px);
   opacity: 0;
 }
-
 .section_3 .content_box_1.on,
 .section_3 .content_box_3.on {
   transform: translateX(0);
@@ -138,7 +137,6 @@
   transform: translateY(0);
   opacity: 1;
 }
-
 .section_3 img {
   border-radius: 60px 60px 0 0;
 }
