@@ -1,13 +1,14 @@
 @charset "utf-8";
 
 .clearfix::after {
-  content: "";
+  content: '';
   clear: both;
   display: block;
 }
 #skipNavi {
   position: relative;
   width: 100%;
+  z-index: 99999;
 }
 #skipNavi a {
   position: absolute;
@@ -43,8 +44,7 @@ input,
 button,
 select,
 table {
-  font-family: "NanumSquareRound", "나눔스퀘어라운드", Arial, "아리엘",
-    sans-serif;
+  font-family: 'NanumSquareRound', '나눔스퀘어라운드', Arial, '아리엘', sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #707070;

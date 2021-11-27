@@ -42,10 +42,10 @@ nav {
   display: block;
 }
 body,
-select {
-  font-family: "NanumSquareRound", "나눔스퀘어라운드", Arial, "아리엘",
-    sans-serif;
-  font-size: 18px;
+select,
+input {
+  font-family: 'NanumSquareRound', '나눔스퀘어라운드', Arial, '아리엘', sans-serif;
+  font-size: 14px;
 }
 ul {
   list-style: none;
@@ -64,10 +64,10 @@ table {
   border-spacing: 0;
   width: 100%;
 }
-input[type="text"]::-ms-clear {
+input[type='text']::-ms-clear {
   display: none;
 }
-input[type="password"]::-ms-reveal {
+input[type='password']::-ms-reveal {
   display: none;
 }
 input,
@@ -78,6 +78,6 @@ button {
   -webkit-appearance: none;
   appearance: none;
 }
-input[type="checkbox"]::-ms-check {
+input[type='checkbox']::-ms-check {
   display: none;
 }

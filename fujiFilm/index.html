@@ -1,537 +1,491 @@
 <!DOCTYPE html>
 <html lang="jp">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1280">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1280" />
     <title>fujifilm</title>
-    <meta name="description" content="fujifilm">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="fujifilm">
-    <meta property="og:url" content="http://ahnyukyung.dothome.co.kr/fujifilm/">
-    <meta property="og:image" content="http://ahnyukyung.dothome.co.kr/fujifilm/images/logo_s.png">
-    <meta property="og:description" content="fujifilm">
-    <link rel="icon" href="http://ahnyukyung.dothome.co.kr/fujifilm/images/logo_s.png">
-    <link rel="apple-touch-icon" href="http://ahnyukyung.dothome.co.kr/fujifilm/images/logo_s.png">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+    <meta name="description" content="fujifilm" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="fujifilm" />
+    <meta property="og:url" content="http://ahnyukyung.dothome.co.kr/fujifilm/" />
+    <meta property="og:image" content="http://ahnyukyung.dothome.co.kr/fujifilm/images/logo_s.png" />
+    <meta property="og:description" content="fujifilm" />
+    <link rel="icon" href="http://ahnyukyung.dothome.co.kr/fujifilm/images/logo_s.png" />
+    <link rel="apple-touch-icon" href="http://ahnyukyung.dothome.co.kr/fujifilm/images/logo_s.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="wrap">
-        <header id="header">
-            <div class="header_inner">
-                <h1 class="logo">
-                    <a href="index.html"><img src="images/fujifilm_corporate_logo.svg" alt="ロゴ"></a>
-                </h1>
-                <nav class="gnb_wrap">
-                    <div class="depth1">
-                        <a class="depth1_tit" href="#">個人のお客さま</a>
-                        <ul class="depth2">
-                            <li class="m-footer-sitemap__group">
-                                <a href="#">製品情報</a>
-                                <ul class="depth3">
-                                    <li><a href="#">デジタルカメラ</a></li>
-                                    <li><a href="#">チェキ</a></li>
-                                    <li><a href="#">写真プリント</a></li>
-                                    <li><a href="#">フィルム／写ルンです</a></li>
-                                    <li><a href="#">化粧品</a></li>
-                                    <li><a href="#">サプリメント</a></li>
-                                    <li><a href="#">双眼鏡</a></li>
-                                    <li><a href="#">抗菌用品</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">サポート</a></li>
-                            <li><a href="#">イベント・キャンペーン</a></li>
-                            <li><a href="#">オンラインショップ</a></li>
-                        </ul>
-                    </div>
-                    <div class="depth1">
-                        <a class="depth1_tit" href="#">医療関係の皆さま</a>
-                        <ul class="depth2 medical_info">
-                            <li class="m-footer-sitemap__group">
-                                <a href="#">製品情報</a>
-                                <ul class="depth3">
-                                    <li><a href="#">ヘルスケアITソリューション</a></li>
-                                    <li><a href="#">MRI・CTシステム</a></li>
-                                    <li><a href="#">X線画像診断システム</a></li>
-                                    <li><a href="#">マンモグラフィ</a></li>
-                                    <li><a href="#">内視鏡システム</a></li>
-                                    <li><a href="#">超音波診断装置</a></li>
-                                    <li><a href="#">IVD・臨床検査</a></li>
-                                    <li><a href="#">検査・測定</a></li>
-                                    <li><a href="#">外科治療支援</a></li>
-                                    <li><a href="#">電子カルテ・レセプト</a></li>
-                                    <li><a href="#">医薬品</a></li>
-                                    <li><a href="#">再生医療</a></li>
-                                    <li><a href="#">バイオCDMO</a></li>
-                                    <li><a href="#">薬局・健康支援</a></li>
-                                    <li><a href="#">動物医療</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">医療ライブラリ</a></li>
-                            <li><a href="#">学会・セミナー</a></li>
-                        </ul>
-                    </div>
-                    <div class="depth1">
-                        <a class="depth1_tit" href="#">ビジネスのお客さま</a>
-                        <ul class="depth2 business_info">
-                            <li class="m-footer-sitemap__group">
-                                <a href="#">製品情報</a>
-                                <ul class="depth3">
-                                    <li><a href="#">印刷</a></li>
-                                    <li><a href="#">写真</a></li>
-                                    <li><a href="#">光学デバイス</a></li>
-                                    <li><a href="#">放送・映画</a></li>
-                                    <li><a href="#">広告・ディスプレイ</a></li>
-                                    <li><a href="#">オフィス</a></li>
-                                    <li><a href="#">セキュリティ</a></li>
-                                    <li><a href="#">製造・生産</a></li>
-                                    <li><a href="#">検査・測定</a></li>
-                                    <li><a href="#">データ管理</a></li>
-                                    <li><a href="#">素材・材料</a></li>
-                                    <li><a href="#">開発・製造受託</a></li>
-                                    <li><a href="#">特定産業支援</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">イベント・セミナー</a></li>
-                        </ul>
-                    </div>
-                    <div class="depth1">
-                        <a class="depth1_tit" href="#">企業情報</a>
-                        <ul class="depth2 company_info">
-                            <li><a href="#">富士フイルムについて</a></li>
-                            <li><a href="#">ブランド</a></li>
-                            <li><a href="#">サステナビリティ</a></li>
-                            <li><a href="#">研究開発</a></li>
-                            <li><a href="#">採用</a></li>
-                            <li><a href="#">広告・スポンサー活動</a></li>
-                            <li><a href="#">資材・購買</a></li>
-                        </ul>
-                    </div>
-                    <div class="depth1">
-                        <a class="depth1_tit" href="#">お知らせ</a>
-                    </div>
-                </nav>
-                <div class="intro">
-                    <a href="#">Global</a>
-                    <button type="submit" class="search">검색</button>
-                </div>
+      <header id="header">
+        <div class="header_inner">
+          <h1 class="logo">
+            <a href="index.html"><img src="images/fujifilm_corporate_logo.svg" alt="ロゴ" /></a>
+          </h1>
+          <nav class="gnb_wrap">
+            <div class="depth1">
+              <a class="depth1_tit" href="#">個人のお客さま</a>
+              <ul class="depth2">
+                <li class="m-footer-sitemap__group">
+                  <a href="#">製品情報</a>
+                  <ul class="depth3">
+                    <li><a href="#">デジタルカメラ</a></li>
+                    <li><a href="#">チェキ</a></li>
+                    <li><a href="#">写真プリント</a></li>
+                    <li><a href="#">フィルム／写ルンです</a></li>
+                    <li><a href="#">化粧品</a></li>
+                    <li><a href="#">サプリメント</a></li>
+                    <li><a href="#">双眼鏡</a></li>
+                    <li><a href="#">抗菌用品</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">サポート</a></li>
+                <li><a href="#">イベント・キャンペーン</a></li>
+                <li><a href="#">オンラインショップ</a></li>
+              </ul>
             </div>
-        </header>
-        <main id="container">
-            <section class="section01">
-                <div class="swiper main_slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="main_img"><img src="images/main_banner01.jpg" alt=""></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="main_img"><img src="images/main_banner02.jpg" alt=""></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="main_img"><img src="images/main_banner03.jpg" alt=""></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="main_img"><img src="images/main_banner04.jpg" alt=""></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="main_img"><img src="images/main_banner05.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-                <div class="main_quick_box">
-                    <a href="#" class="quick_box">
-                        <dl>
-                            <dt>Consumer</dt>
-                            <dd>個人のお客さま</dd>
-                        </dl>
-                    </a>
-                    <a href="#" class="quick_box">
-                        <dl>
-                            <dt>Healthcare</dt>
-                            <dd>医療関係の皆さま</dd>
-                        </dl>
-                    </a>
-                    <a href="#" class="quick_box">
-                        <dl>
-                            <dt>business</dt>
-                            <dd>ビジネスのお客さま</dd>
-                        </dl>
-                    </a>
-                </div>
-            </section>
-            <ul class="banner">
-                <li>
-                    <a href="javascript:void(0)"><img src="images/covid.jpg" alt="新型コロナウイルス感染症への取り組み"></a>
+            <div class="depth1">
+              <a class="depth1_tit" href="#">医療関係の皆さま</a>
+              <ul class="depth2 medical_info">
+                <li class="m-footer-sitemap__group">
+                  <a href="#">製品情報</a>
+                  <ul class="depth3">
+                    <li><a href="#">ヘルスケアITソリューション</a></li>
+                    <li><a href="#">MRI・CTシステム</a></li>
+                    <li><a href="#">X線画像診断システム</a></li>
+                    <li><a href="#">マンモグラフィ</a></li>
+                    <li><a href="#">内視鏡システム</a></li>
+                    <li><a href="#">超音波診断装置</a></li>
+                    <li><a href="#">IVD・臨床検査</a></li>
+                    <li><a href="#">検査・測定</a></li>
+                    <li><a href="#">外科治療支援</a></li>
+                    <li><a href="#">電子カルテ・レセプト</a></li>
+                    <li><a href="#">医薬品</a></li>
+                    <li><a href="#">再生医療</a></li>
+                    <li><a href="#">バイオCDMO</a></li>
+                    <li><a href="#">薬局・健康支援</a></li>
+                    <li><a href="#">動物医療</a></li>
+                  </ul>
                 </li>
-                <li class="never_stop">
-                    <a href="javascript:void(0)"><img src="images/never_stop.jpg"
-                            alt="we will never stop innovating solutions for a better world"></a>
+                <li><a href="#">医療ライブラリ</a></li>
+                <li><a href="#">学会・セミナー</a></li>
+              </ul>
+            </div>
+            <div class="depth1">
+              <a class="depth1_tit" href="#">ビジネスのお客さま</a>
+              <ul class="depth2 business_info">
+                <li class="m-footer-sitemap__group">
+                  <a href="#">製品情報</a>
+                  <ul class="depth3">
+                    <li><a href="#">印刷</a></li>
+                    <li><a href="#">写真</a></li>
+                    <li><a href="#">光学デバイス</a></li>
+                    <li><a href="#">放送・映画</a></li>
+                    <li><a href="#">広告・ディスプレイ</a></li>
+                    <li><a href="#">オフィス</a></li>
+                    <li><a href="#">セキュリティ</a></li>
+                    <li><a href="#">製造・生産</a></li>
+                    <li><a href="#">検査・測定</a></li>
+                    <li><a href="#">データ管理</a></li>
+                    <li><a href="#">素材・材料</a></li>
+                    <li><a href="#">開発・製造受託</a></li>
+                    <li><a href="#">特定産業支援</a></li>
+                  </ul>
                 </li>
-                <button type="button" class="banner_prev"></button>
-                <button type="button" class="banner_next"></button>
+                <li><a href="#">イベント・セミナー</a></li>
+              </ul>
+            </div>
+            <div class="depth1">
+              <a class="depth1_tit" href="#">企業情報</a>
+              <ul class="depth2 company_info">
+                <li><a href="#">富士フイルムについて</a></li>
+                <li><a href="#">ブランド</a></li>
+                <li><a href="#">サステナビリティ</a></li>
+                <li><a href="#">研究開発</a></li>
+                <li><a href="#">採用</a></li>
+                <li><a href="#">広告・スポンサー活動</a></li>
+                <li><a href="#">資材・購買</a></li>
+              </ul>
+            </div>
+            <div class="depth1">
+              <a class="depth1_tit" href="#">お知らせ</a>
+            </div>
+          </nav>
+          <div class="intro">
+            <a href="#">Global</a>
+            <button type="submit" class="search">검색</button>
+          </div>
+        </div>
+      </header>
+      <main id="container">
+        <section class="section01">
+          <div class="swiper main_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="main_img"><img src="images/main_banner01.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_img"><img src="images/main_banner02.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_img"><img src="images/main_banner03.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_img"><img src="images/main_banner04.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_img"><img src="images/main_banner05.jpg" alt="" /></div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="main_quick_box">
+            <a href="#" class="quick_box">
+              <dl>
+                <dt>Consumer</dt>
+                <dd>個人のお客さま</dd>
+              </dl>
+            </a>
+            <a href="#" class="quick_box">
+              <dl>
+                <dt>Healthcare</dt>
+                <dd>医療関係の皆さま</dd>
+              </dl>
+            </a>
+            <a href="#" class="quick_box">
+              <dl>
+                <dt>business</dt>
+                <dd>ビジネスのお客さま</dd>
+              </dl>
+            </a>
+          </div>
+        </section>
+        <ul class="banner">
+          <li>
+            <a href="javascript:void(0)"><img src="images/covid.jpg" alt="新型コロナウイルス感染症への取り組み" /></a>
+          </li>
+          <li class="never_stop">
+            <a href="javascript:void(0)"><img src="images/never_stop.jpg" alt="we will never stop innovating solutions for a better world" /></a>
+          </li>
+          <button type="button" class="banner_prev"></button>
+          <button type="button" class="banner_next"></button>
+        </ul>
+        <section class="section02">
+          <div class="main_product main_product01">
+            <div class="product_info">
+              <h3 class="product_tit">デジタルカメラ</h3>
+              <p class="product_txt">高画質と小型・軽量を両立し、撮影スタイルに応じた多彩なラインアップのミラーレスデジタルカメラ。 快適な操作性と美しい画質で、写真を撮る楽しみを拡大。</p>
+              <a href="#" class="btn_more"> 詳しくはこちら </a>
+            </div>
+          </div>
+          <div class="main_product main_product02">
+            <div class="product_info">
+              <h3 class="product_tit">プリンチャオ</h3>
+              <p class="product_txt">高画質と小型・軽量を両立し、撮影スタイルに応じた多彩なラインアップのミラーレスデジタルカメラ。 快適な操作性と美しい画質で、写真を撮る楽しみを拡大。</p>
+              <a href="#" class="btn_more"> 詳しくはこちら </a>
+            </div>
+          </div>
+          <div class="main_product main_product03">
+            <div class="product_info">
+              <h3 class="product_tit">instax"チェキ"</h3>
+              <p class="product_txt">撮って、すぐにプリント。カードサイズ、スクエアサイズ、ワイドサイズ3種類のプリントサイズをラインアップ。</p>
+              <a href="#" class="btn_more"> 詳しくはこちら </a>
+            </div>
+          </div>
+          <div class="main_product main_product04">
+            <div class="product_info">
+              <h3 class="product_tit">フィルム</h3>
+              <p class="product_txt">各種フィルムカメラに対応したさまざまなフィルムを紹介します。</p>
+              <a href="#" class="btn_more"> 詳しくはこちら </a>
+            </div>
+          </div>
+        </section>
+        <section class="section03">
+          <ul class="product_tab">
+            <li><a href="javascript:void(0)" class="corp_tab on">法人のお客様</a></li>
+            <li><a href="javascript:void(0)" class="indi_tab">個人のお客様</a></li>
+          </ul>
+          <div class="product_contents">
+            <ul class="product_box corp_box">
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_corp_01.png" alt="" />
+                  <span class="product_tit">ヘルスケア製品・ソリューション</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_corp_02.png" alt="" />
+                  <span class="product_tit">産業機器製品</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_corp_03.png" alt="" />
+                  <span class="product_tit">光加工機</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_corp_04.png" alt="" />
+                  <span class="product_tit">アクチュエータユニット・エンコーダ・デジマイクロ</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_corp_05.png" alt="" />
+                  <span class="product_tit">産業用カメラレンズ</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_corp_06.png" alt="" />
+                  <span class="product_tit">特注機器・理化学機器</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_corp_07.png" alt="" />
+                  <span class="product_tit">一般光学ガラス</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_corp_08.png" alt="" />
+                  <span class="product_tit">光学素材・光学部品</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_corp_09.png" alt="" />
+                  <span class="product_tit">測量機</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_corp_10.png" alt="" />
+                  <span class="product_tit">画像関連システム・ソフトウェア</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_corp_11.png" alt="" />
+                  <span class="product_tit">FPD露光装置</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_corp_12.png" alt="" />
+                  <span class="product_tit">半導体装置</span>
+                </a>
+              </li>
             </ul>
-            <section class="section02">
-                <div class="main_product main_product01">
-                    <div class="product_info">
-                        <h3 class="product_tit">
-                            デジタルカメラ
-                        </h3>
-                        <p class="product_txt">
-                            高画質と小型・軽量を両立し、撮影スタイルに応じた多彩なラインアップのミラーレスデジタルカメラ。
-                            快適な操作性と美しい画質で、写真を撮る楽しみを拡大。
-                        </p>
-                        <a href="#" class="btn_more">
-                            詳しくはこちら
-                        </a>
-                    </div>
-                </div>
-                <div class="main_product main_product02">
-                    <div class="product_info">
-                        <h3 class="product_tit">
-                            プリンチャオ
-                        </h3>
-                        <p class="product_txt">
-                            高画質と小型・軽量を両立し、撮影スタイルに応じた多彩なラインアップのミラーレスデジタルカメラ。
-                            快適な操作性と美しい画質で、写真を撮る楽しみを拡大。
-                        </p>
-                        <a href="#" class="btn_more">
-                            詳しくはこちら
-                        </a>
-                    </div>
-                </div>
-                <div class="main_product main_product03">
-                    <div class="product_info">
-                        <h3 class="product_tit">
-                            instax"チェキ"
-                        </h3>
-                        <p class="product_txt">
-                            撮って、すぐにプリント。カードサイズ、スクエアサイズ、ワイドサイズ3種類のプリントサイズをラインアップ。
-                        </p>
-                        <a href="#" class="btn_more">
-                            詳しくはこちら
-                        </a>
-                    </div>
-                </div>
-                <div class="main_product main_product04">
-                    <div class="product_info">
-                        <h3 class="product_tit">
-                            フィルム
-                        </h3>
-                        <p class="product_txt">
-                            各種フィルムカメラに対応したさまざまなフィルムを紹介します。
-                        </p>
-                        <a href="#" class="btn_more">
-                            詳しくはこちら
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="section03">
-                <ul class="product_tab">
-                    <li><a href="javascript:void(0)" class="corp_tab on">法人のお客様</a></li>
-                    <li><a href="javascript:void(0)" class="indi_tab">個人のお客様</a></li>
-                </ul>
-                <div class="product_contents">
-                    <ul class="product_box corp_box">
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_corp_01.png" alt="">
-                                <span class="product_tit">ヘルスケア製品・ソリューション</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_corp_02.png" alt="">
-                                <span class="product_tit">産業機器製品</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_corp_03.png" alt="">
-                                <span class="product_tit">光加工機</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_corp_04.png" alt="">
-                                <span class="product_tit">アクチュエータユニット・エンコーダ・デジマイクロ</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_corp_05.png" alt="">
-                                <span class="product_tit">産業用カメラレンズ</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_corp_06.png" alt="">
-                                <span class="product_tit">特注機器・理化学機器</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_corp_07.png" alt="">
-                                <span class="product_tit">一般光学ガラス</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_corp_08.png" alt="">
-                                <span class="product_tit">光学素材・光学部品</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_corp_09.png" alt="">
-                                <span class="product_tit">測量機</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_corp_10.png" alt="">
-                                <span class="product_tit">画像関連システム・ソフトウェア</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_corp_11.png" alt="">
-                                <span class="product_tit">FPD露光装置</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_corp_12.png" alt="">
-                                <span class="product_tit">半導体装置</span>
-                            </a>
-                        </li>
+            <ul class="product_box indi_box">
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_indi_01.png" alt="" />
+                  <span class="product_tit">一眼レフカメラ</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_indi_02.png" alt="" />
+                  <span class="product_tit">レンズ</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_indi_03.png" alt="" />
+                  <span class="product_tit">スピードライト</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_indi_04.png" alt="" />
+                  <span class="product_tit">ソフトウェア・アプリ</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_indi_05.png" alt="" />
+                  <span class="product_tit">双眼鏡・望遠鏡</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_indi_07.png" alt="" />
+                  <span class="product_tit">ゴルフ用レーザー距離計</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_indi_08.png" alt="" />
+                  <span class="product_tit">一眼レフカメラ</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_indi_09.png" alt="" />
+                  <span class="product_tit">アクセサリー</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="images/pic_product_indi_10.png" alt="" />
+                  <span class="product_tit">メガネレンズ</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section04">
+          <h2 class="section_tit">NEWS</h2>
+          <div class="news_wrap">
+            <table>
+              <caption>
+                お知らせ
+              </caption>
+              <colgroup>
+                <col style="width: 13%" />
+                <col style="width: 85%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>2021年6月14日</th>
+                  <td>
+                    <a href="javascript:void(0)"> お客さま・お取引先さまに対する通常業務の復旧について > </a>
+                    <ul>
+                      <li class="news_impt">重要なお知らせ</li>
+                      <li>製品サポート</li>
+                      <li>その他お知らせ</li>
                     </ul>
-                    <ul class="product_box indi_box">
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_indi_01.png" alt="">
-                                <span class="product_tit">一眼レフカメラ</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_indi_02.png" alt="">
-                                <span class="product_tit">レンズ</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_indi_03.png" alt="">
-                                <span class="product_tit">スピードライト</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_indi_04.png" alt="">
-                                <span class="product_tit">ソフトウェア・アプリ</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_indi_05.png" alt="">
-                                <span class="product_tit">双眼鏡・望遠鏡</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_indi_07.png" alt="">
-                                <span class="product_tit">ゴルフ用レーザー距離計</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_indi_08.png" alt="">
-                                <span class="product_tit">一眼レフカメラ</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_indi_09.png" alt="">
-                                <span class="product_tit">アクセサリー</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="images/pic_product_indi_10.png" alt="">
-                                <span class="product_tit">メガネレンズ</span>
-                            </a>
-                        </li>
+                  </td>
+                </tr>
+                <tr>
+                  <th>2021年6月8日</th>
+                  <td>
+                    <a href="javascript:void(0)"> 「製品・サービスのお問い合わせ」窓口および「修理サービス」窓口の全面復旧のお知らせ > </a>
+                    <ul>
+                      <li class="news_impt">重要なお知らせ</li>
+                      <li>製品サポート</li>
+                      <li>その他お知らせ</li>
                     </ul>
-                </div>
-            </section>
-            <section class="section04">
-                <h2 class="section_tit">NEWS</h2>
-                <div class="news_wrap">
-                    <table>
-                        <caption>お知らせ</caption>
-                        <colgroup>
-                            <col style="width: 13%;">
-                            <col style="width: 85%;">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>2021年6月14日</th>
-                                <td>
-                                    <a href="javascript:void(0)">
-                                        お客さま・お取引先さまに対する通常業務の復旧について >
-                                    </a>
-                                    <ul>
-                                        <li class="news_impt">重要なお知らせ</li>
-                                        <li>製品サポート</li>
-                                        <li>その他お知らせ</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>2021年6月8日</th>
-                                <td>
-                                    <a href="javascript:void(0)">
-                                        「製品・サービスのお問い合わせ」窓口および「修理サービス」窓口の全面復旧のお知らせ >
-                                    </a>
-                                    <ul>
-                                        <li class="news_impt">重要なお知らせ</li>
-                                        <li>製品サポート</li>
-                                        <li>その他お知らせ</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>2021年6月4日</th>
-                                <td>
-                                    <a href="javascript:void(0)">
-                                        当社サーバーへの不正アクセスについて >
-                                    </a>
-                                    <ul>
-                                        <li class="news_impt">重要なお知らせ</li>
-                                        <li>製品サポート</li>
-                                        <li>その他お知らせ</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>2021年5月14日</th>
-                                <td>
-                                    <a href="javascript:void(0)">
-                                        「FUJIFILM Xシリーズ」／「FinePixシリーズ」充電式リチウムイオンバッテリーの模倣品についてのお知らせ >
-                                    </a>
-                                    <ul>
-                                        <li class="news_impt">重要なお知らせ</li>
-                                        <li>製品サポート</li>
-                                        <li>その他お知らせ</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>2021年5月4日</th>
-                                <td>
-                                    <a href="javascript:void(0)">
-                                        デジタルカメラ「FUJIFILM X-T4」専用アクセサリー<br>
-                                        「縦位置バッテリーグリップ VG-XT4」用保証書未封入についてのお詫びとお知らせ (富士フイルムイメージングシステムズ) >
-                                    </a>
-                                    <ul>
-                                        <li class="news_impt">重要なお知らせ</li>
-                                        <li>製品サポート</li>
-                                        <li>その他お知らせ</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-            <section class="section05">
-                <div class="pickup_wrap">
-                    <h2 class="section_tit">ピックアップ</h2>
-                    <div class="swiper-container pickup_slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="img_wrap">
-                                        <img src="images/pickup-eosschool.jpg" alt="">
-                                    </div>
-                                    <div class="txt_wrap">
-                                        <h3>新しい生活様式に合わせて、<br>オンライン講座開始</h3>
-                                        <p>
-                                            EOS学園では写真レベルや目的ごとに様々な講座をご用意。撮影の上達法やテクニックをプロの写真家が教えます。
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="img_wrap">
-                                        <img src="images/pickup-pnote.jpg" alt="">
-                                    </div>
-                                    <div class="txt_wrap">
-                                        <h3>整理整頓する手作りラベルを<br>おうちプリントで</h3>
-                                        <p>
-                                            調味料やスパイス、ハーブ、コーヒー豆などを入れた瓶をより素敵に便利にするキッチンのラベルシール。印刷用のテンプレートを無料配布します。
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="img_wrap">
-                                        <img src="images/pickup-trend.jpg" alt="">
-                                    </div>
-                                    <div class="txt_wrap">
-                                        <h3>BtoB企業が行うべきブランディングと<br>Webサイト活用戦略</h3>
-                                        <p>
-                                            Withコロナ時代にBtoB企業のブランディングがもたらす効果や、戦略的なWebサイトの活用について紹介します。
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="img_wrap">
-                                        <img src="images/pickup-case.jpg" alt="">
-                                    </div>
-                                    <div class="txt_wrap">
-                                        <h3>紙ベースでの運用の課題を払拭し<br>保全業務の最適化を実現</h3>
-                                        <p>
-                                            タブレットを使用し、画面上のPDFに直接記入してもらうことで業務プロセスの最適化を図りました。
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="img_wrap">
-                                        <img src="images/pickup-nvs.jpg" alt="">
-                                    </div>
-                                    <div class="txt_wrap">
-                                        <h3>現場の課題解決を支援する映像DX</h3>
-                                        <p>
-                                            製品トラブル発生原因の究明時間の省力化を実現する、“作業工程トレーサビリティ DX for Milestone XProtect”を提供します。
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>2021年6月4日</th>
+                  <td>
+                    <a href="javascript:void(0)"> 当社サーバーへの不正アクセスについて > </a>
+                    <ul>
+                      <li class="news_impt">重要なお知らせ</li>
+                      <li>製品サポート</li>
+                      <li>その他お知らせ</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>2021年5月14日</th>
+                  <td>
+                    <a href="javascript:void(0)"> 「FUJIFILM Xシリーズ」／「FinePixシリーズ」充電式リチウムイオンバッテリーの模倣品についてのお知らせ > </a>
+                    <ul>
+                      <li class="news_impt">重要なお知らせ</li>
+                      <li>製品サポート</li>
+                      <li>その他お知らせ</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>2021年5月4日</th>
+                  <td>
+                    <a href="javascript:void(0)">
+                      デジタルカメラ「FUJIFILM X-T4」専用アクセサリー<br />
+                      「縦位置バッテリーグリップ VG-XT4」用保証書未封入についてのお詫びとお知らせ (富士フイルムイメージングシステムズ) >
+                    </a>
+                    <ul>
+                      <li class="news_impt">重要なお知らせ</li>
+                      <li>製品サポート</li>
+                      <li>その他お知らせ</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section05">
+          <div class="pickup_wrap">
+            <h2 class="section_tit">ピックアップ</h2>
+            <div class="swiper-container pickup_slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img_wrap">
+                      <img src="images/pickup-eosschool.jpg" alt="" />
                     </div>
+                    <div class="txt_wrap">
+                      <h3>新しい生活様式に合わせて、<br />オンライン講座開始</h3>
+                      <p>EOS学園では写真レベルや目的ごとに様々な講座をご用意。撮影の上達法やテクニックをプロの写真家が教えます。</p>
+                    </div>
+                  </a>
                 </div>
-            </section>
-        </main>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img_wrap">
+                      <img src="images/pickup-pnote.jpg" alt="" />
+                    </div>
+                    <div class="txt_wrap">
+                      <h3>整理整頓する手作りラベルを<br />おうちプリントで</h3>
+                      <p>調味料やスパイス、ハーブ、コーヒー豆などを入れた瓶をより素敵に便利にするキッチンのラベルシール。印刷用のテンプレートを無料配布します。</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img_wrap">
+                      <img src="images/pickup-trend.jpg" alt="" />
+                    </div>
+                    <div class="txt_wrap">
+                      <h3>BtoB企業が行うべきブランディングと<br />Webサイト活用戦略</h3>
+                      <p>Withコロナ時代にBtoB企業のブランディングがもたらす効果や、戦略的なWebサイトの活用について紹介します。</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img_wrap">
+                      <img src="images/pickup-case.jpg" alt="" />
+                    </div>
+                    <div class="txt_wrap">
+                      <h3>紙ベースでの運用の課題を払拭し<br />保全業務の最適化を実現</h3>
+                      <p>タブレットを使用し、画面上のPDFに直接記入してもらうことで業務プロセスの最適化を図りました。</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img_wrap">
+                      <img src="images/pickup-nvs.jpg" alt="" />
+                    </div>
+                    <div class="txt_wrap">
+                      <h3>現場の課題解決を支援する映像DX</h3>
+                      <p>製品トラブル発生原因の究明時間の省力化を実現する、“作業工程トレーサビリティ DX for Milestone XProtect”を提供します。</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
