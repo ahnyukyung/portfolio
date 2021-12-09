@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FooDa</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/insight.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <header id="header">
+        <div class="header_inner">
+          <h1 class="logo">
+            <a href="home.html"><img src="images/logo_01.svg" alt="fooda" /></a>
+          </h1>
+          <nav class="gnb_wrap">
+            <ul class="gnb">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="database.html">Database</a></li>
+              <!-- <li><a href="#">Market</a></li> -->
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="insight.html">Insight</a></li>
+              <li><a href="support.html">Support</a></li>
+            </ul>
+          </nav>
+          <div class="intro_menu">
+            <!-- <button type="button" class="notice"></button> -->
+            <div class="member_wrap">
+              <a href="#" class="user_name">jinyong ha</a>
+              <ul class="user_menu">
+                <li><a href="">마이페이지</a></li>
+                <li><a href="" id="fallowBtn">Fallowing</a></li>
+              </ul>
+            </div>
+            <a href="#" class="logout">로그아웃</a>
+            <div class="lang_wrap">
+              <select name="lang" id="lang" class="lang">
+                <option value="korean">한국어</option>
+                <option value="english">영어</option>
+                <option value="japanese">일본어</option>
+                <option value="thai">태국어</option>
+                <option value="chinese">중국어</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- container -->
+      <div class="insight_container">
+        <div class="insight_wrap">
+          <div class="tit_wrap">
+            <ul class="tab_list" id="tabList">
+              <li class="on"><a href="javascript:void(0)">NEWS</a></li>
+              <li><a href="javascript:void(0)">수입규제</a></li>
+            </ul>
+            <span class="blue">Insight</span>
+          </div>
+          <div class="insight_box" id="tabCont">
+            <!--------- News --------->
+            <div class="news_tab_cont tab_cont">
+              <form action="#" class="src_bar_box">
+                <select name="src_category" id="src_category" title="뉴스검색 카테고리">
+                  <option value="">전체</option>
+                  <option value="">코드</option>
+                  <option value="">품목명</option>
+                  <option value="">국가</option>
+                </select>
+                <input type="text" placeholder="검색어를 입력해주세요." />
+                <button class="btn_src">
+                  <svg width="34" height="34">
+                    <path
+                      d="M21.958 19.833H20.84l-.396-.382a9.168 9.168 0 0 0 2.224-5.993 9.208 9.208 0 0 0-9.209-9.208 9.208 9.208 0 0 0-9.208 9.208 9.208 9.208 0 0 0 9.208 9.209c2.281 0 4.378-.836 5.993-2.225l.382.397v1.12l7.084 7.069 2.11-2.111-7.069-7.084Zm-8.5 0a6.366 6.366 0 0 1-6.375-6.375 6.366 6.366 0 0 1 6.375-6.375 6.366 6.366 0 0 1 6.375 6.375 6.366 6.366 0 0 1-6.375 6.375Z"
+                      fill="#BABABA"
+                    />
+                  </svg>
+                </button>
+              </form>
+
+              <div class="tbl_wrap box_style tbl_wrap01">
+                <table>
+                  <colgroup>
+                    <col style="width: 13%" />
+                    <col style="width: 72%" />
+                    <col style="width: 15%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>구분</th>
+                      <th>제목</th>
+                      <th>일자</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="number">1</td>
+                      <td class="tit"><a href="">몰수품 및 국고귀속물품 수탁판매기관 지정 계획 공고</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                    <tr>
+                      <td class="number">2</td>
+                      <td class="tit"><a href="">2021년도 일반직 공무원(공업사주보) 경력경쟁채용시험 추가 합격자 공고 및 오리엔테이션 안내</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                    <tr>
+                      <td class="number">3</td>
+                      <td class="tit"><a href="">공공기관 청렴도 측정 관련 개인정보 제3자 제공사항 알림</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                    <tr>
+                      <td class="number">3</td>
+                      <td class="tit"><a href="">공공기관 청렴도 측정 관련 개인정보 제3자 제공사항 알림</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                    <tr>
+                      <td class="number">3</td>
+                      <td class="tit"><a href="">공공기관 청렴도 측정 관련 개인정보 제3자 제공사항 알림</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                    <tr>
+                      <td class="number">3</td>
+                      <td class="tit"><a href="">공공기관 청렴도 측정 관련 개인정보 제3자 제공사항 알림</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                    <tr>
+                      <td class="number">3</td>
+                      <td class="tit"><a href="">공공기관 청렴도 측정 관련 개인정보 제3자 제공사항 알림</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                    <tr>
+                      <td class="number">3</td>
+                      <td class="tit"><a href="">공공기관 청렴도 측정 관련 개인정보 제3자 제공사항 알림</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                    <tr>
+                      <td class="number">3</td>
+                      <td class="tit"><a href="">공공기관 청렴도 측정 관련 개인정보 제3자 제공사항 알림</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                    <tr>
+                      <td class="number">3</td>
+                      <td class="tit"><a href="">공공기관 청렴도 측정 관련 개인정보 제3자 제공사항 알림</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="notice_pager">
+                  <li>
+                    <a href="">
+                      <i>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.6502 5L12.8252 6.175L9.00853 10L12.8252 13.825L11.6502 15L6.6502 10L11.6502 5Z" fill="#383838" />
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <li><a href="">1</a></li>
+                  <li><a href="">2</a></li>
+                  <li><a href="">3</a></li>
+                  <li><a href="">4</a></li>
+                  <li><a href="">5</a></li>
+                  <li>
+                    <a href="">
+                      <i>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.34981 5L7.1748 6.175L10.9915 10L7.1748 13.825L8.34981 15L13.3498 10L8.34981 5Z" fill="#383838" />
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 관련뉴스 클릭시 오픈 박스-->
+              <div class="rlt_news_box box_style none">
+                <h2 class="news_tit">(주) 시티랩스, 공공데이터 기반 수입 정보 데이터 플래폼 ‘Fooda’ 서비스 출시</h2>
+                <div class="news_wrap">
+                  <div class="news_img">
+                    <img src="images/img_signup_crop_slide04.png" alt="" />
+                  </div>
+                  <div class="news_cont">
+                    <h3 class="sub_tit">News List</h3>
+                    <p class="news_txt">
+                      The News List app allows for a new way to create, style and display your Wix site current news and events to your users. You can use the “Expand” feature to show your current news or events in full size on click You can add new
+                      News items to your site to notify the most recent news and events about your company and share them with your visitors. By downloading the News List app, you’re able to start working within the News editor. The best part is
+                      you’re in control. Your News content is located in a single place and you can assign different News items to additional News sections. What’s more is that now you can customize your news and events with new and advanced featur
+                      height: 262px;
+                    </p>
+                  </div>
+                </div>
+                <div class="date_box">
+                  <p>발행 : 중앙일보</p>
+                  <span>2021/08/31</span>
+                </div>
+              </div>
+
+              <!-- 관련뉴스 box -->
+              <div class="tbl_wrap rlt_news_wrap box_style">
+                <table>
+                  <colgroup>
+                    <col style="width: 85%" />
+                    <col style="width: 15%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>관련 News</th>
+                      <th>일자</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tit"><a href="">(주) 시티랩스, 공공데이터 기반 수입 정보 데이터 플랫폼, ‘Fooda’ 서비스 출시</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                    <tr>
+                      <td class="tit"><a href="">(주) 시티랩스, 공공데이터 기반 수입 정보 데이터 플랫폼, ‘Fooda’ 서비스 출시</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                    <tr>
+                      <td class="tit"><a href="">(주) 시티랩스, 공공데이터 기반 수입 정보 데이터 플랫폼, ‘Fooda’ 서비스 출시</a></td>
+                      <td class="date">2021.08.03</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!--------- 수입규제 --------->
+            <div class="rst_tab_cont tab_cont none">
+              <form action="#" class="frm_wrap">
+                <div class="top">
+                  <div class="year">
+                    <span class="frm_tit">년도</span>
+                    <select>
+                      <option value="">2021년도</option>
+                      <option value="">2020년도</option>
+                      <option value="">2019년도</option>
+                    </select>
+                  </div>
+                  <div class="nation">
+                    <span class="frm_tit">규제국</span>
+                    <select>
+                      <option value="">인도</option>
+                      <option value="">미국</option>
+                      <option value="">일본</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mdl">
+                  <label for="scrKeywd"><span class="frm_tit">키워드</span></label>
+                  <input type="text" id="scrKeywd" placeholder="규제품목명 / 내용을 검색해주세요." />
+                  <button type="button" class="btn_src">검색</button>
+                </div>
+                <div class="btm">
+                  <span class="frm_tit">상태</span>
+                  <ul class="status_list">
+                    <li class="on"><a href="">조사중</a></li>
+                    <li><a href="">조사종료</a></li>
+                    <li><a href="">규제중</a></li>
+                    <li><a href="">규제종료</a></li>
+                  </ul>
+                  <button type="button" class="btn_src">검색</button>
+                </div>
+              </form>
+
+              <!-- 관련규제 품목 클릭시 오픈 박스-->
+              <div class="rst_item_box box_style none">
+                <dl>
+                  <dt>규제국</dt>
+                  <dd>국가명</dd>
+                  <dt>유형</dt>
+                  <dd>반덤핑</dd>
+                </dl>
+                <dl>
+                  <dt>품목 분류</dt>
+                  <dd>토마토</dd>
+                  <dt>품목명</dt>
+                  <dd>아크릴로니트릴 부타디엔 고무 (Acrylonitrile Butadiene Rubber)</dd>
+                </dl>
+                <dl>
+                  <dt>규제 상태</dt>
+                  <dd>조사중</dd>
+                  <dt>HS 코드</dt>
+                  <dd>019398</dd>
+                </dl>
+                <dl class="txt_long">
+                  <dt>조사개시일</dt>
+                  <dd>2021.07.21</dd>
+                </dl>
+                <dl class="txt_long">
+                  <dt>규제내용</dt>
+                  <dd>내용없음내용없음내용없음내용없음내용없음내용없음내용없음내용없음내용내용없음내용없음내용없음내용없음내용없음내용없음</dd>
+                </dl>
+              </div>
+
+              <div class="rst_item_wrap tbl_wrap box_style">
+                <span class="tbl_tit none">관련 규제</span>
+                <table>
+                  <colgroup>
+                    <col style="width: 14%" />
+                    <col style="width: 40%" />
+                    <col style="width: 10%" />
+                    <col style="width: 10%" />
+                    <col style="width: 9%" />
+                    <col style="width: 17%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>규제국</th>
+                      <th>품목명</th>
+                      <th>규제내용</th>
+                      <th>조사개시일</th>
+                      <th>규제상태</th>
+                      <th>최근갱신일</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>미국</td>
+                      <td><a href="">아크릴로니트릴 부타디엔 고무 (Acrylonitrile Butadiene Rubber)</a></td>
+                      <td>반덤핑</td>
+                      <td>2021.06.28</td>
+                      <td>조사중</td>
+                      <td>2021.07.07</td>
+                    </tr>
+                    <tr>
+                      <td>미국</td>
+                      <td><a href="">전기아연도금강판 (Electrogalvanized Steel)</a></td>
+                      <td>반덤핑</td>
+                      <td>2021.06.28</td>
+                      <td>조사중</td>
+                      <td>2021.07.07</td>
+                    </tr>
+                    <tr>
+                      <td>미국</td>
+                      <td><a href="">세라믹 타일 (Ceramic Tiles)</a></td>
+                      <td>반덤핑</td>
+                      <td>2021.06.28</td>
+                      <td>조사중</td>
+                      <td>2021.07.07</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button type="button" class="btn_download">엑셀 다운로드</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--footer-->
+      <footer>
+        <div class="footer_inner">
+          <div class="footer_l">
+            <div class="f_logo">
+              <img src="images/logo_footer.svg" alt="Fooda logo" />
+            </div>
+            <div class="copy">
+              <ul class="footer_menu">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+              </ul>
+              <p>Copyright © 2021 Fooda. All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="sns">
+            <ul class="sns_list">
+              <li>
+                <svg width="25.54px" height="25.32px" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M27.7724 15.0025C27.7724 7.9681 22.0542 2.26562 15.0005 2.26562C7.9467 2.26562 2.22852 7.9681 2.22852 15.0025C2.22852 21.3598 6.89902 26.6291 13.0048 27.5846V18.6842H9.76197V15.0025H13.0048V12.1964C13.0048 9.00421 14.9116 7.24096 17.829 7.24096C19.2263 7.24096 20.688 7.48972 20.688 7.48972V10.6242H19.0774C17.4908 10.6242 16.9961 11.606 16.9961 12.6133V15.0025H20.5383L19.972 18.6842H16.9961V27.5846C23.1019 26.6291 27.7724 21.3598 27.7724 15.0025"
+                    fill="#1877F2"
+                  />
+                  <path
+                    d="M19.9718 18.6815L20.538 14.9998H16.9958V12.6106C16.9958 11.6033 17.4906 10.6215 19.0772 10.6215H20.6877V7.48704C20.6877 7.48704 19.2261 7.23828 17.8287 7.23828C14.9113 7.23828 13.0046 9.00153 13.0046 12.1937V14.9998H9.76172V18.6815H13.0046V27.5819C13.6648 27.6851 14.332 27.7368 15.0002 27.7366C15.6791 27.7366 16.3456 27.6836 16.9958 27.5819V18.6815H19.9718Z"
+                    fill="white"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg width="45.35px" height="25.53px" viewBox="0 0 53 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.6146 2.17969C23.6786 2.17969 29.4046 7.89494 29.4046 14.9446C29.4046 21.9942 23.6782 27.709 16.6146 27.709C9.5511 27.709 3.82422 21.9942 3.82422 14.9446C3.82422 7.89494 9.55066 2.17969 16.6146 2.17969ZM37.04 2.92742C40.572 2.92742 43.4353 8.30714 43.4353 14.9446H43.4357C43.4357 21.5803 40.5725 26.9617 37.0405 26.9617C33.5085 26.9617 30.6453 21.5803 30.6453 14.9446C30.6453 8.30886 33.508 2.92742 37.04 2.92742ZM46.9255 4.1791C48.1675 4.1791 49.1747 8.99888 49.1747 14.9446C49.1747 20.8885 48.1679 25.71 46.9255 25.71C45.6832 25.71 44.6767 20.8898 44.6767 14.9446C44.6767 8.99931 45.6836 4.1791 46.9255 4.1791Z"
+                    fill="black"
+                  />
+                </svg>
+              </li>
+            </ul>
+            <p class="contact"><a href="#">contact : test@test.com</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/common.js"></script>
+    <script>
+      if ($('.insight_container').length > 0) {
+        //  관련뉴스 클릭시 오픈 박스
+        $('.rlt_news_wrap a').on('click', function (e) {
+          e.preventDefault();
+          $('.rlt_news_box').removeClass('none');
+          $('.tbl_wrap01').addClass('none');
+        });
+
+        //  관련규제 품목 클릭시 오픈 박스
+        $('.rst_item_wrap a').on('click', function (e) {
+          e.preventDefault();
+          $('.rst_item_box').removeClass('none');
+          $('.frm_wrap').addClass('none');
+          $('.rst_item_wrap .tbl_tit').removeClass('none');
+          $('.rst_item_wrap .btn_download').addClass('none');
+        });
+
+        // 수입규제 버튼 클릭
+        $('.status_list li a').on('click', function (e) {
+          e.preventDefault();
+          $(this).parent().toggleClass('on');
+        });
+      }
+    </script>
+  </body>
+</html>

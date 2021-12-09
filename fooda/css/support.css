@@ -1,0 +1,208 @@
+@charset "UTF-8";
+.support_container {
+  background-color: #f5f6fe;
+}
+.support_box {
+  background-color: #fff;
+  border-radius: 12px 12px 0 0;
+}
+
+/* FAQ */
+.faq_box {
+  margin-bottom: 80px;
+}
+.faq_box .tab_tit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 17px;
+}
+
+.faq_box .tab_ic01 {
+  background: url(../images/ic_account.svg) no-repeat;
+  background-color: rebeccapurple;
+}
+.faq_box .tab_ic02 {
+  background: url(../images/ic_recommend.svg) no-repeat;
+}
+.faq_box .tab_ic03 {
+  background: url(../images/ic_company.svg) no-repeat;
+}
+.faq_box .tab_ic04 {
+  background: url(../images/ic_data.svg) no-repeat;
+}
+.faq_box .tab_ic {
+  width: 28px;
+  height: 28px;
+  background-color: #4b48fd;
+  border-radius: 100%;
+  background-position: center center;
+  background-size: 18px 18px;
+  margin-right: 12px;
+}
+
+.faq_wrap_inner {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 36px;
+  color: #383838;
+}
+
+.faq_list {
+  margin-bottom: 20px;
+}
+.faq_list li {
+  padding: 0 16px;
+  margin-bottom: 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.03);
+}
+.faq_list .faq_tit {
+  display: block;
+  line-height: 52px;
+  color: #383838;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+}
+.faq_list .faq_tit::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #383838;
+  border-right: 2px solid #383838;
+  position: absolute;
+  top: 20px;
+  right: 8px;
+  transform: rotate(135deg);
+}
+.faq_list .faq_tit.on {
+  border-bottom: 1px solid #eaeaea;
+}
+.faq_list .faq_tit.on::after {
+  transform: rotate(-45deg);
+}
+.faq_list .faq_txt {
+  margin: 21px 0;
+  position: relative;
+  /* height: 145px; */
+  /* overflow-y: auto; */
+}
+.faq_list .faq_txt::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.faq_list .faq_txt::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.faq_list .faq_txt::-webkit-scrollbar:vertical {
+  width: 4px;
+}
+.faq_list .faq_txt::-webkit-scrollbar-thumb {
+  background-color: #eaeaea;
+  border-radius: 20px;
+}
+.faq_list .faq_txt::-webkit-scrollbar-thumb:hover {
+  background-color: #b1b1b1;
+}
+
+/* 공지사항 */
+.notice_wrap {
+  background-color: #f5f6fe;
+  padding: 40px 0;
+  position: relative;
+}
+.notice_wrap::before {
+  content: '';
+  width: 1160px;
+  height: 1px;
+  background-color: #adacfb;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.notice_wrap {
+  background-color: #f5f6fe;
+  padding: 40px 0;
+}
+.notice_wrap_inner {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.notice_wrap .tbl_header {
+  display: flex;
+  font-weight: 500;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 16px;
+}
+.notice_wrap .row {
+  line-height: 52px;
+  text-align: center;
+}
+.notice_wrap .row a {
+  display: flex;
+}
+.notice_wrap .col1 {
+  width: 113px;
+  padding-left: 7px;
+}
+.notice_wrap .col2 {
+  width: 651px;
+}
+.notice_wrap .col3 {
+  width: 214px;
+}
+.notice_wrap .col4 {
+  width: 89px;
+}
+.notice_wrap .col5 {
+  width: 91px;
+  padding-right: 19px;
+}
+.row .tit,
+.row .impt {
+  font-weight: 500;
+  color: #383838;
+}
+.row .new {
+  display: inline-block;
+  color: #fff;
+  background-color: #4b48fd;
+  border-radius: 100%;
+  font-size: 1px;
+  padding: 4px 5px;
+  margin-left: 10px;
+  line-height: 10px;
+}
+.notice_txt {
+  width: 1062px;
+  border-top: 1px solid #eaeaea;
+  line-height: 1.2;
+  margin: 0 auto;
+  padding: 20px 0 20px 60px;
+  text-align-last: left;
+  color: #383838;
+}
+.notice_wrap .arrow {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41Z' fill='%23BABABA'/%3E%3C/svg%3E") no-repeat 20px center;
+}
+.notice_wrap a.on .arrow {
+  transform: rotate(180deg);
+  background-position: 45px center;
+}
+.notice_pager {
+  width: 230px;
+  margin: 45px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.notice_pager a {
+  font-size: 16px;
+  color: #383838;
+}

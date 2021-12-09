@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+.pricing_container .top_wrap {
+  background: #4b48fd;
+  height: 282px;
+  z-index: -1;
+}
+.top_wrap .pricing_info {
+  width: 523px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+}
+.top_wrap .pricing_info h2 {
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 14px;
+}
+.top_wrap .pricing_info p {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+/* swiper */
+.pricing_container .btm_wrap {
+  height: 422px;
+  background: #f5f6fe;
+  position: relative;
+}
+.btm_wrap .swiper {
+  position: absolute;
+  top: -134px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swiper-wrapper {
+  width: 960px;
+  height: 480px;
+}
+.swiper-slide {
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.03);
+  padding-top: 3.5%;
+}
+.swiper-slide .plan_tit {
+  font-size: 21px;
+  font-weight: 700;
+}
+.swiper-slide .plan_top {
+  text-align: center;
+}
+.swiper-slide .plan_icon {
+  display: block;
+  margin: 10px auto;
+}
+.swiper-slide .plan_icon svg {
+  fill: #d2d2d2;
+}
+.swiper-slide .plan_info_list {
+  margin: 40px 0 0 43px;
+  font-size: 15px;
+}
+.swiper-slide .plan_info_list li {
+  margin-bottom: 16px;
+}
+.plan_info_list li {
+  display: flex;
+  align-items: center;
+}
+.plan_info_list li i {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+.swiper-slide .plan_info_list svg {
+  fill: #909090;
+}
+.plan_info_list svg {
+  width: 24px;
+  height: 24px;
+}
+.swiper-slide .plan_price {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+/* swiper-slide-active */
+.swiper-slide-active .plan_tit {
+  font-size: 22px;
+  color: #4b48fd;
+  font-weight: 700;
+}
+.swiper-slide-active .plan_icon {
+  display: block;
+  margin: 12px auto;
+}
+.swiper-slide-active .plan_icon svg {
+  fill: #4b48fd;
+}
+.swiper-slide-active .plan_info_list {
+  margin: 30px 0 0 67px;
+  color: #383838;
+  font-size: 15px;
+}
+.swiper-slide-active .plan_info_list li {
+  margin-bottom: 18px;
+}
+.swiper-slide-active .plan_info_list .ic_check svg {
+  fill: #4b48fd;
+}
+.swiper-slide-active .plan_info_list .ic_x svg {
+  fill: #dd425a;
+}
+.swiper-slide-active .plan_price {
+  font-size: 44px;
+  font-weight: 700;
+  color: #4b48fd;
+  letter-spacing: 0.05em;
+}
+.swiper-slide-active .dallor {
+  font-size: 26px;
+}

@@ -1,0 +1,295 @@
+@charset "UTF-8";
+.insight_container {
+  background-color: #f5f6fe;
+}
+.tab_list {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+.insight_container .tbl_wrap tbody::before {
+  line-height: 12px;
+}
+.tbl_wrap thead tr th {
+  height: 57px;
+  font-size: 14px;
+}
+.tbl_wrap tbody tr a:hover {
+  text-decoration: underline;
+}
+.rlt_news_wrap table tbody:after,
+.rst_item_wrap table tbody:after {
+  content: '.';
+  color: #fff;
+  display: block;
+  line-height: 12px;
+}
+.rlt_news_wrap table thead tr th,
+.rst_item_wrap table thead tr th {
+  font-size: 16px;
+}
+/* news */
+.insight_box {
+  background-color: #fff;
+  border-radius: 12px 12px 0px 0px;
+}
+.news_tab_cont {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.news_tab_cont .src_bar_box {
+  width: 1080px;
+  height: 55px;
+  margin: 0 auto 40px;
+  border-radius: 8px;
+  border: 1px solid #d2d2d2;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+.src_bar_box select {
+  border: none;
+  color: #383838;
+  font-size: 18px;
+}
+.src_bar_box input {
+  border: none;
+  height: 26px;
+  border-left: 1px solid #909090;
+  padding-left: 24px;
+  margin-left: 22px;
+  width: 90%;
+  font-size: 18px;
+  outline: none;
+}
+.tbl_wrap thead {
+  font-size: 16px;
+}
+.tbl_wrap tbody .number {
+  font-size: 13px;
+}
+.tbl_wrap tbody .tit a {
+  text-align-last: left;
+  color: #383838;
+}
+.notice_pager {
+  width: 230px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.notice_pager a {
+  font-size: 16px;
+  color: #383838;
+}
+.rlt_news_wrap {
+  margin: 30px 0 42px 0;
+}
+.rlt_news_wrap .tit {
+  padding-left: 46px;
+}
+.rlt_news_wrap th:first-child {
+  text-align-last: left;
+  padding-left: 46px;
+  color: #383838;
+}
+
+/* 관련뉴스 클릭시 오픈 */
+.rlt_news_box {
+  padding: 30px;
+  position: relative;
+}
+.rlt_news_box .news_tit {
+  font-size: 18px;
+  color: #383838;
+  font-weight: 500;
+}
+.rlt_news_box .news_wrap {
+  display: flex;
+  margin-top: 36px;
+  align-items: stretch;
+}
+.news_wrap .news_img {
+  width: 153px;
+  height: 132px;
+}
+.news_wrap .news_img img {
+  width: 100%;
+  height: 100%;
+}
+.news_wrap .news_cont {
+  padding: 5px 0 0 15px;
+  line-height: 22px;
+}
+.news_cont .sub_tit {
+  font-size: 20px;
+  color: #383838;
+}
+.news_cont .news_txt {
+  column-count: 2;
+  width: 672px;
+  height: 88px;
+  font-size: 16px;
+  margin-top: 15px;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+}
+.rlt_news_box .date_box {
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+  top: 31px;
+  right: 40px;
+}
+.rlt_news_box .date_box p {
+  color: #383838;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+/* 수입규제 */
+.rst_tab_cont {
+  padding-top: 40px;
+}
+.rst_tab_cont .frm_wrap {
+  width: 1160px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eaeaea;
+  padding: 0 0 25px 10px;
+}
+.frm_wrap .frm_tit {
+  font-size: 16px;
+  margin-right: 43px;
+}
+.frm_wrap > div {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.frm_wrap .top select {
+  width: 240px;
+  height: 40px;
+  border: 1px solid #d2d2d2;
+  box-sizing: border-box;
+  border-radius: 6px;
+  vertical-align: middle;
+  padding-left: 10px;
+  color: #383838;
+}
+.frm_wrap .top .year {
+  margin-right: 90px;
+}
+.frm_wrap .mdl {
+  position: relative;
+}
+.frm_wrap .mdl .frm_tit {
+  margin-right: 36px;
+}
+.frm_wrap .mdl input {
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  width: 923px;
+  font-size: 16px;
+  outline: none;
+  padding: 5px 0;
+}
+.frm_wrap .mdl button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5Zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14Z' fill='%23BABABA'/%3E%3C/svg%3E");
+  right: 150px;
+}
+.frm_wrap .btm {
+  position: relative;
+}
+.frm_wrap .btm .btn_src {
+  width: 100px;
+  height: 34px;
+  background: #4b48fd;
+  border-radius: 50px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+}
+.frm_wrap .btm .status_list {
+  display: flex;
+}
+.frm_wrap .btm .status_list li {
+  margin-right: 10px;
+}
+.frm_wrap .btm .status_list li a {
+  display: block;
+  line-height: 33px;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
+  border: 1px solid #bababa;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 0 20px;
+}
+.frm_wrap .btm .status_list li.on a {
+  background: #4b48fd;
+  color: #fff;
+  border: 1px solid #4b48fd;
+}
+.tbl_wrap {
+  width: 1160px;
+  margin: 50px auto;
+  position: relative;
+}
+.tbl_wrap a {
+  text-align-last: left;
+  color: #383838;
+}
+.tbl_wrap .tbl_tit {
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  top: -33px;
+  left: 10px;
+}
+.tbl_wrap .btn_download {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  color: #4b48fd;
+  font-weight: 500;
+}
+
+/* 관련규제 품목 클릭시 오픈 박스 */
+.rst_item_box {
+  width: 1160px;
+  margin: 0 auto 65px;
+  padding: 25px;
+  font-size: 18px;
+}
+.rst_item_box dl {
+  font-size: 13px;
+  line-height: 52px;
+  height: 52px;
+  font-size: 18px;
+  display: flex;
+}
+.rst_item_box dt {
+  color: #383838;
+  width: 146px;
+  padding-left: 26px;
+  font-weight: 500;
+}
+.rst_item_box dd {
+  padding-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+.rst_item_box .txt_long dd {
+  width: 850px;
+}
