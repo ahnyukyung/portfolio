@@ -14,12 +14,14 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+}
+.logo {
+  width: 90px;
+  line-height: 40px;
 }
 .logo a {
   display: block;
-  width: 90px;
-  height: 40px;
-  margin: 9px 32px 0 0;
 }
 .logo img {
   width: 100%;
@@ -27,10 +29,11 @@
 }
 .gnb_wrap {
   width: 660px;
-  line-height: 56px;
 }
 .gnb {
   display: flex;
+  align-content: center;
+  align-items: center;
 }
 .gnb li {
   width: 110px;
@@ -39,6 +42,7 @@
 .gnb li a {
   color: #adabfb;
   display: block;
+  line-height: 56px;
 }
 .gnb li a:hover {
   color: #fff;
@@ -46,6 +50,7 @@
 }
 .intro_menu {
   display: flex;
+  align-items: baseline;
 }
 .intro_menu .notice {
   display: block;
@@ -55,20 +60,14 @@
   margin: 17px 19px 0 49px;
 }
 .member_wrap {
-  height: 110px;
-  margin: 12px 33px 0 0;
   z-index: 200;
 }
 .member_wrap .user_name {
-  display: block;
-  width: 100px;
-  height: 31px;
+  display: inline-block;
   line-height: 31px;
-  color: #fff;
   background: url(../images/ic_expand_down.svg) no-repeat 82px center / 17px;
   border-radius: 8px 8px 0px 0px;
-  padding-right: 15px;
-  text-align: center;
+  padding: 0px 22px 0 13px;
 }
 .member_wrap .user_name.on {
   background: url(../images/ic_expand_up.svg) no-repeat 82px center / 17px;
@@ -79,7 +78,7 @@
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.08);
   border-radius: 0px 0px 8px 8px;
   text-align: center;
-  padding: 0 18px;
+  padding: 0px 18px;
 }
 .member_wrap .user_menu li:first-child {
   border-bottom: 1px solid #7a77ff;
@@ -92,16 +91,21 @@
   font-size: 13px;
 }
 .intro_menu .logout {
-  width: 52px;
-  color: #fff;
-  margin: 19px 37px 0 0;
+  margin: 0 35px;
 }
 .lang_wrap .lang {
-  background: url(../images/ic_language.svg) no-repeat left center/ 16.67px 16.67px;
+  background-image: url(../images/ic_language.svg), url(../images/ic_expand_down.svg);
+  background-repeat: no-repeat;
+  background-position: left center, right center;
+  background-size: 18px, 17px;
   border: none;
+  background-color: transparent;
   color: #fff;
-  padding-left: 18px;
-  margin-top: 19px;
+  padding: 0px 18px 0 22px;
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /*********************logout_header 공통*******************************/
@@ -110,9 +114,7 @@
 }
 .logout_intro {
   overflow: hidden;
-  width: 125px;
   margin: 0 38px 0 141px;
-  line-height: 56px;
 }
 .logout_intro li {
   float: left;
