@@ -17,11 +17,24 @@
     width: 40px;
     height: 40px;
   }
-
   .about_right {
-    height: 200px;
+    width: 80%;
   }
-
+  .about_box_wrap {
+    height: 160px;
+  }
+  .icon_txt {
+    font-size: 14px;
+  }
+  .icon1 {
+    background-size: 50px;
+  }
+  .icon2 {
+    background-size: 45px;
+  }
+  .icon3 {
+    background-size: 55px;
+  }
   /*************** footer ****************/
   .f_top_wrap_inner {
     width: 100%;
@@ -112,22 +125,6 @@
   .news_wrap .news_btn {
     font-size: 1.2rem;
   }
-
-  .about_kwangdong {
-    font-size: 2.2rem;
-  }
-  .about_tit {
-    font-size: 3rem;
-  }
-  .about_txt {
-    font-size: 1.6rem;
-  }
-  .about_right {
-    height: 180px;
-  }
-  .icon_txt {
-    font-size: 1.8rem;
-  }
 }
 @media all and (max-width: 415px) {
   /*********************header**************/
@@ -174,7 +171,7 @@
 
   .product_prev::before,
   .product_next::before {
-    content: "";
+    content: '';
     width: 5px;
     height: 5px;
     border-top: 2px solid #ffffff;
@@ -240,24 +237,32 @@
     font-size: 1.4rem;
     letter-spacing: -0.05em;
   }
-
-  .about_right {
-    height: 100px;
-  }
-
   .about_kwangdong {
-    font-size: 1.8rem;
+    font-size: 15px;
   }
   .about_tit {
-    font-size: 2.4rem;
+    font-size: 20px;
   }
   .about_txt {
-    font-size: 1.2rem;
+    font-size: 10px;
   }
-
+  .about_right {
+    width: 90%;
+  }
+  .about_box_wrap {
+    height: 100px;
+  }
   .icon_txt {
-    font-size: 1.2rem;
-    padding-top: 55px;
+    font-size: 10px;
+    padding-top: 60px;
+  }
+  .icon1 {
+    background-size: 25px;
+  }
+  .icon2 {
+    background-size: 30px;
+  }
+  .icon3 {
     background-size: 35px;
   }
 }

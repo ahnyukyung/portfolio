@@ -391,22 +391,22 @@ function mainFavorite() {
 }
 
 function addFavorite() {
-  const addFavorite = document.getElementById("add-favorite-container")
+  const addFavorite = document.getElementById('add-favorite-container');
 
-  addFavorite.style.display = "block";
+  addFavorite.style.display = 'block';
 
   setTimeout(() => {
-    addFavorite.style.display = "none"
+    addFavorite.style.display = 'none';
   }, 2000);
 }
 
 function removeFavorite() {
-  const removeFavorite = document.getElementById("remove-favorite-container")
+  const removeFavorite = document.getElementById('remove-favorite-container');
 
-  removeFavorite.style.display = "block";
+  removeFavorite.style.display = 'block';
 
   setTimeout(() => {
-    removeFavorite.style.display = "none"
+    removeFavorite.style.display = 'none';
   }, 2000);
 }
 

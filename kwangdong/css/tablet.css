@@ -41,7 +41,7 @@
     color: #333;
   }
   .m_lang_list li a::after {
-    content: "";
+    content: '';
     height: 2px;
     width: 0;
     background-color: #ef4023;
@@ -56,7 +56,7 @@
     width: 45%;
   }
   .m_lang_list li.on a::after {
-    content: "";
+    content: '';
     height: 2px;
     width: 45%;
     background-color: #ef4023;
@@ -170,7 +170,7 @@
   .m_gnb_tit::before,
   .m_gnb_tit::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 13px;
     height: 1px;
     background-color: #333;
@@ -296,7 +296,26 @@
   .news_btn {
     bottom: -25%;
   }
-
+  .section_5_inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about_left {
+    width: 100%;
+  }
+  .about_right {
+    width: 75%;
+    padding-top: 40px;
+  }
+  .about_box_wrap {
+    height: 180px;
+  }
+  .icon_txt {
+    font-size: 18px;
+  }
+  .about_box_wrap a {
+    padding-top: 0;
+  }
   /***********footer************8*/
   .f_logo {
     display: none;
