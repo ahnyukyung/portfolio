@@ -5,10 +5,10 @@
 /*******************************서브공통***************************/
 .sub_tit {
   text-align: center;
-  padding: 50px;
+  padding: 30px;
 }
 .sub_tit h2 {
-  font-size: 20px;
+  font-size: 30px;
   color: #00c8d4;
   font-family: 'Rubik', sans-serif;
 }
@@ -19,24 +19,24 @@
   font-size: 12px;
   color: #707070;
   position: relative;
-  padding-left: 30px;
+  padding-left: 20px;
   cursor: pointer;
 }
 .checkbox_wrap label:before {
   content: '';
   position: absolute;
-  left: 0;
-  top: 0px;
-  width: 18px;
-  height: 18px;
-  border: 2px solid #d9d9d9;
-  border-radius: 5px;
+  left: 0px;
+  top: -1px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
 }
 .checkbox_wrap input[type='checkbox']:hover + label:before {
-  background: url(../images/check_blue.png) no-repeat center center / 13px;
+  background: url(../images/check_blue.png) no-repeat center center / 10px;
 }
 .checkbox_wrap input[type='checkbox']:checked + label:before {
-  background: url(../images/check_white.png) no-repeat center center / 13px;
+  background: url(../images/check_white.png) no-repeat center center / 10px;
   background-color: #00c8d4;
 }
 
@@ -54,7 +54,7 @@
 input,
 select,
 button {
-  vertical-align: middle;
+  /* vertical-align: middle; */
   margin: 0;
   padding: 0;
   border-radius: 0;
@@ -78,7 +78,7 @@ input[type='password'] {
 
 /*******************************join***************************/
 .join_contents_group {
-  width: 960px;
+  width: 850px;
   margin: 0 auto;
 }
 
@@ -86,14 +86,16 @@ input[type='password'] {
   /* float: right; */
   /* display: block; */
   text-align: right;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  padding-top: 20px;
+  padding-top: 35px;
 }
 .essential {
   color: #00c8d4;
   display: inline-block;
   margin-right: 3px;
+  /* padding-top: 5px; */
+  /* vertical-align: super; */
 }
 .auth_box {
   height: 100px;
@@ -111,14 +113,8 @@ input[type='password'] {
   border-radius: 10px;
 }
 .auth_wrap {
-  /* width: 450px; */
-  /* height: 80px; */
   background: url(../images/join_icon.png) no-repeat;
   padding-left: 100px;
-  /* position: absolute; */
-  /* left: 50%; */
-  /* top: 50%; */
-  /* transform: translate3d(-185px, -40px, 0); */
   color: #fff;
 }
 
@@ -137,72 +133,78 @@ input[type='password'] {
   font-size: 12px;
 }
 .join_form {
-  margin: 60px auto;
+  margin: 10px auto;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
-  padding: 60px 80px;
+  padding: 20px 55px;
 }
 .join_form table {
   margin: 0 auto;
 }
 .join_form tr {
+  height: 55px;
 }
 .join_form th {
   text-align: left;
 }
 
 .join_form label {
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 .join_form input {
   width: 80%;
-  height: 38px;
+  height: 30px;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
 }
 .email_frm {
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 .join_form .join_email {
   width: 480px;
 }
 .email_select {
   /* width: 170px; */
-  height: 38px;
+  height: 30px;
   margin-left: 10px;
   outline: none;
   border-radius: 10px;
   border: 1px solid #c4c4c4;
   padding-left: 10px;
-  background: url(../images/arrow_down_gray.png) no-repeat 95% center;
+  background: url(../images/arrow_down_gray.png) no-repeat 91% center;
+  background-size: 10px;
 }
 .auto_input {
   display: block;
   font-weight: 700;
   margin-top: 5px;
+  font-size: 12px;
 }
 
 .agree_group label {
   font-size: 14px;
 }
 .join_alert {
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
+  padding-top: 50px;
 }
 .all_agree {
   text-align: center;
-  margin: 50px auto;
+  margin: 15px auto;
 }
 .terms_agree_cont {
   border: 1px solid #d9d9d9;
   border-radius: 10px;
   padding: 0 30px;
   box-sizing: border-box;
+  /* margin: 28px 0; */
 }
 .terms_agree_cont p {
-  height: 400px;
+  height: 250px;
   overflow: auto;
   margin: 20px auto;
+  font-size: 12px;
 }
 .terms_agree_cont p::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -220,33 +222,36 @@ input[type='password'] {
 .terms_agree_cont p::-webkit-scrollbar-thumb:hover {
   background-color: #b1b1b1;
 }
+.agree_wrap > p {
+  padding: 10px 0;
+  margin: 10px 0 25px 10px;
+}
 .agree_wrap > p strong {
   color: #ee4741b0;
+  margin-left: 3px;
 }
 .add_agree_group {
-  width: 650px;
-  margin: 50px auto 20px;
+  width: 50%;
+  margin: 30px auto 20px;
 }
 .add_agree_group span {
-  font-size: 14px;
-  margin-left: 35px;
+  font-size: 12px;
+  margin-left: 20px;
   color: #707070b9;
 }
 .add_agree {
-  width: 390px;
+  width: 62%;
   margin: 20px auto;
 }
 .add_agree .checkbox2 {
   margin-left: 10px;
 }
 .add_agree label {
-  font-size: 16px;
-  padding-top: 3px;
 }
 .join_btn {
   display: block;
-  width: 240px;
-  height: 50px;
+  width: 135px;
+  height: 35px;
   background-color: #00c8d4;
   border-radius: 10px;
   margin: 30px auto;
@@ -258,7 +263,7 @@ input[type='password'] {
   margin: 0 auto;
 }
 .sub_tit p {
-  font-size: 22px;
+  font-size: 18px;
 }
 .notice_src {
   text-align: right;
@@ -271,6 +276,7 @@ input[type='password'] {
   width: 15%;
   height: 40px;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 .src_btn {
   display: block;
@@ -279,22 +285,22 @@ input[type='password'] {
   top: 10px;
 }
 .src_btn img {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 }
-
+.notice_group .date {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
 /****************************login************************/
 #login_container {
   width: 530px;
-  height: 750px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 .login_tab {
   width: 50%;
   float: left;
-}
-.login_group {
-  position: relative;
 }
 .login_tab_tit a {
   display: block;
@@ -310,12 +316,6 @@ input[type='password'] {
 .login_tab_tit.on a {
   background: #00c8d4;
   color: #fff;
-}
-.login_box {
-  position: absolute;
-  left: 0;
-  top: 70px;
-  width: 100%;
 }
 .login_box.none {
   display: none;
@@ -418,42 +418,37 @@ input[type='password'] {
   table-layout: fixed;
 }
 .tbl_board_wrap tr {
-  height: 60px;
+  height: 50px;
   border-bottom: 1px solid #eee;
 }
 .tbl_board_wrap tr a:hover {
   color: #000;
 }
 .tbl_board_wrap tbody th {
-  height: 60px;
   border-bottom: 1px solid #eee;
-  color: #000;
+  color: #383838;
   font-weight: 400;
 }
 .tbl_board_wrap tr.notice th {
   color: #00c8d4;
-  background: url(../images/notice_icon.png) no-repeat 32% 50%;
+  background: url(../images/notice_icon.png) no-repeat 40% 50%;
+  padding-left: 20px;
+  background-size: 20px;
 }
 .pagination {
   text-align: center;
   margin: 20px 0;
 }
 .pagination ul {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
+  text-align: center;
 }
 
-.pagination .page {
-  float: left;
-  margin: 0 8px;
+.pagination li {
+  display: inline-block;
+  width: 20px;
 }
-.pagination a {
-  float: left;
-}
-.pagination .page a {
-  width: 40px;
-  margin: 0 5px;
-}
+
 .pagination .page a:hover,
 .pagination .page.on a {
   color: #00c8d4;

@@ -32,17 +32,14 @@
 }
 
 .header_intro li .reserve_btn {
-  border: 2px solid #707070;
-  border-radius: 40px;
-  padding: 12px 22px;
+  border: 1px solid #707070;
+  border-radius: 25px;
+  padding: 8px 16px;
   transition: all 0.2s ease;
-  height: 50px;
-  line-height: 50px;
 }
 .header_intro li .reserve_btn:hover {
   background-color: #707070;
   color: #fff;
-  border: 2px solid #707070;
 }
 .logo {
   position: absolute;
@@ -143,14 +140,15 @@
 }
 .footer_more {
   display: flex;
-  justify-content: space-around;
-  width: 400px;
-  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  height: 40px;
+  align-items: flex-start;
 }
 .footer_more li {
   transition: all 0.2s ease-out;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  /* height: 50px; */
 }
 .footer_more li a {
   display: block;
@@ -158,7 +156,7 @@
   border-radius: 10px;
   text-indent: -999em;
   box-sizing: border-box;
-  height: 50px;
+  height: 40px;
 }
 .footer_more li:hover {
   transform: translateY(-10%);
@@ -168,30 +166,32 @@
 }
 .footer_more .sns {
   background: url(../images/sns.png) no-repeat;
+  background-size: 150px;
 }
 .footer_more .sns_1 {
-  background-position: 0px -72px;
+  background-position: 1px -52px;
 }
 .footer_more .sns_2 {
-  background-position: -47px -25px;
+  background-position: -34px -17px;
 }
 .footer_more .sns_3 {
-  background-position: -47px -73px;
+  background-position: -35px -54px;
 }
 
 .footer_more .language {
   border: 3px solid #fff;
   border-radius: 10px;
-  width: 120px;
-  height: 50px;
+  width: 107px;
+  height: 40px;
   background: url(../images/arrow_down_white.png) no-repeat 95% center #00c8d4;
+  background-size: 10px;
   padding-left: 5px;
   outline: none;
 }
 .footer_more .language_box {
-  width: 120px;
+  width: 105px;
   height: 50px;
 }
 .footer_more .up {
-  background: url(../images/arrow_up.png) no-repeat 17px 16px;
+  background: url(../images/arrow_up.png) no-repeat 13px 12px;
 }
