@@ -111,18 +111,17 @@ input[type='password'] {
   background-color: #00c8d4;
   color: #fff;
   border-radius: 10px;
-}
-.auth_wrap {
-  background: url(../images/join_icon.png) no-repeat;
-  padding-left: 100px;
-  color: #fff;
+  padding: 20px 80px;
+  box-sizing: border-box;
 }
 
 .phone_auth .auth_wrap {
-  background-position: -15px -125px;
+  background: url(../images/phone.svg) no-repeat left bottom;
+  padding-left: 40px;
 }
 .ipin_auth .auth_wrap {
-  background-position: -15px -15px;
+  background: url(../images/ipin.svg) no-repeat left bottom;
+  padding-left: 55px;
 }
 .auth_tit {
   font-size: 16px;

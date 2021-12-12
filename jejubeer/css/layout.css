@@ -79,11 +79,11 @@
   display: block;
   position: relative;
   transition: all 0.2s linear;
-  background: url(../images/wave2.png) no-repeat center 55px;
+  background: url(../images/wave.svg) no-repeat center 55px;
 }
 .gnb > li .gnb_tit:hover,
 .gnb > li .gnb_tit.on {
-  background-position: center 25px;
+  background-position: center 35px;
 }
 
 .gnb .shop {

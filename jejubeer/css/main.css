@@ -81,7 +81,7 @@
   font-size: 15px;
   font-weight: 700;
   display: block;
-  background: url('../images/wave_btn2.png') 0px 60px no-repeat;
+  background: url('../images/wave_btn.png') 0px 60px no-repeat;
   transition: background-position 0.5s linear 0s;
   text-align: center;
   margin: 0px auto;
@@ -250,22 +250,11 @@
   flex-direction: column;
   align-items: center;
 }
-.new_wrap .new_center_box > img {
-  width: 77%;
-  padding-top: 35px;
+.new_center_box .beer_img {
+  padding-bottom: 20px;
 }
-.new_center_box .new_img {
-  display: block;
-  text-align: center;
-  width: 200px;
-}
-.new_center_box .new_img img {
-  width: 100%;
-}
-.new_wrap_bg2 .new_center_box {
-  position: relative;
-}
-.new_wrap_bg2 .new_img {
+.new_wrap_2 .beer_img {
+  padding: 60px 0;
 }
 .new_right_box {
 }
@@ -276,23 +265,23 @@
   line-height: 1.7;
   margin-top: 10px;
   padding-top: 4px;
-  background: url('../images/new_icons.png') 0% 0% / 60px no-repeat;
+  /* background: url('../images/new_icons.png') 0% 0% / 60px no-repeat */
   padding-left: 78px;
 }
 .beer_feature li:first-child {
   margin-top: 0px;
 }
 .beer_feature li.icon_1 {
-  background-position: 2px 0px;
+  background: url(../images/new_icon01.svg) no-repeat 12px 6px / 40px;
 }
 .beer_feature li.icon_2 {
-  background-position: 2px -66px;
+  background: url(../images/new_icon02.svg) no-repeat 13px 11px / 36px;
 }
 .beer_feature li.icon_3 {
-  background-position: 2px -132px;
+  background: url(../images/new_icon03.svg) no-repeat 14px 14px / 31px;
 }
 .beer_feature li.icon_4 {
-  background-position: 2px -201px;
+  background: url(../images/new_icon04.svg) no-repeat 12px 8px / 40px;
 }
 .new_wrap_2 .icon_2 {
   line-height: 3.4;
@@ -357,8 +346,8 @@
   color: rgb(0, 200, 212);
 }
 .section_5 .youtube_group {
-  width: 650px;
-  height: 500px;
+  width: 700px;
+  height: 480px;
   border: 4px solid rgb(0, 200, 212);
   border-radius: 40px;
   box-sizing: border-box;
@@ -388,7 +377,11 @@
   background-position: -125px 0px;
   padding-right: 35px;
 }
+.youtube_box {
+}
 .youtube_box iframe {
+  width: 100%;
+  height: 370px;
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next,
