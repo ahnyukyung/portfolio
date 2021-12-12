@@ -278,6 +278,10 @@ input[type='password'] {
   margin-bottom: 15px;
   border-radius: 10px;
 }
+.notice_src input.active {
+  width: 25%;
+  transition: width 0.5s ease;
+}
 .src_btn {
   display: block;
   position: absolute;

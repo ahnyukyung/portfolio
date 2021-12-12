@@ -4,7 +4,7 @@
 .section_1 {
   width: 1230px;
   height: 550px;
-  margin: 0px auto;
+  margin: 15px auto 0;
   display: flex;
   position: relative;
 }
@@ -72,7 +72,7 @@
 .section_2 .main_txt {
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 .more_btn {
   border-radius: 50px;
