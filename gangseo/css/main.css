@@ -2,7 +2,6 @@
 .container-floor1 {
   position: relative;
   width: 1200px;
-  height: 270px;
   margin: 45px auto;
 }
 .container-floor1 .main-banner {
@@ -126,6 +125,7 @@
   border: none;
 }
 .side-navi .side-navi-menu li a {
+  display: block;
   color: #fff;
 }
 .side-navi .side-navi-menu li span {
@@ -148,12 +148,7 @@
 /* floor-2 */
 .container-floor2 {
   width: 1200px;
-  height: 160px;
-  margin: 45px auto;
-}
-.container-floor2 .quick-menu {
-  width: 1200px;
-  margin: 40px auto;
+  margin: 0 auto;
 }
 .container-floor2 .quick-menu li {
   float: left;
@@ -224,19 +219,16 @@
 
 /* floor-3 */
 .container-floor3 {
-  width: 100%;
   height: 460px;
   background: url(../images/floor3-bg.png) repeat-x center center;
 }
 .container-floor3-inner {
   width: 1200px;
-  height: 460px;
   margin: 45px auto;
 }
 .container-floor3-inner .notice-board {
   position: relative;
   width: 830px;
-  height: 400px;
   margin: 30px 0 20px;
 }
 .notice-board .notice-list > li {
@@ -246,7 +238,6 @@
 .notice-title {
   display: inline-block;
   width: 150px;
-  height: 65px;
   line-height: 65px;
   font-size: 18px;
   text-align: center;
@@ -322,20 +313,17 @@
 .container-floor3-inner .notice-box {
   position: relative;
   width: 290px;
-  height: 387px;
   margin: 30px 0 20px;
   border: 1px solid #d9d9d9;
   box-sizing: border-box;
 }
 .notice-box .notice-banner {
   overflow: hidden;
-  width: 288px;
   height: 320px;
   position: relative;
 }
 .banner-contents {
   width: 864px;
-  height: 320px;
   position: absolute;
 }
 .banner-contents li {
@@ -381,7 +369,6 @@
 .container-floor4 {
   position: relative;
   width: 1200px;
-  height: 480px;
   margin: 70px auto;
 }
 .news-title {
@@ -586,7 +573,7 @@
   background: url(../images/main-5floor-bottom08.gif) no-repeat 25px 0;
 }
 .service-banner {
-  padding-bottom: 25px;
+  padding: 25px 0;
 }
 .service-banner img {
   width: 1200px;
