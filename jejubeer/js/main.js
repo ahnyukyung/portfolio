@@ -133,12 +133,12 @@ $(function () {
   });
 
   $('.join_btn').click(function () {
-    var idReg = /^[A-Za-z]{1}[A-Za-z0-9_-]{5,17}$/;
+    const idReg = /^[A-Za-z]{1}[A-Za-z0-9_-]{5,17}$/;
     if (!idReg.test($('.join_id').val())) {
       alert('아이디는 영문자로 시작하는 6~16자이어야 합니다.');
       $('.join_id').focus();
     } else {
-      var pwReg = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[~!@#$%^&*()+|=])[A-Za-z\d~!@#$%^&*()+|=]{8,17}$/;
+      const pwReg = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[~!@#$%^&*()+|=])[A-Za-z\d~!@#$%^&*()+|=]{8,17}$/;
       if (!pwReg.test($('.join_pw').val())) {
         alert('비밀번호는  숫자, 문자, 특수문자가 포함된 8~16자이어야 합니다.');
         $('.join_pw').focus();
