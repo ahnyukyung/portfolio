@@ -31,13 +31,13 @@
   margin-left: 0;
 }
 
-.header_intro li .reserve_btn {
+.header_intro li .notice_btn {
   border: 1px solid #707070;
   border-radius: 25px;
   padding: 8px 16px;
   transition: all 0.2s ease;
 }
-.header_intro li .reserve_btn:hover {
+.header_intro li .notice_btn:hover {
   background-color: #707070;
   color: #fff;
 }
@@ -134,7 +134,7 @@
   align-items: center;
 }
 .footer .company_info {
-  margin-top: 25px;
+  padding: 25px 0;
   line-height: 2.5;
 }
 .footer .company_info a {
