@@ -4,83 +4,347 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FooDa</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
   <body>
-    <div class="container">
-      <section class="section01">
-        <div class="main_slide">
-          <h2 class="slide_tit">Fooda 플랫폼을 통해 적합한 한국 수입업체를 찾으세요</h2>
-          <div class="src_bar"></div>
-          <ul class="slide_info">
-            <li>
-              <dl>
-                <dt>5,039,039</dt>
-                <dd>
+    <div id="wrap">
+      <header id="header">
+        <div class="header_inner">
+          <h1 class="logo">
+            <a href="index.html"><img src="images/logo_01.svg" alt="fooda" /></a>
+          </h1>
+          <nav class="gnb_wrap">
+            <ul class="gnb">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="database.html">Database</a></li>
+              <!-- <li><a href="#">Market</a></li> -->
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="insight.html">Insight</a></li>
+              <li><a href="support.html">Support</a></li>
+            </ul>
+          </nav>
+          <div class="intro_menu">
+            <!-- <button type="button" class="notice"></button> -->
+            <div class="member_wrap">
+              <a href="#" class="user_name">jason park</a>
+              <ul class="user_menu">
+                <li><a href="">마이페이지</a></li>
+                <li><a href="" id="fallowBtn">Fallowing</a></li>
+              </ul>
+            </div>
+            <a href="#" class="logout">로그아웃</a>
+            <div class="lang_wrap">
+              <select name="lang" id="lang" class="lang">
+                <option value="korean">한국어</option>
+                <option value="english">영어</option>
+                <option value="japanese">일본어</option>
+                <option value="thai">태국어</option>
+                <option value="chinese">중국어</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <section class="section01">
+          <div class="section01_inner">
+            <h2 class="slide_tit">Fooda 플랫폼을 통해 적합한 한국 수입업체를 찾으세요</h2>
+            <div id="src_bar_wrap" class="src_bar_wrap">
+              <button type="submit" id="btn_src" class="btn_src">
+                <svg width="21" height="21">
+                  <path
+                    d="M13.563 12.25h-.692l-.245-.236A5.662 5.662 0 0 0 14 8.313 5.687 5.687 0 1 0 8.312 14a5.662 5.662 0 0 0 3.702-1.374l.236.245v.691l4.375 4.367 1.304-1.304-4.366-4.375Zm-5.25 0a3.932 3.932 0 0 1-3.938-3.938 3.932 3.932 0 0 1 3.938-3.937 3.932 3.932 0 0 1 3.937 3.938 3.932 3.932 0 0 1-3.938 3.937Z"
+                    fill="#BABABA"
+                  />
+                </svg>
+              </button>
+              <input type="text" list="itemList" placeholder="희망하는 수출입품목(HS CODE)을 검색하세요." class="searchInp src_bar box_style" />
+              <datalist id="itemList" class="item_list">
+                <option value="토마토"></option>
+                <option value="토마토 케찹"></option>
+                <option value="바질"></option>
+                <option value="바질 페스토"></option>
+                <option value="생강"></option>
+                <option value="블루베리"></option>
+                <option value="전복"></option>
+              </datalist>
+            </div>
+            <ul class="slide_info">
+              <li>
+                <span>5,039,039</span>
+                <p>
                   제공하는<br />
                   데이터 양
-                </dd>
-              </dl>
-            </li>
-            <li>
-              <dl>
-                <dt>$12,942 백만불</dt>
-                <dd>
+                </p>
+              </li>
+              <li>
+                <span>$12,942 백만불</span>
+                <p>
                   한국 농식품 교역규모<br />
                   (교역량 순위 :9위)
-                </dd>
-              </dl>
-            </li>
-            <li>
-              <dl>
-                <dt>세계 9위</dt>
-                <dd>교역량 순위</dd>
-              </dl>
-            </li>
-            <li>
-              <dl>
-                <dt>1,002,505</dt>
-                <dd>
+                </p>
+              </li>
+              <li>
+                <span>세계 9위</span>
+                <p>교역량 순위</p>
+              </li>
+              <li>
+                <span>1,002,505</span>
+                <p>
                   제공하는<br />
                   수출입품목
-                </dd>
-              </dl>
-            </li>
-          </ul>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section02">
+          <div class="left_box">
+            <ul class="info_list">
+              <li>
+                <i>
+                  <img src="images/ic_data.svg" alt="" />
+                </i>
+                <dl>
+                  <dt>빠르고 정확한 한국 수출정보</dt>
+                  <dd>
+                    국가기관을 통해 수집한 정확하고 최신화된<br />
+                    한국 수출정보를 간편하게 확인하세요.
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <i>
+                  <img src="images/ic_company.svg" alt="" />
+                </i>
+                <dl>
+                  <dt>적합한 수입업체 추천</dt>
+                  <dd>
+                    관심 수출품목을 등록하시면, 적합한<br />
+                    수입업체를 추천해드립니다.<br />
+                    편리하게 한국 수입업체 정보를 확인하세요.
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <i>
+                  <img src="images/ic_issue.svg" alt="" />
+                </i>
+                <dl>
+                  <dt>정확한 한국 현지 정보</dt>
+                  <dd>
+                    관심 수출품목에 대한 각종 정확한<br />
+                    한국 현지정보를 확인하세요.
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="right_box">
+            <img src="images/img_intro_notebook.png" alt="서브페이지 상세 이미지" />
+          </div>
+        </section>
+        <section class="section03">
+          <h2 class="section_tit">FTA</h2>
+          <div class="map">
+            <img src="images/img_fta_map.png " alt="" />
+            <div class="canada country">
+              <div class="pointer"></div>
+              <div class="flag_box">
+                <div class="flag"><img src="images/flags/CA.gif" alt="" /></div>
+                <span>캐나다</span>
+              </div>
+              <div class="info_box">
+                <p>2020년 기준</p>
+                <div class="row">
+                  <span class="caption">수입금액</span>
+                  <span class="figure">$100,00</span>
+                </div>
+                <div class="row">
+                  <span class="caption">수입건수</span>
+                  <span class="figure">5,000건</span>
+                </div>
+              </div>
+            </div>
+            <div class="usa country">
+              <div class="pointer"></div>
+              <div class="flag_box">
+                <div class="flag"><img src="images/flags/US.gif" alt="" /></div>
+                <span>미국</span>
+              </div>
+              <div class="info_box">
+                <p>2020년 기준</p>
+                <div class="row">
+                  <span class="caption">수입금액</span>
+                  <span class="figure">$100,00</span>
+                </div>
+                <div class="row">
+                  <span class="caption">수입건수</span>
+                  <span class="figure">5,000건</span>
+                </div>
+              </div>
+            </div>
+            <div class="england country">
+              <div class="pointer"></div>
+              <div class="flag_box">
+                <div class="flag"><img src="images/flags/GB.gif" alt="" /></div>
+                <span>영국</span>
+              </div>
+              <div class="info_box">
+                <p>2020년 기준</p>
+                <div class="row">
+                  <span class="caption">수입금액</span>
+                  <span class="figure">$100,00</span>
+                </div>
+                <div class="row">
+                  <span class="caption">수입건수</span>
+                  <span class="figure">5,000건</span>
+                </div>
+              </div>
+            </div>
+            <div class="china country">
+              <div class="pointer"></div>
+              <div class="flag_box">
+                <div class="flag"><img src="images/flags/CN.gif" alt="" /></div>
+                <span>중국</span>
+              </div>
+              <div class="info_box">
+                <p>2020년 기준</p>
+                <div class="row">
+                  <span class="caption">수입금액</span>
+                  <span class="figure">$100,00</span>
+                </div>
+                <div class="row">
+                  <span class="caption">수입건수</span>
+                  <span class="figure">5,000건</span>
+                </div>
+              </div>
+            </div>
+            <div class="korea country">
+              <div class="pointer"></div>
+              <div class="flag_box">
+                <div class="flag"><img src="images/flags/KR.gif" alt="" /></div>
+                <span>한국</span>
+              </div>
+              <div class="info_box">
+                <p>2020년 기준</p>
+                <div class="row">
+                  <span class="caption">수입금액</span>
+                  <span class="figure">$100,00</span>
+                </div>
+                <div class="row">
+                  <span class="caption">수입건수</span>
+                  <span class="figure">5,000건</span>
+                </div>
+              </div>
+            </div>
+            <div class="japan country">
+              <div class="pointer"></div>
+              <div class="flag_box">
+                <div class="flag"><img src="images/flags/JP.gif" alt="" /></div>
+                <span>일본</span>
+              </div>
+              <div class="info_box">
+                <p>2020년 기준</p>
+                <div class="row">
+                  <span class="caption">수입금액</span>
+                  <span class="figure">$100,00</span>
+                </div>
+                <div class="row">
+                  <span class="caption">수입건수</span>
+                  <span class="figure">5,000건</span>
+                </div>
+              </div>
+            </div>
+            <div class="australia country">
+              <div class="pointer on"></div>
+              <div class="flag_box">
+                <div class="flag"><img src="images/flags/AU.gif" alt="" /></div>
+                <span>호주</span>
+              </div>
+              <div class="info_box">
+                <p>2020년 기준</p>
+                <div class="row">
+                  <span class="caption">수입금액</span>
+                  <span class="figure">$100,00</span>
+                </div>
+                <div class="row">
+                  <span class="caption">수입건수</span>
+                  <span class="figure">5,000건</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="footer_inner">
+          <div class="footer_l">
+            <div class="f_logo">
+              <img src="images/logo_footer.svg" alt="Fooda logo" />
+            </div>
+            <div class="copy">
+              <ul class="footer_menu">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+              </ul>
+              <p>Copyright © 2021 Fooda. All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="sns">
+            <ul class="sns_list">
+              <li>
+                <svg width="25.54px" height="25.32px" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M27.7724 15.0025C27.7724 7.9681 22.0542 2.26562 15.0005 2.26562C7.9467 2.26562 2.22852 7.9681 2.22852 15.0025C2.22852 21.3598 6.89902 26.6291 13.0048 27.5846V18.6842H9.76197V15.0025H13.0048V12.1964C13.0048 9.00421 14.9116 7.24096 17.829 7.24096C19.2263 7.24096 20.688 7.48972 20.688 7.48972V10.6242H19.0774C17.4908 10.6242 16.9961 11.606 16.9961 12.6133V15.0025H20.5383L19.972 18.6842H16.9961V27.5846C23.1019 26.6291 27.7724 21.3598 27.7724 15.0025"
+                    fill="#1877F2"
+                  />
+                  <path
+                    d="M19.9718 18.6815L20.538 14.9998H16.9958V12.6106C16.9958 11.6033 17.4906 10.6215 19.0772 10.6215H20.6877V7.48704C20.6877 7.48704 19.2261 7.23828 17.8287 7.23828C14.9113 7.23828 13.0046 9.00153 13.0046 12.1937V14.9998H9.76172V18.6815H13.0046V27.5819C13.6648 27.6851 14.332 27.7368 15.0002 27.7366C15.6791 27.7366 16.3456 27.6836 16.9958 27.5819V18.6815H19.9718Z"
+                    fill="white"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg width="45.35px" height="25.53px" viewBox="0 0 53 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.6146 2.17969C23.6786 2.17969 29.4046 7.89494 29.4046 14.9446C29.4046 21.9942 23.6782 27.709 16.6146 27.709C9.5511 27.709 3.82422 21.9942 3.82422 14.9446C3.82422 7.89494 9.55066 2.17969 16.6146 2.17969ZM37.04 2.92742C40.572 2.92742 43.4353 8.30714 43.4353 14.9446H43.4357C43.4357 21.5803 40.5725 26.9617 37.0405 26.9617C33.5085 26.9617 30.6453 21.5803 30.6453 14.9446C30.6453 8.30886 33.508 2.92742 37.04 2.92742ZM46.9255 4.1791C48.1675 4.1791 49.1747 8.99888 49.1747 14.9446C49.1747 20.8885 48.1679 25.71 46.9255 25.71C45.6832 25.71 44.6767 20.8898 44.6767 14.9446C44.6767 8.99931 45.6836 4.1791 46.9255 4.1791Z"
+                    fill="black"
+                  />
+                </svg>
+              </li>
+            </ul>
+            <p class="contact"><a href="#">contact : test@test.com</a></p>
+          </div>
         </div>
-      </section>
-      <section class="section02">
-        <div class="left_box">
-          <ul>
-            <li>
-              <i></i>
-              <dl>
-                <dt>빠르고 정확한 한국 수출정보</dt>
-                <dd>국가기관을 통해 수집한 정확하고 최신화된 한국 수출정보를 간편하게 확인하세요.</dd>
-              </dl>
-            </li>
-            <li>
-              <i></i>
-              <dl>
-                <dt>적합한 수입업체 추천</dt>
-                <dd>관심 수출품목을 등록하시면, 적합한 수입업체를 추천해드립니다. 편리하게 한국 수입업체 정보를 확인하세요.</dd>
-              </dl>
-            </li>
-            <li>
-              <i></i>
-              <dl>
-                <dt>정확한 한국 현지 정보</dt>
-                <dd>관심 수출품목에 대한 각종 정확한 한국 현지정보를 확인하세요.</dd>
-              </dl>
-            </li>
-          </ul>
-        </div>
-        <div class="right_box">
-          <img src="images/img_intro_notebook.png" alt="서브페이지 상세 이미지" />
-        </div>
-      </section>
-      <section class="section03"></section>
-      <section class="section04"></section>
+      </footer>
     </div>
+    <script src="js/common.js"></script>
+
+    <script>
+      // section01 bg
+      const section01 = document.querySelector(".section01");
+      function changeBg() {
+        const backGround = ["img_intro_slide01.png", "img_intro_slide02.png", "img_intro_slide03.png"];
+        const randomNumber = Math.floor(Math.random() * 3);
+        section01.style.backgroundImage = `url(/images/${backGround[randomNumber]})`;
+      }
+      changeBg();
+      setInterval(changeBg, 3000);
+
+      $(".flag_box")
+        .on("mouseenter", function () {
+          $(this).siblings(".info_box").fadeIn();
+        })
+        .on("mouseleave", function () {
+          $(this).siblings(".info_box").fadeOut();
+        });
+    </script>
   </body>
 </html>

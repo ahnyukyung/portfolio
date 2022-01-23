@@ -1,0 +1,273 @@
+#wrap {
+  background-color: #f5f6fe;
+}
+.section01 {
+  background-image: url(/images/img_intro_slide01.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  position: relative;
+  z-index: 20;
+  transition: background-image 0.8s linear;
+}
+.section01::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(56, 56, 56, 0.7);
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+.section01_inner {
+  padding: 147px 0 70px;
+  color: #fff;
+  text-align: center;
+}
+.slide_tit {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.src_bar_wrap {
+  width: 1008px;
+  height: 56px;
+  margin: 0 auto;
+  position: relative;
+}
+.src_bar_wrap .src_bar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  text-align: center;
+  outline: none;
+}
+.section01 .btn_src {
+  position: absolute;
+  top: 17px;
+  right: 25px;
+  z-index: 999;
+}
+.item_list {
+  width: 100%;
+}
+.slide_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1247px;
+  margin: 0 auto;
+  padding-top: 115px;
+}
+.slide_info li {
+  padding: 0 82px;
+  border-left: 1px solid #fff;
+  height: 84px;
+  vertical-align: middle;
+}
+.slide_info li:first-child {
+  border: none;
+}
+.slide_info span {
+  font-size: 30px;
+}
+.slide_info p {
+  font-size: 16px;
+  margin-top: 6px;
+}
+.section02 {
+  width: 1097px;
+  margin: 0 auto;
+  padding-top: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section02 .left_box {
+  padding-left: 25px;
+}
+.section02 .right_box {
+  width: 677px;
+}
+.section02 .right_box img {
+  width: 100%;
+}
+.info_list {
+}
+.info_list li {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+.info_list li:last-child {
+  margin-bottom: 0;
+}
+.info_list li i {
+  display: block;
+  width: 78px;
+  height: 78px;
+  background: #7a77ff;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+.info_list li i img {
+  width: 50%;
+}
+.info_list li dl {
+}
+.info_list li dt {
+  font-size: 20px;
+  font-weight: 500;
+  color: #383838;
+  margin-bottom: 8px;
+}
+.info_list li dd {
+  font-size: 16px;
+}
+.section03 {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 60px 0 37px;
+}
+.section_tit {
+  font-size: 30px;
+  font-weight: 500;
+  color: #383838;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #bababa;
+}
+.map img {
+  width: 100%;
+}
+.map {
+  position: relative;
+}
+.country {
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+.pointer {
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  background-color: #7a77ff;
+  margin-right: 6px;
+  position: relative;
+}
+.pointer.on::after {
+  display: block;
+}
+.pointer::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 5px;
+  height: 5px;
+  background: #3230c5;
+  border-radius: 100%;
+}
+.flag_box {
+  color: #fff;
+  background-color: #383838;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 5px 12px 5px 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid #383838;
+}
+.flag_box:hover {
+  /* transform: scale(1.1); */
+  background: #4b48fd;
+  border: 2px solid #adacfb;
+}
+.flag {
+  width: 35px;
+  height: 20px;
+  margin-right: 12px;
+}
+.flag img {
+  width: 100%;
+  height: 100%;
+}
+.info_box {
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
+  border: 1px solid #4b48fd;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  position: absolute;
+  top: 47px;
+  left: 9px;
+  width: 115px;
+  z-index: 999;
+  padding: 10px;
+  display: none;
+}
+.info_box .row {
+  display: flex;
+  justify-content: space-between;
+}
+.info_box p {
+  font-size: 12px;
+  text-align: right;
+  padding-bottom: 10px;
+}
+.info_box .caption {
+  font-size: 10px;
+}
+.info_box .figure {
+  font-size: 12px;
+  color: #4b48fd;
+}
+.info_box::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  transform: rotate(-45deg);
+  border-top: 1px solid #4b48fd;
+  border-right: 1px solid #4b48fd;
+  position: absolute;
+  left: 54px;
+  top: -5px;
+  background-color: #fff;
+}
+.canada {
+  left: 18.99%;
+  top: 37.61%;
+}
+.usa {
+  left: 22.86%;
+  top: 50.33%;
+}
+.england {
+  left: 47.24%;
+  top: 41.1%;
+}
+.china {
+  left: 72.45%;
+  top: 51.95%;
+}
+.korea {
+  left: 80.88%;
+  top: 56.01%;
+}
+.japan {
+  left: 84.5%;
+  top: 51.16%;
+}
+.australia {
+  left: 84.62%;
+  top: 79.55%;
+}

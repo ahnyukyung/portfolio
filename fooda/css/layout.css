@@ -48,6 +48,10 @@
   color: #fff;
   text-decoration: underline;
 }
+.gnb li.active a {
+  color: #fff;
+  text-decoration: underline;
+}
 .intro_menu {
   display: flex;
   align-items: baseline;
