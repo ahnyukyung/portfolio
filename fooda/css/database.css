@@ -130,16 +130,16 @@
 .category_tit .category_img {
   width: 80px;
   height: 80px;
-  background: rgb(29, 112, 50);
   border-radius: 100%;
   margin-right: 28px;
+}
+.category_tit .category_img img {
+  width: 100%;
+  border-radius: inherit;
 }
 .category_tit .star {
   width: 30px;
   height: 30px;
-  margin: 0 19px 15px 0;
-  /* background: url("data:image/svg+xml,%3Csvg width='30' height='29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m15 22.905 9.27 5.595-2.46-10.545L30 10.86l-10.785-.915L15 0l-4.215 9.945L0 10.86l8.19 7.095L5.73 28.5 15 22.905Z' fill='%234B48FD'/%3E%3C/svg%3E")
-    no-repeat center center; */
 }
 
 .category_txt .name {
@@ -162,7 +162,7 @@
 }
 .category_info dl:first-child::before,
 .category_info dl:after {
-  content: '';
+  content: "";
   width: 1px;
   height: 30px;
   background: #eaeaea;
@@ -225,8 +225,10 @@
   padding-top: 20px;
 }
 .today_list_items li {
-  overflow: hidden;
   height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .today_list_items li:last-child {
   margin-bottom: 11px;
@@ -237,12 +239,7 @@
 .today_list02 li {
   padding: 19px 0 18px;
 }
-.today_list01 li .star {
-  margin: 12px 8px 0 0;
-}
-.today_list02 li .star {
-  margin: 5px 10px 0 0;
-}
+
 .today_list01 li .today_list_name {
   margin-top: 6px;
 }
@@ -250,23 +247,23 @@
   display: block;
   width: 48px;
   height: 48px;
-  background: #4b48fd;
+  background: url(/images/tomato.png) no-repeat center center;
+  background-size: cover;
   border-radius: 100%;
-  float: left;
+  /* float: left; */
 }
 .today_list_box .star {
-  float: left;
+  /* float: left; */
   width: 24px;
   height: 23px;
   background: url("data:image/svg+xml,%3Csvg width='24' height='23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m23.666 8.783-8.388-.724L12 .336 8.72 8.07l-8.388.712 6.37 5.518-1.913 8.202L12 18.15l7.21 4.352-1.902-8.202 6.358-5.518ZM12 15.969l-4.387 2.649 1.167-4.994-3.874-3.36 5.11-.443L12 5.119l1.995 4.714 5.11.443-3.874 3.36 1.167 4.993L12 15.97Z' fill='%23BABABA'/%3E%3C/svg%3E")
     no-repeat center center;
 }
 
-.today_list_name {
-  float: right;
-}
 .today_list_name .name {
   color: #383838;
+  font-weight: 500;
+  margin-right: 10px;
 }
 .today_list_name .items {
   font-size: 13px;
@@ -274,7 +271,6 @@
 .last_year_price {
   font-size: 13px;
   color: #383838;
-  margin-left: 10px;
 }
 .today_list_wrap .btn_fallowing {
   color: #4b48fd;
@@ -326,9 +322,7 @@
 .section03 .right_box {
   position: relative;
 }
-.section03 .center_box tbody,
-.section03 .left_box {
-}
+
 /* 관련 품목 */
 .section03 .left_box tbody {
   display: block;
@@ -702,7 +696,10 @@
 .product_list .pro_img {
   width: 132px;
   height: 98px;
-  background-color: salmon;
+}
+.product_list .pro_img img {
+  width: 100%;
+  height: 100%;
 }
 .product_list .pro_name {
   height: 16px;
@@ -962,7 +959,7 @@
   visibility: visible;
 }
 .category_tip .tip_box::before {
-  content: '';
+  content: "";
   width: 13px;
   height: 13px;
   position: absolute;
@@ -1093,7 +1090,7 @@
   font-size: 9px;
 }
 .item_box .item_chart:before {
-  content: '';
+  content: "";
   width: 1px;
   height: 36px;
   background: #eaeaea;
@@ -1118,7 +1115,7 @@
   z-index: 100;
 }
 .item_box .item_popup::before {
-  content: '';
+  content: "";
   width: 13px;
   height: 13px;
   position: absolute;
@@ -1222,7 +1219,7 @@
 }
 
 /* checkbox 커스텀 */
-input[type='checkbox'] {
+input[type="checkbox"] {
   display: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -1236,7 +1233,7 @@ input[type='checkbox'] {
   cursor: pointer;
 }
 .fallowing_chk_wrap label:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -1px;
@@ -1245,7 +1242,7 @@ input[type='checkbox'] {
   background: url("data:image/svg+xml,%3Csvg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 2v14H2V2h14Zm0-2H2C.9 0 0 .9 0 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2Z' fill='%23909090'/%3E%3C/svg%3E")
     no-repeat center center;
 }
-.fallowing_chk_wrap input[type='checkbox']:checked + label:before {
+.fallowing_chk_wrap input[type="checkbox"]:checked + label:before {
   background: url("data:image/svg+xml,%3Csvg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H2C.9 0 0 .9 0 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2Zm0 16H2V2h14v14ZM14.99 6l-1.41-1.42-6.59 6.59L4.41 8.6l-1.42 1.41 4 3.99 8-8Z' fill='%234B48FD'/%3E%3C/svg%3E")
     no-repeat center center;
 }
@@ -1387,7 +1384,7 @@ input[type='checkbox'] {
   position: relative;
 }
 .news_select .btn_recent::after {
-  content: '';
+  content: "";
   width: 6px;
   height: 6px;
   border-left: 1px solid #4b48fd;
@@ -1684,7 +1681,7 @@ input[type='checkbox'] {
   background-color: rgba(75, 72, 253, 0.1);
 }
 
-.autoComplete_wrapper > ul > li[aria-selected='true'] {
+.autoComplete_wrapper > ul > li[aria-selected="true"] {
   background-color: rgba(75, 72, 253, 0.1);
 }
 
@@ -1747,10 +1744,6 @@ polyline {
   /* stroke: red; */
   stroke-width: 2px;
   fill: none;
-}
-
-p {
-  white-space: pre;
 }
 
 .arc path {

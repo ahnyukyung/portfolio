@@ -1,70 +1,78 @@
 $(function () {
   // slider
-  $('.btn_prev').on('click', function () {
-    $(this).siblings('ul').prepend($(this).siblings('ul').children('li:last'));
+  $(".btn_prev").on("click", function () {
+    $(this).siblings("ul").prepend($(this).siblings("ul").children("li:last"));
   });
-  $('.btn_next').on('click', function () {
-    $(this).siblings('ul').append($(this).siblings('ul').children('li:first'));
+  $(".btn_next").on("click", function () {
+    $(this).siblings("ul").append($(this).siblings("ul").children("li:first"));
   });
 
   // 추천 수입업체 리스트
-  $('.section03 table a').on('click', function (e) {
+  $(".section03 table a").on("click", function (e) {
     e.preventDefault();
-    $(this).parent().parent().siblings().removeClass('on');
-    $(this).parents('tr').addClass('on');
-    if ('left_box tr.on') {
-      $('.center_box tbody').removeClass('none');
-      $('.center_box .info_box').addClass('none');
+    $(this).parent().parent().siblings().removeClass("on");
+    $(this).parents("tr").addClass("on");
+    if ("left_box tr.on") {
+      $(".center_box tbody").removeClass("none");
+      $(".center_box .info_box").addClass("none");
     }
-    $('.section03 .center_box a').on('click', function () {
-      if ('center_box tr.on') {
-        $('.right_box_inner').removeClass('none');
-        $('.right_box .info_box').addClass('none');
+    $(".section03 .center_box a").on("click", function () {
+      if ("center_box tr.on") {
+        $(".right_box_inner").removeClass("none");
+        $(".right_box .info_box").addClass("none");
       }
     });
   });
 
   // today_list
-  $('.today_list_wrap').hide();
-  $('.today_list').on('click', function (e) {
+  $(".today_list_wrap").hide();
+  $(".today_list").on("click", function (e) {
     e.preventDefault();
-    $('.today_list_wrap').fadeIn(300);
+    $(".today_list_wrap").fadeIn(300);
   });
-  $('.today_close').on('click', function (e) {
-    $('.today_list_wrap').fadeOut(300);
+  $(".today_close").on("click", function (e) {
+    $(".today_list_wrap").fadeOut(300);
   });
 
   // 수입업체팝업 열기
-  $('.popup_box01').hide();
-  $('#corpInfoBtn').on('click', function (e) {
+  $(".popup_box").hide();
+  $("#corpInfoBtn").on("click", function (e) {
     e.preventDefault();
-    $('#corpInfoPopup').show();
-    $('#popup_wrap .dimm').show();
+    $("#corpInfoPopup").show();
+    $("#popup_wrap .dimm").show();
+  });
+  $("#fallowBtn").on("click", function (e) {
+    e.preventDefault();
+    $("#followPopup").show();
+    $("#popup_wrap .dimm").show();
+  });
+  $(".btn_fallowing").on("click", function () {
+    $("#fallowBtn").trigger("click");
   });
 
   // 별버튼 공통
-  $('.star').on('click', function () {
-    $(this).toggleClass('on');
+  $(".star").on("click", function () {
+    $(this).toggleClass("on");
   });
 
   // 팝업 팁버튼
-  $('.btn_tip').on({
+  $(".btn_tip").on({
     mouseenter: function () {
-      $('.tip_box').addClass('on');
+      $(".tip_box").addClass("on");
     },
     mouseleave: function () {
-      $('.tip_box').removeClass('on');
+      $(".tip_box").removeClass("on");
     },
   });
 
   // 아이템 호버시 상자
-  $('.item_popup').hide();
-  $('.recommend_items li a').on({
+  $(".item_popup").hide();
+  $(".recommend_items li a").on({
     mouseenter: function () {
-      $('.item_popup').fadeIn('fast');
+      $(".item_popup").fadeIn("fast");
     },
     mouseleave: function () {
-      $('.item_popup').hide();
+      $(".item_popup").hide();
     },
   });
 });
@@ -73,7 +81,7 @@ $(function () {
 
 ///////////// 검색어 입력시 서치바에 open 클래스를 추가, 포커스 아웃시 open 클래스 삭제
 
-const srcBar = document.getElementById('autoComplete');
+const srcBar = document.getElementById("autoComplete");
 
 // document.addEventListener('keyup', logKey);
 // function logKey(e) {
@@ -156,10 +164,10 @@ const autoCompleteJS = new autoComplete({
     // src: ["토마토", "토마토주스", "토마토케챱", "꿀토마토", "망고주스", "키위주스"],
     src: [
       {
-        name: '토마토',
-        enName: 'tomato',
-        hscode: '060582',
-        category: 'Fresh',
+        name: "토마토",
+        enName: "tomato",
+        hscode: "060582",
+        category: "Fresh",
         volume: 15000,
         yearDollar: 202550,
         dollarMin: 0.6,
@@ -168,10 +176,10 @@ const autoCompleteJS = new autoComplete({
         like: false,
       },
       {
-        name: '토마토즙',
-        enName: 'tomatoJuice',
-        hscode: '060583',
-        category: '가공품',
+        name: "토마토즙",
+        enName: "tomatoJuice",
+        hscode: "060583",
+        category: "가공품",
         volume: 15000,
         yearDollar: 202550,
         dollarMin: 0.6,
@@ -180,10 +188,10 @@ const autoCompleteJS = new autoComplete({
         like: true,
       },
       {
-        name: '토마토케찹',
-        enName: 'tomatoSouce',
-        hscode: '060584',
-        category: '가공품',
+        name: "토마토케찹",
+        enName: "tomatoSouce",
+        hscode: "060584",
+        category: "가공품",
         volume: 15000,
         yearDollar: 202550,
         dollarMin: 0.6,
@@ -192,17 +200,17 @@ const autoCompleteJS = new autoComplete({
         like: false,
       },
     ],
-    keys: ['name', 'hscode', 'enName'],
+    keys: ["name", "hscode", "enName"],
   },
   resultsList: {
     element: (list, data) => {
-      const info = document.createElement('p');
+      const info = document.createElement("p");
       if (data.results.length > 0) {
         info.innerHTML = `<strong>${data.matches.length}</strong>개의 결과`;
-        searchBar.id = 'autoCompleteOn';
+        searchBar.id = "autoCompleteOn";
       } else {
-        info.innerHTML = '검색 결과가 없습니다.';
-        searchBar.id = 'autoCompleteOn';
+        info.innerHTML = "검색 결과가 없습니다.";
+        searchBar.id = "autoCompleteOn";
       }
       list.prepend(info);
     },
@@ -239,27 +247,27 @@ const autoCompleteJS = new autoComplete({
   },
 });
 
-const searchBar = document.getElementsByClassName('searchInp')[0];
-const searchButton = document.getElementById('btn_src');
+const searchBar = document.getElementsByClassName("searchInp")[0];
+const searchButton = document.getElementById("btn_src");
 
-autoCompleteJS.input.addEventListener('selection', function (event) {
+autoCompleteJS.input.addEventListener("selection", function (event) {
   const feedback = event.detail;
   const selection = feedback.selection.value.name;
   // const selection = `${feedback.selection.value.name}(${feedback.selection.value.hscode})`;
 
   if (!liked) autoCompleteJS.input.value = selection;
   liked = false;
-  searchBar.id = 'autoComplete';
+  searchBar.id = "autoComplete";
   searchBar.style.opacity = 1;
 });
 
-['focus', 'blur'].forEach((eventType) => {
+["focus", "blur"].forEach((eventType) => {
   autoCompleteJS.input.addEventListener(eventType, () => {
-    if (eventType === 'blur') {
-      searchBar.id = 'autoComplete';
+    if (eventType === "blur") {
+      searchBar.id = "autoComplete";
       // searchBar.style.opacity = 0.5;
       searchButton.style.opacity = 0.8;
-    } else if (eventType === 'focus') {
+    } else if (eventType === "focus") {
       searchBar.style.opacity = 1;
       searchButton.style.opacity = 1;
     }
@@ -267,9 +275,9 @@ autoCompleteJS.input.addEventListener('selection', function (event) {
 });
 
 let exp;
-$('.searchInp').on('propertychange change keyup paste input', () => {
-  let inpValue = $('.searchInp').val();
-  if (inpValue.length < 1) searchBar.id = 'autoComplete';
+$(".searchInp").on("propertychange change keyup paste input", () => {
+  let inpValue = $(".searchInp").val();
+  if (inpValue.length < 1) searchBar.id = "autoComplete";
 
   const krExp = /^[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]+$/;
   const numExp = /^[0-9]+$/;
@@ -281,7 +289,7 @@ $('.searchInp').on('propertychange change keyup paste input', () => {
 });
 
 function onClick() {
-  let searchValue = document.getElementsByClassName('searchInp')[0].value;
+  let searchValue = document.getElementsByClassName("searchInp")[0].value;
   console.log(searchValue);
 }
 
@@ -289,12 +297,12 @@ let liked = false;
 function like(hscode, like) {
   liked = true;
 
-  if (like) $('.modalContent').text('관심품목 해제');
-  else $('.modalContent').text('관심품목 등록');
+  if (like) $(".modalContent").text("관심품목 해제");
+  else $(".modalContent").text("관심품목 등록");
 
-  $('#modal').show();
+  $("#modal").show();
   setTimeout(() => {
-    $('#modal').hide();
+    $("#modal").hide();
   }, 1000);
   // hscode로 디비 셀렉해서 like t/f 변환
   // if (like) like = false;
@@ -306,16 +314,16 @@ function like(hscode, like) {
 let searchFavoriteStatus = 0;
 
 function favorite() {
-  let favoriteBtn = document.getElementsByClassName('favorite');
-  let favoriteSvg = document.getElementsByClassName('favorite-svg');
+  let favoriteBtn = document.getElementsByClassName("favorite");
+  let favoriteSvg = document.getElementsByClassName("favorite-svg");
   // let favoriteOffIndex = Array.from(favoriteOff).indexOf(event.target);
   // let favoriteBtnIndex = Array.from(favoriteBtn).indexOf(event.target);
 
   for (let i = 0; i < favoriteBtn.length; i++) {
-    console.log('favoriteSvg[i] classList: ', favoriteSvg[i].classList);
+    console.log("favoriteSvg[i] classList: ", favoriteSvg[i].classList);
 
     favoriteBtn[i].onclick = function (target) {
-      if (favoriteSvg[i].classList.contains('favorite-off')) {
+      if (favoriteSvg[i].classList.contains("favorite-off")) {
         favoriteBtn[i].innerHTML = `<svg class="favorite-svg favorite-on" width="25" height="25" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M50.0007 71.959L75.7507 87.5006L68.9173 58.209L91.6673 38.5006L61.709 35.959L50.0007 8.33398L38.2923 35.959L8.33398 38.5006L31.084 58.209L24.2507 87.5006L50.0007 71.959Z" fill="#383838"/>
         <path d="M50.0007 71.959L75.7507 87.5006L68.9173 58.209L91.6673 38.5006L61.709 35.959L50.0007 8.33398L38.2923 35.959L8.33398 38.5006L31.084 58.209L24.2507 87.5006L50.0007 71.959Z" fill="#383838"/>
@@ -325,7 +333,7 @@ function favorite() {
         <path d="M91.6673 38.5006L61.709 35.9173L50.0007 8.33398L38.2923 35.959L8.33398 38.5006L31.084 58.209L24.2507 87.5006L50.0007 71.959L75.7507 87.5006L68.959 58.209L91.6673 38.5006ZM50.0007 64.1673L34.334 73.6256L38.5007 55.7923L24.6673 43.7923L42.9173 42.209L50.0007 25.4173L57.1257 42.2507L75.3757 43.834L61.5423 55.834L65.709 73.6673L50.0007 64.1673Z" fill="#BABABA"/>
         <path d="M91.6673 38.5006L61.709 35.9173L50.0007 8.33398L38.2923 35.959L8.33398 38.5006L31.084 58.209L24.2507 87.5006L50.0007 71.959L75.7507 87.5006L68.959 58.209L91.6673 38.5006ZM50.0007 64.1673L34.334 73.6256L38.5007 55.7923L24.6673 43.7923L42.9173 42.209L50.0007 25.4173L57.1257 42.2507L75.3757 43.834L61.5423 55.834L65.709 73.6673L50.0007 64.1673Z" fill="#BABABA"/>
         </svg>`;
-        $('.modalContent').text('관심품목 해제');
+        $(".modalContent").text("관심품목 해제");
       }
     };
   }
@@ -360,15 +368,15 @@ function favorite() {
 }
 
 //////////////// 본 페이지에서 관심상품 추가 /////////////////
-const mainFavoriteIcon = document.querySelector('#main-star');
+const mainFavoriteIcon = document.querySelector("#main-star");
 let favoriteStatus = 1;
 
 function mainFavorite() {
-  let mainFavoriteOff = document.getElementsByClassName('main-favorite-off')[0];
-  console.log('favorite status:', favoriteStatus);
+  let mainFavoriteOff = document.getElementsByClassName("main-favorite-off")[0];
+  console.log("favorite status:", favoriteStatus);
 
   if (favoriteStatus === 0) {
-    console.log('favorite is on');
+    console.log("favorite is on");
 
     mainFavoriteIcon.innerHTML = `<svg class="main-favorite-on star" width="25" height="25" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M50.0007 71.959L75.7507 87.5006L68.9173 58.209L91.6673 38.5006L61.709 35.959L50.0007 8.33398L38.2923 35.959L8.33398 38.5006L31.084 58.209L24.2507 87.5006L50.0007 71.959Z" fill="#4B48FD    "/>
@@ -378,7 +386,7 @@ function mainFavorite() {
     favoriteStatus = 1;
     addFavorite();
   } else if (favoriteStatus === 1) {
-    console.log('favorite is off');
+    console.log("favorite is off");
 
     mainFavoriteIcon.innerHTML = `<svg class="main-favorite-off star" width="25" height="25" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M91.6673 38.5006L61.709 35.9173L50.0007 8.33398L38.2923 35.959L8.33398 38.5006L31.084 58.209L24.2507 87.5006L50.0007 71.959L75.7507 87.5006L68.959 58.209L91.6673 38.5006ZM50.0007 64.1673L34.334 73.6256L38.5007 55.7923L24.6673 43.7923L42.9173 42.209L50.0007 25.4173L57.1257 42.2507L75.3757 43.834L61.5423 55.834L65.709 73.6673L50.0007 64.1673Z" fill="#BABABA"/>
@@ -391,22 +399,22 @@ function mainFavorite() {
 }
 
 function addFavorite() {
-  const addFavorite = document.getElementById('add-favorite-container');
+  const addFavorite = document.getElementById("add-favorite-container");
 
-  addFavorite.style.display = 'block';
+  addFavorite.style.display = "block";
 
   setTimeout(() => {
-    addFavorite.style.display = 'none';
+    addFavorite.style.display = "none";
   }, 2000);
 }
 
 function removeFavorite() {
-  const removeFavorite = document.getElementById('remove-favorite-container');
+  const removeFavorite = document.getElementById("remove-favorite-container");
 
-  removeFavorite.style.display = 'block';
+  removeFavorite.style.display = "block";
 
   setTimeout(() => {
-    removeFavorite.style.display = 'none';
+    removeFavorite.style.display = "none";
   }, 2000);
 }
 
@@ -427,7 +435,7 @@ const english = /^[a-zA-Z]*$/;
 // 숫자가 포함되었는지 체크
 const number = /^[0-9]+$/;
 
-const searchSubmitBtn = document.getElementsByClassName('btn_src')[0];
+const searchSubmitBtn = document.getElementsByClassName("btn_src")[0];
 
 function search() {
   const userInput = srcBar.value;
@@ -437,57 +445,57 @@ function search() {
     searchEnglish(userInput);
   } else if (korean.test(userInput)) {
     searchKorean(userInput);
-  } else console.log('user input 인식 불가');
+  } else console.log("user input 인식 불가");
 }
 
 function searchHscode(hscode) {
   $.ajax({
-    url: 'https://fooda.citylabsdev.com/search/hscode?hscode=' + hscode,
-    method: 'GET', // HTTP 요청 메소드(GET, POST 등)
+    url: "https://fooda.citylabsdev.com/search/hscode?hscode=" + hscode,
+    method: "GET", // HTTP 요청 메소드(GET, POST 등)
     success: function (result) {
       if (result) {
-        console.log('성공');
+        console.log("성공");
       } else {
-        console.log('실패');
+        console.log("실패");
       }
     },
   }) // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
     .always(function (xhr, status) {
-      console.log('요청이 완료되었습니다!');
+      console.log("요청이 완료되었습니다!");
     });
 }
 
 function searchEnglish(englishName) {
   $.ajax({
-    url: 'https://fooda.citylabsdev.com/search/krproductname?krproductname=' + englishName,
-    method: 'GET', // HTTP 요청 메소드(GET, POST 등)
+    url: "https://fooda.citylabsdev.com/search/krproductname?krproductname=" + englishName,
+    method: "GET", // HTTP 요청 메소드(GET, POST 등)
     success: function (result) {
       if (result) {
-        console.log('성공');
+        console.log("성공");
       } else {
-        console.log('실패');
+        console.log("실패");
       }
     },
   }) // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
     .always(function (xhr, status) {
-      console.log('요청이 완료되었습니다!');
+      console.log("요청이 완료되었습니다!");
     });
 }
 
 function searchKorean(koreanName) {
   $.ajax({
-    url: 'https://fooda.citylabsdev.com/search/productname?productname=' + koreanName,
-    method: 'GET', // HTTP 요청 메소드(GET, POST 등)
+    url: "https://fooda.citylabsdev.com/search/productname?productname=" + koreanName,
+    method: "GET", // HTTP 요청 메소드(GET, POST 등)
     success: function (result) {
       if (result) {
-        console.log('성공');
+        console.log("성공");
       } else {
-        console.log('실패');
+        console.log("실패");
       }
     },
   }) // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
     .always(function (xhr, status) {
-      console.log('요청이 완료되었습니다!');
+      console.log("요청이 완료되었습니다!");
     });
 }
 
@@ -506,22 +514,22 @@ function makeImportProductDonutChart() {
 
   // append the svg object to the div called 'my_dataviz'
   var svg = d3
-    .select('#import_product_donut')
-    .append('svg')
-    .attr('width', width)
-    .attr('height', height)
-    .append('g')
-    .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+    .select("#import_product_donut")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
   // d3.select("#my_dataviz").attr("align","right");
 
   // Create dummy data - 데이터 크기순으로 정렬한 후 첫번째 index 2개만 biggestarc 적용하면 될듯
   var data = [
-    { name: '미국', import: 40 },
-    { name: '베트남', import: 15 },
-    { name: '중국', import: 30 },
-    { name: '인도네시아', import: 22 },
-    { name: '말레이시아', import: 17 },
+    { name: "미국", import: 40 },
+    { name: "베트남", import: 15 },
+    { name: "중국", import: 30 },
+    { name: "인도네시아", import: 22 },
+    { name: "말레이시아", import: 17 },
   ];
 
   var sortedData = data.sort(function (a, b) {
@@ -531,7 +539,7 @@ function makeImportProductDonutChart() {
   console.log(sortedData);
 
   // set the color scale
-  var color = d3.scaleOrdinal(['#9848FD', '#3DC282', '#3CC1EB', '#487BFD', '#6148FD']);
+  var color = d3.scaleOrdinal(["#9848FD", "#3DC282", "#3CC1EB", "#487BFD", "#6148FD"]);
 
   // Compute the position of each group on the pie:
   var pie = d3
@@ -562,82 +570,82 @@ function makeImportProductDonutChart() {
     .outerRadius(radius * 0.9);
 
   // 툴팁
-  var tooltip = d3.select('body').append('div').attr('class', 'tooltip');
+  var tooltip = d3.select("body").append("div").attr("class", "tooltip");
 
   // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
   svg
-    .selectAll('allSlices')
+    .selectAll("allSlices")
     .data(data_ready)
     .enter()
-    .append('path')
-    .attr('d', function (d) {
+    .append("path")
+    .attr("d", function (d) {
       if (d.data.key == 0) {
         return biggestarc(d);
       } else {
         return arc(d);
       }
     })
-    .attr('fill', function (d) {
+    .attr("fill", function (d) {
       return color(d.data.key);
     })
-    .attr('stroke', function (d) {
+    .attr("stroke", function (d) {
       return color(d.data.key);
     })
-    .style('stroke-width', '1px')
-    .attr('text-anchor', 'end');
+    .style("stroke-width", "1px")
+    .attr("text-anchor", "end");
 
   svg
-    .selectAll('allSlices')
+    .selectAll("allSlices")
     .data(data_ready)
     .enter()
-    .append('path')
-    .attr('d', function (d) {
+    .append("path")
+    .attr("d", function (d) {
       return arc(d);
     })
-    .attr('fill', function (d) {
+    .attr("fill", function (d) {
       return color(d.data.key);
     })
-    .attr('stroke', function (d) {
+    .attr("stroke", function (d) {
       return color(d.data.key);
     })
-    .style('stroke-width', '1px')
-    .attr('text-anchor', 'end')
-    .on('mouseout', function (d) {
-      console.log('mouseout');
-      d3.select(this).transition().duration(200).attr('d', arc);
-      tooltip.style('visibility', 'hidden');
+    .style("stroke-width", "1px")
+    .attr("text-anchor", "end")
+    .on("mouseout", function (d) {
+      console.log("mouseout");
+      d3.select(this).transition().duration(200).attr("d", arc);
+      tooltip.style("visibility", "hidden");
     })
-    .on('mousemove', function (d) {
-      d3.select(this).transition().duration(100).attr('d', biggestarc);
+    .on("mousemove", function (d) {
+      d3.select(this).transition().duration(100).attr("d", biggestarc);
       tooltip
-        .attr('class', 'tooltip-data')
-        .style('visibility', 'visible')
-        .style('position', 'absolute')
-        .style('left', d3.event.pageX + 'px')
-        .style('top', d3.event.pageY + 'px')
-        .attr('dy', '0em')
-        .text('line1');
+        .attr("class", "tooltip-data")
+        .style("visibility", "visible")
+        .style("position", "absolute")
+        .style("left", d3.event.pageX + "px")
+        .style("top", d3.event.pageY + "px")
+        .attr("dy", "0em")
+        .text("line1");
 
-      d3.select(this).append('text').attr('dy', '1em').text('line2');
+      d3.select(this).append("text").attr("dy", "1em").text("line2");
       // .text(d.data.value.name  + d.data.value.import + '%')
     });
 
   // Add the polylines between chart and labels:
   svg
-    .selectAll('allPolylines')
+    .selectAll("allPolylines")
     .data(data_ready)
     .enter()
-    .append('polyline')
-    .attr('stroke', function (d) {
+    .append("polyline")
+    .attr("stroke", function (d) {
       if (d.data.key == 0 || d.data.key == 1) {
         // index가 0이나 1일 경우만 polyline 그려줌
         return color(d.data.key);
       }
     })
-    .style('fill', 'none')
-    .style('opacity', 1)
-    .style('stroke-width', 2)
-    .attr('points', function (d) {
+    .style("fill", "none")
+    .style("opacity", 1)
+    .style("stroke-width", 2)
+    .attr("points", function (d) {
       var posA = arc.centroid(d); // line insertion in the slice
       var posB = outerArc.centroid(d); // line break: we use the other arc generator that has been built only for that
       var posC = outerArc.centroid(d); // Label position = almost the same as posB
@@ -648,59 +656,59 @@ function makeImportProductDonutChart() {
 
   // Add the polylines between chart and labels:
   svg
-    .selectAll('allLabels')
+    .selectAll("allLabels")
     .data(data_ready)
     .enter()
-    .append('text')
+    .append("text")
     .text(function (d) {
       console.log(d.data.value.name);
       if (d.data.key == 0 || d.data.key == 1) {
         return d.data.value.name;
       }
     })
-    .attr('transform', function (d) {
+    .attr("transform", function (d) {
       var pos = outerArc.centroid(d);
       var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
       pos[0] = radius * 1.75 * (midangle < Math.PI ? 1 : -1);
-      return 'translate(' + pos + ')';
+      return "translate(" + pos + ")";
     })
-    .attr('dy', '-0.5em')
-    .style('text-anchor', function (d) {
+    .attr("dy", "-0.5em")
+    .style("text-anchor", function (d) {
       var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-      return midangle < Math.PI ? 'start' : 'end';
+      return midangle < Math.PI ? "start" : "end";
     })
-    .style('fill', function (d) {
+    .style("fill", function (d) {
       return color(d.data.key);
     })
-    .append('circle');
+    .append("circle");
 
   svg
-    .selectAll('allLabels')
+    .selectAll("allLabels")
     .data(data_ready)
     .enter()
-    .append('text')
+    .append("text")
     .text(function (d) {
       console.log(d.data.key);
       if (d.data.key == 0 || d.data.key == 1) {
-        return d.data.value.import + '%';
+        return d.data.value.import + "%";
       }
     })
-    .attr('transform', function (d) {
+    .attr("transform", function (d) {
       var pos2 = outerArc.centroid(d);
       var midangle2 = d.startAngle + (d.endAngle - d.startAngle) / 2;
       pos2[0] = radius * 1.75 * (midangle2 < Math.PI ? 1 : -1);
-      return 'translate(' + pos2 + ')';
+      return "translate(" + pos2 + ")";
     })
-    .attr('dy', '1.2em')
-    .style('text-anchor', function (d) {
+    .attr("dy", "1.2em")
+    .style("text-anchor", function (d) {
       var midangle2 = d.startAngle + (d.endAngle - d.startAngle) / 2;
-      return midangle2 < Math.PI ? 'start' : 'end';
+      return midangle2 < Math.PI ? "start" : "end";
     })
-    .style('fill', function (d) {
+    .style("fill", function (d) {
       return color(d.data.key);
     });
 
-  var slices = svg.selectAll('allSlices');
+  var slices = svg.selectAll("allSlices");
 }
 
 //-------------------------------수입업체 세부정보 2------------------------------------
@@ -716,22 +724,22 @@ function makeImportCountryDonutChart() {
 
   // append the svg object to the div called 'my_dataviz'
   var svg = d3
-    .select('#import_country_donut')
-    .append('svg')
-    .attr('width', width)
-    .attr('height', height)
-    .append('g')
-    .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+    .select("#import_country_donut")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
   // d3.select("#my_dataviz").attr("align","right");
 
   // Create dummy data - 데이터 크기순으로 정렬한 후 첫번째 index 2개만 biggestarc 적용하면 될듯
   var data = [
-    { name: '미국', import: 40 },
-    { name: '베트남', import: 15 },
-    { name: '중국', import: 30 },
-    { name: '인도네시아', import: 22 },
-    { name: '말레이시아', import: 17 },
+    { name: "미국", import: 40 },
+    { name: "베트남", import: 15 },
+    { name: "중국", import: 30 },
+    { name: "인도네시아", import: 22 },
+    { name: "말레이시아", import: 17 },
   ];
 
   var sortedData = data.sort(function (a, b) {
@@ -741,7 +749,7 @@ function makeImportCountryDonutChart() {
   console.log(sortedData);
 
   // set the color scale
-  var color = d3.scaleOrdinal(['#9848FD', '#3DC282', '#3CC1EB', '#487BFD', '#6148FD']);
+  var color = d3.scaleOrdinal(["#9848FD", "#3DC282", "#3CC1EB", "#487BFD", "#6148FD"]);
 
   // Compute the position of each group on the pie:
   var pie = d3
@@ -772,82 +780,82 @@ function makeImportCountryDonutChart() {
     .outerRadius(radius * 0.9);
 
   // 툴팁
-  var tooltip = d3.select('body').append('div').attr('class', 'tooltip');
+  var tooltip = d3.select("body").append("div").attr("class", "tooltip");
 
   // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
   svg
-    .selectAll('allSlices')
+    .selectAll("allSlices")
     .data(data_ready)
     .enter()
-    .append('path')
-    .attr('d', function (d) {
+    .append("path")
+    .attr("d", function (d) {
       if (d.data.key == 0) {
         return biggestarc(d);
       } else {
         return arc(d);
       }
     })
-    .attr('fill', function (d) {
+    .attr("fill", function (d) {
       return color(d.data.key);
     })
-    .attr('stroke', function (d) {
+    .attr("stroke", function (d) {
       return color(d.data.key);
     })
-    .style('stroke-width', '1px')
-    .attr('text-anchor', 'end');
+    .style("stroke-width", "1px")
+    .attr("text-anchor", "end");
 
   svg
-    .selectAll('allSlices')
+    .selectAll("allSlices")
     .data(data_ready)
     .enter()
-    .append('path')
-    .attr('d', function (d) {
+    .append("path")
+    .attr("d", function (d) {
       return arc(d);
     })
-    .attr('fill', function (d) {
+    .attr("fill", function (d) {
       return color(d.data.key);
     })
-    .attr('stroke', function (d) {
+    .attr("stroke", function (d) {
       return color(d.data.key);
     })
-    .style('stroke-width', '1px')
-    .attr('text-anchor', 'end')
-    .on('mouseout', function (d) {
-      console.log('mouseout');
-      d3.select(this).transition().duration(200).attr('d', arc);
-      tooltip.style('visibility', 'hidden');
+    .style("stroke-width", "1px")
+    .attr("text-anchor", "end")
+    .on("mouseout", function (d) {
+      console.log("mouseout");
+      d3.select(this).transition().duration(200).attr("d", arc);
+      tooltip.style("visibility", "hidden");
     })
-    .on('mousemove', function (d) {
-      d3.select(this).transition().duration(100).attr('d', biggestarc);
+    .on("mousemove", function (d) {
+      d3.select(this).transition().duration(100).attr("d", biggestarc);
       tooltip
-        .attr('class', 'tooltip-data')
-        .style('visibility', 'visible')
-        .style('position', 'absolute')
-        .style('left', d3.event.pageX + 'px')
-        .style('top', d3.event.pageY + 'px')
-        .attr('dy', '0em')
-        .text('line1');
+        .attr("class", "tooltip-data")
+        .style("visibility", "visible")
+        .style("position", "absolute")
+        .style("left", d3.event.pageX + "px")
+        .style("top", d3.event.pageY + "px")
+        .attr("dy", "0em")
+        .text("line1");
 
-      d3.select(this).append('text').attr('dy', '1em').text('line2');
+      d3.select(this).append("text").attr("dy", "1em").text("line2");
       // .text(d.data.value.name  + d.data.value.import + '%')
     });
 
   // Add the polylines between chart and labels:
   svg
-    .selectAll('allPolylines')
+    .selectAll("allPolylines")
     .data(data_ready)
     .enter()
-    .append('polyline')
-    .attr('stroke', function (d) {
+    .append("polyline")
+    .attr("stroke", function (d) {
       if (d.data.key == 0 || d.data.key == 1) {
         // index가 0이나 1일 경우만 polyline 그려줌
         return color(d.data.key);
       }
     })
-    .style('fill', 'none')
-    .style('opacity', 1)
-    .style('stroke-width', 2)
-    .attr('points', function (d) {
+    .style("fill", "none")
+    .style("opacity", 1)
+    .style("stroke-width", 2)
+    .attr("points", function (d) {
       var posA = arc.centroid(d); // line insertion in the slice
       var posB = outerArc.centroid(d); // line break: we use the other arc generator that has been built only for that
       var posC = outerArc.centroid(d); // Label position = almost the same as posB
@@ -858,59 +866,59 @@ function makeImportCountryDonutChart() {
 
   // Add the polylines between chart and labels:
   svg
-    .selectAll('allLabels')
+    .selectAll("allLabels")
     .data(data_ready)
     .enter()
-    .append('text')
+    .append("text")
     .text(function (d) {
       console.log(d.data.value.name);
       if (d.data.key == 0 || d.data.key == 1) {
         return d.data.value.name;
       }
     })
-    .attr('transform', function (d) {
+    .attr("transform", function (d) {
       var pos = outerArc.centroid(d);
       var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
       pos[0] = radius * 1.75 * (midangle < Math.PI ? 1 : -1);
-      return 'translate(' + pos + ')';
+      return "translate(" + pos + ")";
     })
-    .attr('dy', '-0.5em')
-    .style('text-anchor', function (d) {
+    .attr("dy", "-0.5em")
+    .style("text-anchor", function (d) {
       var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-      return midangle < Math.PI ? 'start' : 'end';
+      return midangle < Math.PI ? "start" : "end";
     })
-    .style('fill', function (d) {
+    .style("fill", function (d) {
       return color(d.data.key);
     })
-    .append('circle');
+    .append("circle");
 
   svg
-    .selectAll('allLabels')
+    .selectAll("allLabels")
     .data(data_ready)
     .enter()
-    .append('text')
+    .append("text")
     .text(function (d) {
       console.log(d.data.key);
       if (d.data.key == 0 || d.data.key == 1) {
-        return d.data.value.import + '%';
+        return d.data.value.import + "%";
       }
     })
-    .attr('transform', function (d) {
+    .attr("transform", function (d) {
       var pos2 = outerArc.centroid(d);
       var midangle2 = d.startAngle + (d.endAngle - d.startAngle) / 2;
       pos2[0] = radius * 1.75 * (midangle2 < Math.PI ? 1 : -1);
-      return 'translate(' + pos2 + ')';
+      return "translate(" + pos2 + ")";
     })
-    .attr('dy', '1.2em')
-    .style('text-anchor', function (d) {
+    .attr("dy", "1.2em")
+    .style("text-anchor", function (d) {
       var midangle2 = d.startAngle + (d.endAngle - d.startAngle) / 2;
-      return midangle2 < Math.PI ? 'start' : 'end';
+      return midangle2 < Math.PI ? "start" : "end";
     })
-    .style('fill', function (d) {
+    .style("fill", function (d) {
       return color(d.data.key);
     });
 
-  var slices = svg.selectAll('allSlices');
+  var slices = svg.selectAll("allSlices");
 }
 
 //------------------ 국가별 점유율 donut chart ---------------------
@@ -925,22 +933,22 @@ var radius = Math.min(width, height) / 2 - margin;
 
 // append the svg object to the div called 'my_dataviz'
 var svg = d3
-  .select('#country_donut')
-  .append('svg')
-  .attr('width', width)
-  .attr('height', height)
-  .append('g')
-  .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+  .select("#country_donut")
+  .append("svg")
+  .attr("width", width)
+  .attr("height", height)
+  .append("g")
+  .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 // d3.select("#my_dataviz").attr("align","right");
 
 // Create dummy data - 데이터 크기순으로 정렬한 후 첫번째 index 2개만 biggestarc 적용하면 될듯
 var data = [
-  { name: '미국', import: 40 },
-  { name: '베트남', import: 15 },
-  { name: '중국', import: 30 },
-  { name: '인도네시아', import: 22 },
-  { name: '말레이시아', import: 17 },
+  { name: "미국", import: 40 },
+  { name: "베트남", import: 15 },
+  { name: "중국", import: 30 },
+  { name: "인도네시아", import: 22 },
+  { name: "말레이시아", import: 17 },
 ];
 
 var sortedData = data.sort(function (a, b) {
@@ -950,7 +958,7 @@ var sortedData = data.sort(function (a, b) {
 console.log(sortedData);
 
 // set the color scale
-var color = d3.scaleOrdinal(['#9848FD', '#3DC282', '#3CC1EB', '#487BFD', '#6148FD']);
+var color = d3.scaleOrdinal(["#9848FD", "#3DC282", "#3CC1EB", "#487BFD", "#6148FD"]);
 
 // Compute the position of each group on the pie:
 var pie = d3
@@ -981,82 +989,82 @@ var outerArc = d3
   .outerRadius(radius * 0.9);
 
 // 툴팁
-var tooltip = d3.select('body').append('div').attr('class', 'tooltip');
+var tooltip = d3.select("body").append("div").attr("class", "tooltip");
 
 // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
 svg
-  .selectAll('allSlices')
+  .selectAll("allSlices")
   .data(data_ready)
   .enter()
-  .append('path')
-  .attr('d', function (d) {
+  .append("path")
+  .attr("d", function (d) {
     if (d.data.key == 0) {
       return biggestarc(d);
     } else {
       return arc(d);
     }
   })
-  .attr('fill', function (d) {
+  .attr("fill", function (d) {
     return color(d.data.key);
   })
-  .attr('stroke', function (d) {
+  .attr("stroke", function (d) {
     return color(d.data.key);
   })
-  .style('stroke-width', '1px')
-  .attr('text-anchor', 'end');
+  .style("stroke-width", "1px")
+  .attr("text-anchor", "end");
 
 svg
-  .selectAll('allSlices')
+  .selectAll("allSlices")
   .data(data_ready)
   .enter()
-  .append('path')
-  .attr('d', function (d) {
+  .append("path")
+  .attr("d", function (d) {
     return arc(d);
   })
-  .attr('fill', function (d) {
+  .attr("fill", function (d) {
     return color(d.data.key);
   })
-  .attr('stroke', function (d) {
+  .attr("stroke", function (d) {
     return color(d.data.key);
   })
-  .style('stroke-width', '1px')
-  .attr('text-anchor', 'end')
-  .on('mouseout', function (d) {
-    console.log('mouseout');
-    d3.select(this).transition().duration(200).attr('d', arc);
-    tooltip.style('visibility', 'hidden');
+  .style("stroke-width", "1px")
+  .attr("text-anchor", "end")
+  .on("mouseout", function (d) {
+    console.log("mouseout");
+    d3.select(this).transition().duration(200).attr("d", arc);
+    tooltip.style("visibility", "hidden");
   })
-  .on('mousemove', function (d) {
-    d3.select(this).transition().duration(100).attr('d', biggestarc);
+  .on("mousemove", function (d) {
+    d3.select(this).transition().duration(100).attr("d", biggestarc);
     tooltip
-      .attr('class', 'tooltip-data')
-      .style('visibility', 'visible')
-      .style('position', 'absolute')
-      .style('left', d3.event.pageX + 'px')
-      .style('top', d3.event.pageY + 'px')
-      .attr('dy', '0em')
-      .text('line1');
+      .attr("class", "tooltip-data")
+      .style("visibility", "visible")
+      .style("position", "absolute")
+      .style("left", d3.event.pageX + "px")
+      .style("top", d3.event.pageY + "px")
+      .attr("dy", "0em")
+      .text("line1");
 
-    d3.select(this).append('text').attr('dy', '1em').text('line2');
+    d3.select(this).append("text").attr("dy", "1em").text("line2");
     // .text(d.data.value.name  + d.data.value.import + '%')
   });
 
 // Add the polylines between chart and labels:
 svg
-  .selectAll('allPolylines')
+  .selectAll("allPolylines")
   .data(data_ready)
   .enter()
-  .append('polyline')
-  .attr('stroke', function (d) {
+  .append("polyline")
+  .attr("stroke", function (d) {
     if (d.data.key == 0 || d.data.key == 1) {
       // index가 0이나 1일 경우만 polyline 그려줌
       return color(d.data.key);
     }
   })
-  .style('fill', 'none')
-  .style('opacity', 1)
-  .style('stroke-width', 2)
-  .attr('points', function (d) {
+  .style("fill", "none")
+  .style("opacity", 1)
+  .style("stroke-width", 2)
+  .attr("points", function (d) {
     var posA = arc.centroid(d); // line insertion in the slice
     var posB = outerArc.centroid(d); // line break: we use the other arc generator that has been built only for that
     var posC = outerArc.centroid(d); // Label position = almost the same as posB
@@ -1067,97 +1075,97 @@ svg
 
 // Add the polylines between chart and labels:
 svg
-  .selectAll('allLabels')
+  .selectAll("allLabels")
   .data(data_ready)
   .enter()
-  .append('text')
+  .append("text")
   .text(function (d) {
     console.log(d.data.value.name);
     if (d.data.key == 0 || d.data.key == 1) {
       return d.data.value.name;
     }
   })
-  .attr('transform', function (d) {
+  .attr("transform", function (d) {
     var pos = outerArc.centroid(d);
     var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
     pos[0] = radius * 1.75 * (midangle < Math.PI ? 1 : -1);
-    return 'translate(' + pos + ')';
+    return "translate(" + pos + ")";
   })
-  .attr('dy', '-0.5em')
-  .style('text-anchor', function (d) {
+  .attr("dy", "-0.5em")
+  .style("text-anchor", function (d) {
     var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-    return midangle < Math.PI ? 'start' : 'end';
+    return midangle < Math.PI ? "start" : "end";
   })
-  .style('fill', function (d) {
+  .style("fill", function (d) {
     return color(d.data.key);
   })
-  .append('circle');
+  .append("circle");
 
 svg
-  .selectAll('allLabels')
+  .selectAll("allLabels")
   .data(data_ready)
   .enter()
-  .append('text')
+  .append("text")
   .text(function (d) {
     console.log(d.data.key);
     if (d.data.key == 0 || d.data.key == 1) {
-      return d.data.value.import + '%';
+      return d.data.value.import + "%";
     }
   })
-  .attr('transform', function (d) {
+  .attr("transform", function (d) {
     var pos2 = outerArc.centroid(d);
     var midangle2 = d.startAngle + (d.endAngle - d.startAngle) / 2;
     pos2[0] = radius * 1.75 * (midangle2 < Math.PI ? 1 : -1);
-    return 'translate(' + pos2 + ')';
+    return "translate(" + pos2 + ")";
   })
-  .attr('dy', '1.2em')
-  .style('text-anchor', function (d) {
+  .attr("dy", "1.2em")
+  .style("text-anchor", function (d) {
     var midangle2 = d.startAngle + (d.endAngle - d.startAngle) / 2;
-    return midangle2 < Math.PI ? 'start' : 'end';
+    return midangle2 < Math.PI ? "start" : "end";
   })
-  .style('fill', function (d) {
+  .style("fill", function (d) {
     return color(d.data.key);
   });
 
-var slices = svg.selectAll('allSlices');
+var slices = svg.selectAll("allSlices");
 
 /////////////// 현지 가격 추이 Line chart ///////////////
 makePriceLineChart();
 
 function makePriceLineChart() {
-  let ctx_price_line_chart = document.getElementById('price_line_chart').getContext('2d');
+  let ctx_price_line_chart = document.getElementById("price_line_chart").getContext("2d");
 
   var chart = new Chart(ctx_price_line_chart, {
     // The type of chart we want to create
-    type: 'line',
+    type: "line",
 
     // The data for our dataset
     data: {
-      labels: ['2018', '2019', '2020'],
+      labels: ["2018", "2019", "2020"],
       datasets: [
         {
-          label: 'Income',
-          backgroundColor: '#ffffff',
-          borderColor: '#4B48FD',
+          label: "Income",
+          backgroundColor: "#ffffff",
+          borderColor: "#4B48FD",
           data: [12000, 29000, 15000],
-          pointBorderColor: '#000',
-          pointBackgroundColor: 'rgba(255,255,255,0)',
+          pointBorderColor: "#000",
+          pointBackgroundColor: "rgba(255,255,255,0)",
           pointBorderWidth: 0,
           pointHoverRadius: 8,
           // pointHoverBackgroundColor: gradientStroke,
-          pointHoverBorderColor: 'rgba(220,220,220,1)',
+          pointHoverBorderColor: "rgba(220,220,220,1)",
           pointHoverBorderWidth: 4,
           pointRadius: 1,
           borderWidth: 3,
           pointHitRadius: 16,
           fill: false,
           tension: 0,
-          pointBorderColor: '#4B48FD',
-          pointBackgroundColor: '#fff',
+          pointBorderColor: "#4B48FD",
+          pointBackgroundColor: "#fff",
           pointBorderWidth: 8,
           pointHoverRadius: 5,
-          pointHoverBackgroundColor: 'rgba(75,192,192,1)',
-          pointHoverBorderColor: 'rgba(220,220,220,1)',
+          pointHoverBackgroundColor: "rgba(75,192,192,1)",
+          pointHoverBorderColor: "rgba(220,220,220,1)",
           pointHoverBorderWidth: 2,
           pointRadius: 1,
           pointHitRadius: 10,
@@ -1170,10 +1178,10 @@ function makePriceLineChart() {
       maintainAspectRatio: false,
       responsive: false,
       tooltips: {
-        backgroundColor: '#fff',
+        backgroundColor: "#fff",
         displayColors: true,
-        titleFontColor: '#000',
-        bodyFontColor: '#000',
+        titleFontColor: "#000",
+        bodyFontColor: "#000",
       },
       plugins: {
         legend: {
@@ -1193,9 +1201,9 @@ function makePriceLineChart() {
           },
           grid: {
             drawBorder: true,
-            color: '#ffffff',
+            color: "#ffffff",
             borderWidth: 2,
-            borderColor: '#383838',
+            borderColor: "#383838",
           },
         },
         yAxes: {
@@ -1211,7 +1219,7 @@ function makePriceLineChart() {
           },
           grid: {
             drawBorder: false,
-            color: '#ffffff',
+            color: "#ffffff",
           },
         },
       },
@@ -1223,39 +1231,39 @@ function makePriceLineChart() {
 makeSalesLineChart();
 
 function makeSalesLineChart() {
-  let ctx_sales_line_chart = document.getElementById('sales_line_chart').getContext('2d');
+  let ctx_sales_line_chart = document.getElementById("sales_line_chart").getContext("2d");
 
   var chart = new Chart(ctx_sales_line_chart, {
     // The type of chart we want to create
-    type: 'line',
+    type: "line",
 
     // The data for our dataset
     data: {
-      labels: ['2018', '2019', '2020'],
+      labels: ["2018", "2019", "2020"],
       datasets: [
         {
-          label: 'Income',
-          backgroundColor: '#ffffff',
-          borderColor: '#4B48FD',
+          label: "Income",
+          backgroundColor: "#ffffff",
+          borderColor: "#4B48FD",
           data: [12000, 29000, 15000],
-          pointBorderColor: '#000',
-          pointBackgroundColor: 'rgba(255,255,255,0)',
+          pointBorderColor: "#000",
+          pointBackgroundColor: "rgba(255,255,255,0)",
           pointBorderWidth: 0,
           pointHoverRadius: 8,
           // pointHoverBackgroundColor: gradientStroke,
-          pointHoverBorderColor: 'rgba(220,220,220,1)',
+          pointHoverBorderColor: "rgba(220,220,220,1)",
           pointHoverBorderWidth: 4,
           pointRadius: 1,
           borderWidth: 3,
           pointHitRadius: 16,
           fill: false,
           tension: 0,
-          pointBorderColor: '#4B48FD',
-          pointBackgroundColor: '#fff',
+          pointBorderColor: "#4B48FD",
+          pointBackgroundColor: "#fff",
           pointBorderWidth: 8,
           pointHoverRadius: 5,
-          pointHoverBackgroundColor: 'rgba(75,192,192,1)',
-          pointHoverBorderColor: 'rgba(220,220,220,1)',
+          pointHoverBackgroundColor: "rgba(75,192,192,1)",
+          pointHoverBorderColor: "rgba(220,220,220,1)",
           pointHoverBorderWidth: 2,
           pointRadius: 1,
           pointHitRadius: 10,
@@ -1268,10 +1276,10 @@ function makeSalesLineChart() {
       maintainAspectRatio: false,
       responsive: false,
       tooltips: {
-        backgroundColor: '#fff',
+        backgroundColor: "#fff",
         displayColors: true,
-        titleFontColor: '#000',
-        bodyFontColor: '#000',
+        titleFontColor: "#000",
+        bodyFontColor: "#000",
       },
       plugins: {
         legend: {
@@ -1291,9 +1299,9 @@ function makeSalesLineChart() {
           },
           grid: {
             drawBorder: true,
-            color: '#ffffff',
+            color: "#ffffff",
             borderWidth: 2,
-            borderColor: '#383838',
+            borderColor: "#383838",
           },
         },
         yAxes: {
@@ -1309,7 +1317,7 @@ function makeSalesLineChart() {
           },
           grid: {
             drawBorder: false,
-            color: '#ffffff',
+            color: "#ffffff",
           },
         },
       },
@@ -1321,39 +1329,39 @@ function makeSalesLineChart() {
 makeTransactionLineChart();
 
 function makeTransactionLineChart() {
-  let ctx = document.getElementById('transaction_line_chart').getContext('2d');
+  let ctx = document.getElementById("transaction_line_chart").getContext("2d");
 
   var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'line',
+    type: "line",
 
     // The data for our dataset
     data: {
-      labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+      labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
       datasets: [
         {
-          label: 'Income',
-          backgroundColor: '#ffffff',
-          borderColor: '#4B48FD',
+          label: "Income",
+          backgroundColor: "#ffffff",
+          borderColor: "#4B48FD",
           data: [8000, 900, 7000, 6000, 4000, 6500, 7500, 3200, 4500, 4000, 7000, 2000],
-          pointBorderColor: '#000',
-          pointBackgroundColor: 'rgba(255,255,255,0)',
+          pointBorderColor: "#000",
+          pointBackgroundColor: "rgba(255,255,255,0)",
           pointBorderWidth: 0,
           pointHoverRadius: 8,
           // pointHoverBackgroundColor: gradientStroke,
-          pointHoverBorderColor: 'rgba(220,220,220,1)',
+          pointHoverBorderColor: "rgba(220,220,220,1)",
           pointHoverBorderWidth: 4,
           pointRadius: 1,
           borderWidth: 3,
           pointHitRadius: 16,
           fill: false,
           tension: 0,
-          pointBorderColor: '#4B48FD',
-          pointBackgroundColor: '#fff',
+          pointBorderColor: "#4B48FD",
+          pointBackgroundColor: "#fff",
           pointBorderWidth: 8,
           pointHoverRadius: 5,
-          pointHoverBackgroundColor: 'rgba(75,192,192,1)',
-          pointHoverBorderColor: 'rgba(220,220,220,1)',
+          pointHoverBackgroundColor: "rgba(75,192,192,1)",
+          pointHoverBorderColor: "rgba(220,220,220,1)",
           pointHoverBorderWidth: 2,
           pointRadius: 1,
           pointHitRadius: 10,
@@ -1365,10 +1373,10 @@ function makeTransactionLineChart() {
     options: {
       tension: 0.4,
       tooltips: {
-        backgroundColor: '#fff',
+        backgroundColor: "#fff",
         displayColors: true,
-        titleFontColor: '#000',
-        bodyFontColor: '#000',
+        titleFontColor: "#000",
+        bodyFontColor: "#000",
       },
       plugins: {
         legend: {
@@ -1386,9 +1394,9 @@ function makeTransactionLineChart() {
           },
           grid: {
             drawBorder: true,
-            color: '#ffffff',
+            color: "#ffffff",
             borderWidth: 2,
-            borderColor: '#383838',
+            borderColor: "#383838",
           },
         },
         y: {
@@ -1402,7 +1410,7 @@ function makeTransactionLineChart() {
           },
           grid: {
             drawBorder: false,
-            color: '#ffffff',
+            color: "#ffffff",
           },
         },
       },
@@ -1414,27 +1422,27 @@ function makeTransactionLineChart() {
 
 drawBarChart();
 function drawBarChart() {
-  const labels2 = ['2018', '2019', '2020'];
+  const labels2 = ["2018", "2019", "2020"];
   const data2 = {
     labels: labels2,
     datasets: [
       {
-        label: 'Datasest 1',
-        backgroundColor: '#4B48FD',
-        borderColor: '#4B48FD',
+        label: "Datasest 1",
+        backgroundColor: "#4B48FD",
+        borderColor: "#4B48FD",
         data: [25000, 20000, 30000],
       },
     ],
-    pointBorderColor: '#000',
-    pointBackgroundColor: 'rgba(255,255,255,0)',
+    pointBorderColor: "#000",
+    pointBackgroundColor: "rgba(255,255,255,0)",
     fill: false,
     tension: 0,
   };
 
-  var ctx2 = document.getElementById('import_amount_bar').getContext('2d');
+  var ctx2 = document.getElementById("import_amount_bar").getContext("2d");
 
   var myBarChart = new Chart(ctx2, {
-    type: 'bar',
+    type: "bar",
     data: data2,
     options: {
       barPercentage: 0.3,
@@ -1443,10 +1451,10 @@ function drawBarChart() {
         display: false,
       },
       tooltips: {
-        backgroundColor: '#fff',
+        backgroundColor: "#fff",
         displayColors: true,
-        titleFontColor: '#000',
-        bodyFontColor: '#000',
+        titleFontColor: "#000",
+        bodyFontColor: "#000",
       },
       plugins: {
         legend: {
@@ -1469,7 +1477,7 @@ function drawBarChart() {
             drawBorder: true,
             display: false,
             borderWidth: 2,
-            borderColor: '#000',
+            borderColor: "#000",
           },
         },
         y: {
@@ -1477,7 +1485,7 @@ function drawBarChart() {
             display: true,
             // beginAtZero: true,
             fontSize: 10,
-            fontColor: '#909090',
+            fontColor: "#909090",
             stepSize: 10000,
             // min: -3000 // minimum value on yAxes
             // beginAtZero: true,
@@ -1495,20 +1503,20 @@ function drawBarChart() {
 /////////////// 구글맵 /////////////////
 
 function initMap() {
-  console.log('Map is initialized.');
+  console.log("Map is initialized.");
 
-  var map = new google.maps.Map(document.getElementById('google-map'), {
+  var map = new google.maps.Map(document.getElementById("google-map"), {
     zoom: 8,
     styles: [
       {
-        featureType: 'administrative.country',
-        elementType: 'geometry',
+        featureType: "administrative.country",
+        elementType: "geometry",
         stylers: [
           {
-            visibility: 'simplified',
+            visibility: "simplified",
           },
           {
-            hue: '#ff0000',
+            hue: "#ff0000",
           },
         ],
       },
@@ -1524,16 +1532,16 @@ function initMap() {
   geocodeAddress(geocoder, map);
 
   function geocodeAddress(geocoder, resultMap) {
-    console.log('geocodeAddress 함수 실행');
+    console.log("geocodeAddress 함수 실행");
 
     // 주소 설정
-    var address = '경기도 안양시 만안구 예술공원로 153-32';
+    var address = "경기도 안양시 만안구 예술공원로 153-32";
 
     geocoder.geocode({ address: address }, function (result, status) {
       console.log(result);
       console.log(status);
 
-      if (status === 'OK') {
+      if (status === "OK") {
         // 맵의 중심 좌표를 설정한다.
         resultMap.setCenter(result[0].geometry.location);
         // 맵의 확대 정도를 설정한다.
@@ -1545,11 +1553,11 @@ function initMap() {
         });
 
         // 위도
-        console.log('위도(latitude) : ' + marker.position.lat());
+        console.log("위도(latitude) : " + marker.position.lat());
         // 경도
-        console.log('경도(longitude) : ' + marker.position.lng());
+        console.log("경도(longitude) : " + marker.position.lng());
       } else {
-        alert('지오코드가 다음의 이유로 성공하지 못했습니다 : ' + status);
+        alert("지오코드가 다음의 이유로 성공하지 못했습니다 : " + status);
       }
     });
   }

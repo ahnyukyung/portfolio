@@ -1,0 +1,344 @@
+@charset "UTF-8";
+body {
+}
+#wrap {
+  background: url(../images/pc/front_32/pc_img_bg_08.png) no-repeat center top / cover;
+}
+
+/********** header **********/
+#header a {
+  color: #383838;
+}
+.gnb_open {
+  fill: #989898;
+}
+
+/********** container **********/
+#front32_container {
+  width: 1180px;
+  margin: 0 auto;
+  margin-top: 554px;
+}
+.main_title {
+  display: none;
+}
+
+/* section 공통 */
+section {
+  margin-top: 260px;
+}
+.section_tit {
+  position: relative;
+  font-size: 42px;
+  margin-bottom: 88px;
+}
+.section_tit::after {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 4px;
+  background-color: #c6e9ac;
+  left: 0;
+  bottom: -40px;
+  border-radius: 1.65em;
+}
+
+/* section01 */
+.mobile_img {
+  display: none;
+}
+.section_box {
+  display: flex;
+  justify-content: space-between;
+}
+.smart_hub_txt {
+  font-size: 24px;
+  line-height: 135%;
+}
+.smart_hub_list {
+  margin-top: 60px;
+  font-size: 22px;
+  line-height: 150%;
+  color: #686868;
+}
+.smart_hub_list li {
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+.smart_hub_list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #c6e9ac;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.section01 .section_box--right {
+  border-radius: 42px 21px 135px 44px;
+  border: 4px solid #c6e9ac;
+  border-bottom: 12px solid #c6e9ac;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.08);
+  margin-left: 37px;
+  margin-top: -27px;
+}
+
+/* section02 */
+.m_section_box {
+  display: none;
+}
+.section02 .contents {
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 42px 21px 110px 44px;
+  border: 4px solid #c6e9ac;
+  border-bottom: 8px solid #c6e9ac;
+  width: 283px;
+}
+
+/* section03 */
+.banner {
+  position: relative;
+  opacity: 0.8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 30px 20px 110px 30px;
+  padding: 40px 0 40px 120px;
+  background-image: url(../images/pc/front_32/pc_32_img_06.png), linear-gradient(271deg, rgba(177, 234, 172, 0.8) -24.03%, rgba(217, 241, 209, 0.8) 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center right, center center;
+  background-size: contain;
+  margin-bottom: 130px;
+}
+.banner h2 {
+  font-size: 30px;
+}
+.banner_contents {
+  position: relative;
+}
+.banner .info_txt {
+  font-size: 18px;
+  line-height: 130%;
+  margin-top: 11px;
+}
+.btn_link {
+  display: flex;
+  align-items: center;
+  border: 2px solid #6bc227;
+  border-radius: 18px;
+  color: #6bc227;
+  padding: 5px 12px 5px 18px;
+  background-color: #fff;
+  font-size: 17px;
+  position: absolute;
+  top: 0;
+  left: 185px;
+}
+.btn_link svg {
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
+}
+.m_img {
+  display: none;
+}
+
+/********************************** tablet *******************************/
+@media all and (max-width: 1279px) {
+  /* tablet 공통 */
+  #wrap {
+    background: none;
+  }
+  #header {
+    border-bottom: 1px solid #d2d2d2;
+  }
+  #front32_container {
+    margin-top: 2.14em;
+    width: 86.97vw;
+  }
+  .main_title {
+    display: block;
+    font-size: 3.12vw;
+    padding: 1.25em 0 1.25em 1.41em;
+    background: url(../images/tablet/t_11/t_11_img_01.png) no-repeat center right / contain;
+    background-color: rgba(198, 233, 172, 0.2);
+    border-radius: 0.41em;
+  }
+  section {
+    margin-top: 4.28em;
+  }
+  .section_tit {
+    font-size: 2.6vw;
+    margin: 1.5em 0 1.5em;
+  }
+  .section_tit::after {
+    width: 11.6766%;
+    height: 12%;
+    bottom: -0.5em;
+  }
+  .pc_br {
+    display: none;
+  }
+  /* tablet section01*/
+  .section01 .section_box--right {
+    display: none;
+  }
+  .smart_hub_txt {
+    font-size: 1.95vw;
+  }
+  .mobile_img {
+    display: block;
+    width: 67.3652%;
+    margin: 1.33em auto 1.46em;
+  }
+  .smart_hub_list {
+    width: 67.3652%;
+    margin: 0 auto;
+    font-size: 1.95vw;
+  }
+  .smart_hub_list li {
+    margin-bottom: 1.06em;
+    padding-left: 1.13em;
+  }
+  .smart_hub_list li::before {
+    width: 0.33em;
+    height: 0.33em;
+  }
+
+  /* tablet section02 */
+  .section02 .section_box {
+    display: none;
+  }
+  .m_section_box {
+    display: block;
+  }
+  .m_section_box01,
+  .m_section_box02 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .m_section_box01 {
+    padding-bottom: 1.57em;
+  }
+  .m_contents {
+    width: 49.2401%;
+    position: relative;
+  }
+
+  /* tablet section03 */
+  .banner {
+    background: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+  .banner h2 {
+    font-size: 2.6vw;
+    margin: 1.5em 0 1.5em;
+    position: relative;
+  }
+  .banner h2::after {
+    content: "";
+    position: absolute;
+    width: 11.6766%;
+    height: 12%;
+    left: 0;
+    bottom: -0.5em;
+    background: #c6e9ac;
+  }
+  .banner .info_txt {
+    font-size: 2.34vw;
+    margin-bottom: 1.22em;
+  }
+  .btn_link {
+    color: #fff;
+    background: #9adb68;
+    border: none;
+    font-size: 2.34vw;
+    padding: 0.5em 0.7em 0.5em 1.33em;
+    border-radius: 5.55em;
+    top: 50%;
+    left: 77.6%;
+  }
+  .btn_link svg {
+    width: 1.66em;
+    height: 1.66em;
+    margin-left: 0.22em;
+  }
+  .m_img {
+    display: block;
+  }
+}
+
+/********************************** mobile *******************************/
+@media all and (max-width: 719px) {
+  #front32_container {
+    margin-top: 1.42em;
+    width: 91.11vw;
+  }
+  .main_title {
+    font-size: 3.88vw;
+    padding: 1.25em 0 1.25em 1.41em;
+  }
+  section {
+    margin-top: 2.71em;
+  }
+  .section_tit {
+    font-size: 3.88vw;
+  }
+  .section_tit::after {
+    width: 15%;
+  }
+  /* m_section01 */
+  .smart_hub_txt {
+    font-size: 3.05vw;
+  }
+  .mobile_img {
+    width: 100%;
+    margin: 1.81em 0;
+  }
+  .smart_hub_list {
+    width: 100%;
+    font-size: 3.05vw;
+  }
+  /* m_section02 */
+  .m_section_box01,
+  .m_section_box02 {
+    flex-direction: column;
+  }
+  .m_section_box01 {
+    padding: 0;
+  }
+  .m_contents {
+    width: 100%;
+    font-size: 5.55vw;
+    padding-bottom: 1em;
+  }
+  /* m_section03 */
+  .banner {
+  }
+  .banner h2 {
+    font-size: 3.88vw;
+  }
+  .banner h2::after {
+    width: 15%;
+  }
+  .banner .info_txt {
+    font-size: 3.05vw;
+    margin-bottom: 0.9em;
+    width: 70%;
+  }
+  .btn_link {
+    font-size: 3.33vw;
+    padding: 0.5em 0.66em 0.5em 1.16em;
+    border-radius: 5.55em;
+    left: 72%;
+  }
+  .btn_link svg {
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 0.33em;
+  }
+}

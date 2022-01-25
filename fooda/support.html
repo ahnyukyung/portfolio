@@ -18,22 +18,22 @@
       <header id="header">
         <div class="header_inner">
           <h1 class="logo">
-            <a href="home.html"><img src="images/logo_01.svg" alt="fooda" /></a>
+            <a href="index.html"><img src="images/logo_01.svg" alt="fooda" /></a>
           </h1>
           <nav class="gnb_wrap">
             <ul class="gnb">
-              <li><a href="home.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="database.html">Database</a></li>
               <!-- <li><a href="#">Market</a></li> -->
               <li><a href="pricing.html">Pricing</a></li>
               <li><a href="insight.html">Insight</a></li>
-              <li><a href="support.html">Support</a></li>
+              <li class="active"><a href="support.html">Support</a></li>
             </ul>
           </nav>
           <div class="intro_menu">
             <!-- <button type="button" class="notice"></button> -->
             <div class="member_wrap">
-              <a href="#" class="user_name">jinyong ha</a>
+              <a href="#" class="user_name">jason park</a>
               <ul class="user_menu">
                 <li><a href="">마이페이지</a></li>
                 <li><a href="" id="fallowBtn">Fallowing</a></li>
@@ -443,16 +443,16 @@
     </div>
     <script src="js/common.js"></script>
     <script>
-      if ($('.support_container').length > 0) {
+      if ($(".support_container").length > 0) {
         // support 아코디언 공통
         function tabSlide(e) {
           e.preventDefault();
-          $(this).toggleClass('on').parent().siblings().find('>a').removeClass('on');
-          $(this).next().slideToggle(300).parent().siblings().find('p').slideUp(300);
+          $(this).toggleClass("on").parent().siblings().find(">a").removeClass("on");
+          $(this).next().slideToggle(300).parent().siblings().find("p").slideUp(300);
         }
-        $('.faq_list .faq_txt').hide();
-        $('.notice_txt').hide();
-        $('.faq_list .faq_tit, .notice_wrap .row a').on('click', tabSlide);
+        $(".faq_list .faq_txt").hide();
+        $(".notice_txt").hide();
+        $(".faq_list .faq_tit, .notice_wrap .row a").on("click", tabSlide);
       }
     </script>
   </body>

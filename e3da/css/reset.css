@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/SpoqaHanSansNeo-Light.otf") format("opentype"), url("../fonts/SpoqaHanSansNeo-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/SpoqaHanSansNeo-Regular.otf") format("opentype"), url("../fonts/SpoqaHanSansNeo-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/SpoqaHanSansNeo-Medium.otf") format("opentype"), url("../fonts/SpoqaHanSansNeo-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/SpoqaHanSansNeo-Bold.otf") format("opentype"), url("../fonts/SpoqaHanSansNeo-Bold.woff") format("woff");
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+address,
+code,
+em,
+img,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+fieldset,
+img {
+  border: 0;
+  vertical-align: top;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+address,
+em {
+  font-style: normal;
+}
+strong {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #383838;
+  /* 모바일 크롬,사파리에서 클릭시 색상 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+  overflow: hidden;
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  font-size: 100%;
+}
+/* 폼요소 세로정렬, ios 둥근모서리, 기본스타일 제거 */
+input,
+select,
+textarea,
+button {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* 익스 select 화살표빼기 */
+select::-ms-expand {
+  display: none;
+}
+
+textarea {
+  resize: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+/********** common ***********/
+body,
+input,
+button,
+select,
+textarea,
+table {
+  font-weight: 300;
+  font-family: "Spoqa Han Sans Neo", "Apple SD Gothic Neo", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  color: #383838;
+}
+
+legend,
+caption,
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+input:focus { outline: none; }
+textarea:focus {outline:none;}
+/* float해제 */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* placeholder 공통 */
+::-webkit-input-placeholder {
+  color: #bbb;
+} /* Webkit,크롬,사파리 */
+:-moz-placeholder {
+  color: #bbb;
+} /* Firefox 4-18 */
+::-moz-placeholder {
+  color: #bbb;
+  opacity: 1;
+} /* Firefox 19+ */
+:-ms-input-placeholder {
+  color: #bbb !important;
+} /* IE10+ */

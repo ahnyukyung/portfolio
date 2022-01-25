@@ -292,17 +292,523 @@
           </div>
           <button type="button" class="popup_close">팝업창 닫기</button>
         </div>
+        <div class="popup_box popup_box02 box_style" id="followPopup">
+          <ul class="popup_tab">
+            <li class="fallow_tit">팔로우 정보</li>
+            <li class="on">
+              <a href="#" rel="tab3" class="tab3">
+                <i>
+                  <svg width="28" height="28">
+                    <path
+                      d="m25.667 10.783-8.389-.724L14 2.336l-3.278 7.735-8.389.712 6.37 5.518-1.913 8.202L14 20.15l7.21 4.352-1.902-8.202 6.359-5.518ZM14 17.969l-4.387 2.649 1.167-4.994-3.873-3.36 5.11-.443L14 7.119l1.995 4.714 5.11.443-3.873 3.36 1.166 4.993L14 17.97Z"
+                    />
+                  </svg>
+                </i>
+                관심품목
+              </a>
+            </li>
+            <li>
+              <a href="#" rel="tab4" class="tab4">
+                <i>
+                  <svg width="28" height="28">
+                    <path
+                      d="M14 8.167V3.5H2.334v21h23.333V8.167H14Zm-7 14H4.667v-2.334H7v2.334ZM7 17.5H4.667v-2.333H7V17.5Zm0-4.667H4.667V10.5H7v2.333Zm0-4.666H4.667V5.833H7v2.334Zm4.667 14H9.334v-2.334h2.333v2.334Zm0-4.667H9.334v-2.333h2.333V17.5Zm0-4.667H9.334V10.5h2.333v2.333Zm0-4.666H9.334V5.833h2.333v2.334Zm11.667 14H14v-2.334h2.334V17.5H14v-2.333h2.334v-2.334H14V10.5h9.334v11.667ZM21 12.833h-2.333v2.334H21v-2.334Zm0 4.667h-2.333v2.333H21V17.5Z"
+                    />
+                    <path
+                      d="M14 8.167V3.5H2.334v21h23.333V8.167H14Zm-7 14H4.667v-2.334H7v2.334ZM7 17.5H4.667v-2.333H7V17.5Zm0-4.667H4.667V10.5H7v2.333Zm0-4.666H4.667V5.833H7v2.334Zm4.667 14H9.334v-2.334h2.333v2.334Zm0-4.667H9.334v-2.333h2.333V17.5Zm0-4.667H9.334V10.5h2.333v2.333Zm0-4.666H9.334V5.833h2.333v2.334Zm11.667 14H14v-2.334h2.334V17.5H14v-2.333h2.334v-2.334H14V10.5h9.334v11.667ZM21 12.833h-2.333v2.334H21v-2.334Zm0 4.667h-2.333v2.333H21V17.5Z"
+                    />
+                  </svg>
+                </i>
+                추천업체
+              </a>
+            </li>
+            <li>
+              <a href="#" rel="tab5" class="tab5">
+                <i>
+                  <svg width="28" height="28">
+                    <path d="M22.167 5.833v16.334H5.833V5.833h16.334Zm0-2.333H5.833A2.34 2.34 0 0 0 3.5 5.833v16.334A2.34 2.34 0 0 0 5.833 24.5h16.334a2.34 2.34 0 0 0 2.333-2.333V5.833A2.34 2.34 0 0 0 22.167 3.5Z" />
+                    <path d="M22.167 5.833v16.334H5.833V5.833h16.334Zm0-2.333H5.833A2.34 2.34 0 0 0 3.5 5.833v16.334A2.34 2.34 0 0 0 5.833 24.5h16.334a2.34 2.34 0 0 0 2.333-2.333V5.833A2.34 2.34 0 0 0 22.167 3.5Z" />
+                    <path d="M16.333 19.835H8.167V17.5h8.166v2.334Zm3.5-4.667H8.167v-2.333h11.666v2.333Zm0-4.667H8.167V8.168h11.666v2.333Z" />
+                    <path d="M16.333 19.835H8.167V17.5h8.166v2.334Zm3.5-4.667H8.167v-2.333h11.666v2.333Zm0-4.667H8.167V8.168h11.666v2.333Z" />
+                  </svg>
+                </i>
+                관련이슈
+              </a>
+            </li>
+          </ul>
+          <div class="favorite_box tab_content" id="tab3">
+            <p class="fallow_info">내가 선택한 관심 품목을 나타냅니다.</p>
+            <div class="favorite_box_top">
+              <div class="category_tip">
+                <span class="btn_tip">
+                  <svg>
+                    <path
+                      d="M12.667 22.001h2.666v-2.666h-2.666V22ZM14 .668C6.64.668.667 6.641.667 14.001S6.64 27.335 14 27.335 27.333 21.36 27.333 14C27.333 6.641 21.36.668 14 .668Zm0 24c-5.88 0-10.667-4.787-10.667-10.667S8.12 3.335 14 3.335 24.667 8.12 24.667 14c0 5.88-4.787 10.667-10.667 10.667Zm0-18.667a5.332 5.332 0 0 0-5.333 5.334h2.666c0-1.467 1.2-2.667 2.667-2.667 1.467 0 2.667 1.2 2.667 2.667 0 2.666-4 2.333-4 6.666h2.666c0-3 4-3.333 4-6.666A5.332 5.332 0 0 0 14 6Z"
+                      fill="#383838"
+                    />
+                  </svg>
+                </span>
+                <div class="tip_box">
+                  해당 카테고리 영역에 마우스를 올리시면<br />
+                  각 카테고리 정보확인이 가능합니다.
+                </div>
+              </div>
+
+              <div class="category_chart_wrap">
+                <h4 class="popup_tit">카테고리</h4>
+                <div class="category_chart" id="fallowPie"></div>
+              </div>
+            </div>
+            <div class="favorite_box_btm clearfix">
+              <div class="chart_caption">
+                <p>최근 3년 데이터</p>
+                <ul class="caption_list clearfix">
+                  <li><span class="circle_blue"></span>성장률</li>
+                  <li><span class="circle_red"></span>점유율</li>
+                  <li><span class="circle_gray"></span>수입금액</li>
+                </ul>
+              </div>
+              <div class="favorite_item">
+                <p class="item_tit">
+                  <button type="button" class="star on">즐겨찾기</button>
+                  <span>우유</span><span>(HS code : 040490)</span> - <span>Milk</span>
+                  <span class="local_price">현지금액 : $10,000</span>
+                </p>
+                <div class="item_box box_style">
+                  <div class="recommend_wrap">
+                    <span>추천</span>
+                    <ul class="recommend_items">
+                      <li>
+                        <a href="#"> + <span class="item_name">두유</span></a>
+                      </li>
+                      <li>
+                        <a href="#"> + <span class="item_name">에멘탈치즈</span></a>
+                      </li>
+                      <li>
+                        <a href="#"> + <span class="item_name">요거트</span></a>
+                      </li>
+                      <li>
+                        <a href="#"> + <span class="item_name">치즈</span></a>
+                      </li>
+                    </ul>
+                    <!-- 품목 호버 팝업 -->
+                    <div class="item_popup">
+                      <div class="top">
+                        <div class="item_tit">
+                          <span class="item_img">
+                            <img src="images/flags/TW.gif" alt="" />
+                          </span>
+                          <span class="item_name black">두유</span>
+                        </div>
+                        <div class="item_info">
+                          <p class="income">수입액(2020년)</p>
+                          <ul class="black">
+                            <li>$ 1.38 B</li>
+                            <li>1Y <span class="red">+ 0.73%</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="code">Hs Code: 0201 - Meat of bovine animals; fresh or chiled</p>
+                      <div class="btm">
+                        <p class="black">성장률</p>
+                        <ul class="growth_rate">
+                          <li>
+                            <p class="year">2019</p>
+                            <p class="red">+ 1.55%</p>
+                          </li>
+                          <li>
+                            <p class="year">2020년</p>
+                            <p class="red">+ 1.55%</p>
+                          </li>
+                          <li>
+                            <p class="year">현재</p>
+                            <p class="red">+ 1.55%</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item_chart">
+                    <div class="fallowLine" id="fallowLine0"></div>
+                    <div class="lableWrap">
+                      <div class="lable0"></div>
+                      <div class="lable1"></div>
+                      <div class="lable2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="favorite_item">
+                <p class="item_tit">
+                  <button type="button" class="star">즐겨찾기</button>
+                  <span>우유</span><span>(HS code : 040490)</span> - <span>Milk</span>
+                  <span class="local_price">현지금액 : $10,000</span>
+                </p>
+                <div class="item_box box_style">
+                  <div class="recommend_wrap">
+                    <span>추천</span>
+                    <ul class="recommend_items">
+                      <li>
+                        <a href="#"> + <span class="item_name">두유</span></a>
+                      </li>
+                      <li>
+                        <a href="#"> + <span class="item_name">에멘탈치즈</span></a>
+                      </li>
+                      <li>
+                        <a href="#"> + <span class="item_name">요거트</span></a>
+                      </li>
+                      <li>
+                        <a href="#"> + <span class="item_name">치즈</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="item_chart">
+                    <div class="fallowLine" id="fallowLine1"></div>
+                    <div class="lableWrap">
+                      <div class="lable0"></div>
+                      <div class="lable1"></div>
+                      <div class="lable2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="favorite_item">
+                <p class="item_tit">
+                  <button type="button" class="star">즐겨찾기</button>
+                  <span>우유</span><span>(HS code : 040490)</span> - <span>Milk</span>
+                  <span class="local_price">현지금액 : $10,000</span>
+                </p>
+                <div class="item_box box_style">
+                  <div class="recommend_wrap">
+                    <span>추천</span>
+                    <ul class="recommend_items">
+                      <li>
+                        <a href="#"> + <span class="item_name">두유</span></a>
+                      </li>
+                      <li>
+                        <a href="#"> + <span class="item_name">에멘탈치즈</span></a>
+                      </li>
+                      <li>
+                        <a href="#"> + <span class="item_name">요거트</span></a>
+                      </li>
+                      <li>
+                        <a href="#"> + <span class="item_name">치즈</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="item_chart">
+                    <div class="fallowLine" id="fallowLine2"></div>
+                    <div class="lableWrap">
+                      <div class="lable0"></div>
+                      <div class="lable1"></div>
+                      <div class="lable2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn_more">더보기</button>
+            </div>
+          </div>
+          <div class="recommend_box tab_content" id="tab4">
+            <p class="fallow_info">관심품목 기반으로 수출 업체를 추천해드립니다.</p>
+            <div class="fallowing_chk_wrap">
+              <h4 class="popup_tit">Following 상품</h4>
+              <form action="#" method="post" class="chk_box" name="chk_box">
+                <ul class="chk_list clearfix">
+                  <li>
+                    <input type="checkbox" id="chk01" />
+                    <label for="chk01">양고기</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk02" />
+                    <label for="chk02">홍당무</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk03" />
+                    <label for="chk03">감자</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk04" />
+                    <label for="chk04">돼지고기</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk05" />
+                    <label for="chk05">닭고기</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk06" />
+                    <label for="chk06">상추</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk07" />
+                    <label for="chk07">무</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk08" />
+                    <label for="chk08">무</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk09" />
+                    <label for="chk09">양고기</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk10" />
+                    <label for="chk10">홍당무</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk11" />
+                    <label for="chk11">감자</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk12" />
+                    <label for="chk12">돼지고기</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk13" />
+                    <label for="chk13">닭고기</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk14" />
+                    <label for="chk14">상추</label>
+                  </li>
+                </ul>
+              </form>
+              <button type="button" class="btn_more">더보기</button>
+            </div>
+            <div class="favorite_corp_wrap">
+              <h4 class="popup_tit">관심업체 목록</h4>
+              <div class="corp_wrap">
+                <div class="corp_info_box box_style">
+                  <span class="corp_name">회사명</span>
+                  <p class="main_category">대표 카테고리 : 채소, 과일, 낙농품</p>
+                  <div class="tbl_box">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>제품명</th>
+                          <th>수입빈도</th>
+                          <th>수입국가</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>양고기</td>
+                          <td>6회</td>
+                          <td>뉴질랜드</td>
+                        </tr>
+                        <tr>
+                          <td>아보카도</td>
+                          <td>10809회</td>
+                          <td>뉴질랜드</td>
+                        </tr>
+                        <tr>
+                          <td>가지</td>
+                          <td>13회</td>
+                          <td>미국</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button type="button" class="star">즐겨찾기</button>
+                </div>
+                <div class="corp_info_box box_style">
+                  <span class="corp_name">회사명</span>
+                  <p class="main_category">대표 카테고리 : 채소, 과일, 낙농품</p>
+                  <div class="tbl_box">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>제품명</th>
+                          <th>수입빈도</th>
+                          <th>수입국가</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>양고기</td>
+                          <td>6회</td>
+                          <td>뉴질랜드</td>
+                        </tr>
+                        <tr>
+                          <td>아보카도</td>
+                          <td>108회</td>
+                          <td>뉴질랜드</td>
+                        </tr>
+                        <tr>
+                          <td>가지</td>
+                          <td>13회</td>
+                          <td>미국</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button type="button" class="star">즐겨찾기</button>
+                </div>
+                <div class="corp_info_box box_style">
+                  <span class="corp_name">회사명</span>
+                  <p class="main_category">대표 카테고리 : 채소, 과일, 낙농품</p>
+                  <div class="tbl_box">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>제품명</th>
+                          <th>수입빈도</th>
+                          <th>수입국가</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>양고기</td>
+                          <td>6회</td>
+                          <td>뉴질랜드</td>
+                        </tr>
+                        <tr>
+                          <td>아보카도</td>
+                          <td>108회</td>
+                          <td>뉴질랜드</td>
+                        </tr>
+                        <tr>
+                          <td>가지</td>
+                          <td>13회</td>
+                          <td>미국</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button type="button" class="star">즐겨찾기</button>
+                </div>
+              </div>
+              <button type="button" class="btn_more">더보기</button>
+            </div>
+            <div class="recommend_corp_wrap">
+              <h4 class="popup_tit">추천업체 목록</h4>
+              <div class="corp_wrap">
+                <div class="corp_info_box box_style">
+                  <span class="corp_name">회사명</span>
+                  <p class="main_category">대표 카테고리 : 채소, 과일, 낙농품</p>
+                  <div class="tbl_box">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>제품명</th>
+                          <th>수입빈도</th>
+                          <th>수입국가</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>양고기</td>
+                          <td>6회</td>
+                          <td>뉴질랜드</td>
+                        </tr>
+                        <tr>
+                          <td>아보카도</td>
+                          <td>108회</td>
+                          <td>뉴질랜드</td>
+                        </tr>
+                        <tr>
+                          <td>가지</td>
+                          <td>13회</td>
+                          <td>미국</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button type="button" class="star">즐겨찾기</button>
+                </div>
+                <div class="corp_info_box box_style">
+                  <span class="corp_name">회사명</span>
+                  <p class="main_category">대표 카테고리 : 채소, 과일, 낙농품</p>
+                  <div class="tbl_box">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>제품명</th>
+                          <th>수입빈도</th>
+                          <th>수입국가</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>양고기</td>
+                          <td>6회</td>
+                          <td>뉴질랜드</td>
+                        </tr>
+                        <tr>
+                          <td>아보카도</td>
+                          <td>108회</td>
+                          <td>뉴질랜드</td>
+                        </tr>
+                        <tr>
+                          <td>가지</td>
+                          <td>13회</td>
+                          <td>미국</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button type="button" class="star">즐겨찾기</button>
+                </div>
+                <div class="corp_info_box box_style">
+                  <span class="corp_name">회사명</span>
+                  <p class="main_category">대표 카테고리 : 채소, 과일, 낙농품</p>
+                  <div class="tbl_box">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>제품명</th>
+                          <th>수입빈도</th>
+                          <th>수입국가</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>양고기</td>
+                          <td>6회</td>
+                          <td>뉴질랜드</td>
+                        </tr>
+                        <tr>
+                          <td>아보카도</td>
+                          <td>108회</td>
+                          <td>뉴질랜드</td>
+                        </tr>
+                        <tr>
+                          <td>가지</td>
+                          <td>13회</td>
+                          <td>미국</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button type="button" class="star">즐겨찾기</button>
+                </div>
+              </div>
+              <button type="button" class="btn_more">더보기</button>
+            </div>
+          </div>
+          <div class="issue_box clearfix tab_content" id="tab5">
+            <p class="fallow_info">관심품목 기반으로 현지 수출 이슈를 보여 줍니다.</p>
+            <h4 class="popup_tit">수출 관련 이슈</h4>
+            <div class="news_wrap"></div>
+            <ul class="news_select">
+              <li><a href="#" class="btn_recent">최신순</a></li>
+              <li><a href="#" class="btn_old">오래된 순</a></li>
+            </ul>
+            <button type="button" class="btn_more">더보기</button>
+          </div>
+          <button type="button" class="popup_close">팝업창 닫기</button>
+        </div>
       </div>
       <!-- header -->
       <header id="header">
         <div class="header_inner">
           <h1 class="logo">
-            <a href="home.html"><img src="images/logo_01.svg" alt="fooda" /></a>
+            <a href="index.html"><img src="images/logo_01.svg" alt="fooda" /></a>
           </h1>
           <nav class="gnb_wrap">
             <ul class="gnb">
-              <li><a href="home.html">Home</a></li>
-              <li><a href="database.html">Database</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="database.html">Database</a></li>
               <!-- <li><a href="#">Market</a></li> -->
               <li><a href="pricing.html">Pricing</a></li>
               <li><a href="insight.html">Insight</a></li>
@@ -312,7 +818,7 @@
           <div class="intro_menu">
             <!-- <button type="button" class="notice"></button> -->
             <div class="member_wrap">
-              <a href="#" class="user_name">jinyong ha</a>
+              <a href="#" class="user_name">jason park</a>
               <ul class="user_menu">
                 <li><a href="">마이페이지</a></li>
                 <li><a href="" id="fallowBtn">Fallowing</a></li>
@@ -384,7 +890,9 @@
 
           <div class="category_box box_style">
             <div class="category_tit">
-              <span class="category_img"></span>
+              <span class="category_img">
+                <img src="images/tomato.png" alt="" />
+              </span>
               <!-- <button type="button" id="main-star" class="star" onclick="mainFavorite()">즐겨찾기
               </button> -->
               <div id="main-star" class="favorite-container" onclick="mainFavorite()">
@@ -510,7 +1018,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><a href="">토마토 케챱</a></td>
+                      <td><a href="">토마토 케찹</a></td>
                     </tr>
                     <tr>
                       <td><a href="">토마토 주스</a></td>
@@ -519,10 +1027,10 @@
                       <td><a href="">토마토 페이스트</a></td>
                     </tr>
                     <tr>
-                      <td><a href="">아스파라거스 페이스트 케챱 </a></td>
+                      <td><a href="">아스파라거스 페이스트 케찹 </a></td>
                     </tr>
                     <tr>
-                      <td><a href="">토마토 케챱</a></td>
+                      <td><a href="">토마토 케찹</a></td>
                     </tr>
                     <tr>
                       <td><a href="">토마토 주스</a></td>
@@ -531,7 +1039,7 @@
                       <td><a href="">토마토 페이스트</a></td>
                     </tr>
                     <tr>
-                      <td><a href="">토마토 케챱</a></td>
+                      <td><a href="">토마토 케찹</a></td>
                     </tr>
                     <tr>
                       <td><a href="">토마토 주스</a></td>
@@ -858,7 +1366,9 @@
             <ul class="product_list">
               <li>
                 <a href="#">
-                  <div class="pro_img"></div>
+                  <div class="pro_img">
+                    <img src="images/ginger.jpeg" alt="" />
+                  </div>
                   <p class="pro_name">생강</p>
                   <span class="currency">USD</span>
                   <span class="pro_price">1,200~</span>
@@ -866,7 +1376,9 @@
               </li>
               <li>
                 <a href="#">
-                  <div class="pro_img"></div>
+                  <div class="pro_img">
+                    <img src="images/blueberry.jpeg" alt="" />
+                  </div>
                   <p class="pro_name">블루베리</p>
                   <span class="currency">USD</span>
                   <span class="pro_price">1,200~</span>
@@ -874,7 +1386,9 @@
               </li>
               <li>
                 <a href="#">
-                  <div class="pro_img"></div>
+                  <div class="pro_img">
+                    <img src="images/abalone.jpeg" alt="" />
+                  </div>
                   <p class="pro_name">전복</p>
                   <span class="currency">USD</span>
                   <span class="pro_price">1,200~</span>
@@ -882,7 +1396,9 @@
               </li>
               <li>
                 <a href="#">
-                  <div class="pro_img"></div>
+                  <div class="pro_img">
+                    <img src="images/peanut.jpeg" alt="" />
+                  </div>
                   <p class="pro_name">땅콩</p>
                   <span class="currency">USD</span>
                   <span class="pro_price">1,200~</span>
@@ -890,31 +1406,39 @@
               </li>
               <li>
                 <a href="#">
-                  <div class="pro_img"></div>
+                  <div class="pro_img">
+                    <img src="images/avocado.png" alt="" />
+                  </div>
                   <p class="pro_name">아보카도</p>
                   <span class="currency">USD</span>
-                  <span class="pro_price">1,200~</span>
+                  <span class="pro_price">1,600~</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <div class="pro_img"></div>
+                  <div class="pro_img">
+                    <img src="images/ginger.jpeg" alt="" />
+                  </div>
                   <p class="pro_name">생강</p>
                   <span class="currency">USD</span>
-                  <span class="pro_price">1,200~</span>
+                  <span class="pro_price">1,400~</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <div class="pro_img"></div>
+                  <div class="pro_img">
+                    <img src="images/blueberry.jpeg" alt="" />
+                  </div>
                   <p class="pro_name">블루베리</p>
                   <span class="currency">USD</span>
-                  <span class="pro_price">1,200~</span>
+                  <span class="pro_price">1,500~</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <div class="pro_img"></div>
+                  <div class="pro_img">
+                    <img src="images/avocado.png" alt="" />
+                  </div>
                   <p class="pro_name">아보카도</p>
                   <span class="currency">USD</span>
                   <span class="pro_price">1,200~</span>
@@ -991,5 +1515,7 @@
 
     <script src="js/common.js"></script>
     <script src="js/database.js"></script>
+    <script src="js/fallowingPie.js"></script>
+    <script src="js/fallowingLine.js"></script>
   </body>
 </html>
