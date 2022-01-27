@@ -247,7 +247,7 @@
   display: block;
   width: 48px;
   height: 48px;
-  background: url(/images/tomato.png) no-repeat center center;
+  background: url(../images/tomato.png) no-repeat center center;
   background-size: cover;
   border-radius: 100%;
   /* float: left; */
@@ -1071,23 +1071,6 @@
 .item_box .item_chart {
   position: relative;
   width: 200px;
-  height: 50px;
-}
-.fallowLine {
-  width: 250px;
-  height: 40px;
-  z-index: 10000;
-  /* border: 1px solid red; */
-}
-.lableWrap {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 0 0 10px;
-  color: #383838;
-  font-family: Spoqa Han Sans Neo;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 9px;
 }
 .item_box .item_chart:before {
   content: "";

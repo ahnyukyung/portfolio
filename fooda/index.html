@@ -333,7 +333,7 @@
       function changeBg() {
         const backGround = ["img_intro_slide01.png", "img_intro_slide02.png", "img_intro_slide03.png"];
         const randomNumber = Math.floor(Math.random() * 3);
-        section01.style.backgroundImage = `url(/images/${backGround[randomNumber]})`;
+        section01.style.backgroundImage = `url(./images/${backGround[randomNumber]})`;
       }
       changeBg();
       setInterval(changeBg, 3000);
