@@ -8,14 +8,8 @@
 #wrap {
   background: url(../images/pc/pc_bg_noti_01.svg) no-repeat left top;
 }
-
 #front46_container {
   background: url(../images/pc/pc_bg_noti_02.svg) no-repeat right bottom;
-}
-#front46_container .container_inner {
-  width: 800px;
-  margin: 0 auto;
-  margin-top: 34px;
 }
 #front46_container h2 {
   display: flex;
@@ -23,20 +17,24 @@
   background: url(../images/pc/pc_img_community_02.png) no-repeat left center;
   background-size: 22px;
   padding-left: 42px;
-  height: 50px;
-  margin-bottom: 47px;
+  width: 1200px;
+  margin: 30px auto 47px;
 }
-#front46_container h2 span {
+#front46_container h2 strong {
   font-size: 34px;
   font-weight: 700;
   line-height: 50px;
   margin-right: 20px;
 }
-#front46_container h2 p {
+#front46_container h2 span {
   font-size: 18px;
   color: #686868;
 }
-
+#front46_container .container_inner {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 34px;
+}
 /* check_box 공통 */
 .input_chk {
   display: block;
@@ -217,6 +215,7 @@
   padding: 15px 45px;
   border-radius: 3px;
   font-size: 18px;
+  border: none;
 }
 .btn_join {
   text-align: right;
@@ -244,6 +243,9 @@
 /********************************** tablet *******************************/
 @media all and (max-width: 1279px) {
   /********* layout tablet**********/
+  #header {
+    border-bottom: 1px solid #d2d2d2;
+  }
   #wrap,
   #front46_container {
     background: none;
@@ -350,8 +352,6 @@
   .input_chk label:before {
     width: 1.8em;
     height: 1.83em;
-  }
-  .input_chk input[type="checkbox"]:checked + label:before {
   }
   /* terms_chk_all  */
   .terms_chk_all {

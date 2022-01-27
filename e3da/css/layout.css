@@ -69,9 +69,7 @@
   z-index: -1;
   display: none;
 }
-.gnb_bg.open {
-  display: block;
-}
+
 .gnb > li > a {
   width: 120px;
   line-height: 56px;
@@ -79,28 +77,16 @@
 .gnb > li:first-child a {
   width: 204px;
 }
-.gnb > li.open .gnb_tit {
-  color: #383838;
-}
-.gnb > li.active .gnb_tit {
-  background-color: rgba(56, 56, 56, 0.05);
-  font-weight: 700;
-}
 
 /* pc gnb depth02 */
-.gnb > li.active .depth02 {
-  background-color: rgba(56, 56, 56, 0.05);
-}
 .gnb .depth02 {
   position: absolute;
-  top: 64px;
+  top: 56px;
   width: 120px;
   height: 274px;
   font-size: 12px;
   display: none;
-}
-.gnb .depth02.open {
-  display: block;
+  padding-top: 8px;
 }
 .gnb > li:first-child .depth02 {
   width: 204px;
@@ -116,6 +102,31 @@
 .depth02 li a:hover {
   color: #1db4bd;
   font-weight: 700;
+}
+
+/* gnb hover시 적용*/
+.header_inner.open .gnb .gnb_tit {
+  color: #383838;
+}
+.header_inner.open .gnb .depth02 {
+  display: block;
+}
+.header_inner.open .btn_login {
+  color: #383838;
+}
+.header_inner.open .gnb_bg {
+  display: block;
+}
+.gnb > li.active .gnb_tit {
+  background-color: rgba(56, 56, 56, 0.05);
+  font-weight: 700;
+}
+.gnb > li.active .depth02 {
+  background-color: rgba(56, 56, 56, 0.05);
+}
+#service.active,
+#comunity.active {
+  padding-top: 102px;
 }
 /***************** gnb iso ******************/
 .depth02 li a .gnb_icon {
@@ -149,11 +160,6 @@
   width: 100%;
   transform: translateX(-50%);
 }
-#service.active,
-#comunity.active {
-  padding-top: 102px;
-}
-
 .btn_login {
   display: flex;
   align-items: center;

@@ -207,8 +207,7 @@ caption,
   width: 1px;
   height: 1px;
 }
-input:focus { outline: none; }
-textarea:focus {outline:none;}
+
 /* float해제 */
 .clearfix:after {
   content: "";
@@ -230,3 +229,6 @@ textarea:focus {outline:none;}
 :-ms-input-placeholder {
   color: #bbb !important;
 } /* IE10+ */
+
+input:focus { outline: none; }
+textarea:focus {outline:none;}

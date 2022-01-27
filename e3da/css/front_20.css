@@ -1,91 +1,15 @@
 @charset "UTF-8";
+@import url(../css/service.css);
 #wrap {
-  background: url(../images/pc/front_20/pc_img_bg_04.png) no-repeat center top / cover;
+  background-image: url(../images/pc/front_20/pc_img_bg_04.png);
 }
 
-/********** header **********/
-#header a {
-  color: #383838;
-}
-.gnb_open {
-  fill: #989898;
-}
-
-/********** container **********/
-#front20_container {
-  width: 1180px;
-  margin: 0 auto;
-  margin-top: 554px;
-}
 /* section 공통 */
-section {
-  margin-top: 260px;
-}
-.main_title {
-  display: none;
-}
-.section_tit {
-  position: relative;
-  font-size: 42px;
-  margin-bottom: 88px;
-}
 .section_tit::after {
-  position: absolute;
-  content: "";
-  width: 120px;
-  height: 4px;
   background-color: #c6e9ac;
-  left: 0;
-  bottom: -40px;
-  border-radius: 1.65em;
-}
-.section_tit--small {
-  font-size: 24px;
-  color: #686868;
 }
 .m_sub_tit {
   display: none;
-}
-.mobile_img {
-  display: none;
-}
-.section_box {
-  display: flex;
-  justify-content: space-between;
-}
-.smart_hub_txt {
-  font-size: 24px;
-  line-height: 135%;
-}
-.smart_hub_list {
-  margin-top: 60px;
-  font-size: 22px;
-  line-height: 150%;
-  color: #686868;
-}
-.smart_hub_list li {
-  margin-bottom: 10px;
-  padding-left: 30px;
-  position: relative;
-}
-.smart_hub_list li::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  background-color: #c6e9ac;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.section01 .section_box--right {
-  border-radius: 42px 21px 135px 44px;
-  border: 4px solid #c6e9ac;
-  border-bottom: 12px solid #c6e9ac;
-  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.08);
-  margin-left: 37px;
-  margin-top: -27px;
 }
 
 /* section02 */
@@ -283,66 +207,12 @@ section {
 
 /********************************** tablet *******************************/
 @media all and (max-width: 1279px) {
-  /* tablet 공통 */
-  #wrap {
-    background: none;
-  }
-  #header {
-    border-bottom: 1px solid #d2d2d2;
-  }
-  #front20_container {
-    margin-top: 2.14em;
-    width: 86.97vw;
-  }
-  section {
-    margin-top: 4.28em;
-  }
-  .section_tit {
-    font-size: 2.6vw;
-    margin: 1.5em 0 1.5em;
-  }
-  .section_tit::after {
-    width: 11.6766%;
-    height: 12%;
-    bottom: -0.5em;
-  }
   .main_title {
-    display: block;
-    font-size: 3.12vw;
-    padding: 1.25em 0 1.25em 1.41em;
-    background: url(../images/tablet/t_07/t_07_img_01.png) no-repeat center right / contain;
+    /* padding: 1.25em 0 1.25em 1.41em; */
+    background-image: url(../images/tablet/t_07/t_07_img_01.png);
     background-color: rgba(198, 233, 172, 0.2);
-    border-radius: 0.41em;
   }
-  .main_title p {
-    font-size: 2.08vw;
-    color: #686868;
-  }
-  /* 공통E */
-  .section01 .section_box--right {
-    display: none;
-  }
-  .smart_hub_txt {
-    font-size: 1.95vw;
-  }
-  .mobile_img {
-    display: block;
-    width: 67.3652%;
-    margin: 1.33em auto 1.46em;
-  }
-  .smart_hub_list {
-    width: 67.3652%;
-    margin: 0 auto;
-    font-size: 1.95vw;
-  }
-  .smart_hub_list li {
-    margin-bottom: 1.06em;
-    padding-left: 1.13em;
-  }
-  .smart_hub_list li::before {
-    width: 0.33em;
-    height: 0.33em;
-  }
+
   /* tablet section02 */
   .section02 .section_box {
     display: none;
@@ -533,26 +403,6 @@ section {
     font-size: 3.88vw;
     padding: 1.25em 0 1.25em 1.41em;
   }
-  section {
-    margin-top: 2.71em;
-  }
-  .section_tit {
-    font-size: 3.88vw;
-  }
-  .section_tit::after {
-    width: 15%;
-  }
-  .smart_hub_txt {
-    font-size: 3.05vw;
-  }
-  .mobile_img {
-    width: 100%;
-    margin: 1.81em 0;
-  }
-  .smart_hub_list {
-    width: 100%;
-    font-size: 3.05vw;
-  }
 
   /* m_section02 */
   .m_section_box01,
@@ -578,7 +428,6 @@ section {
   }
 
   /* m_section03 */
-
   .m_sub_tit {
     font-size: 3.05vw;
   }

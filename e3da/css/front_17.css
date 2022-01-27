@@ -1,23 +1,11 @@
 @charset "UTF-8";
-#header a {
-  color: #383838;
-}
-.gnb_open {
-  fill: #989898;
-}
+@import url(../css/service.css);
+
 #wrap {
-  background: url(../images/pc/front_17/pc_img_bg_03.png) no-repeat center top / cover;
+  background-image: url(../images/pc/front_17/pc_img_bg_03.png);
 }
 
-#front17_container {
-  width: 1180px;
-  margin: 0 auto;
-  margin-top: 554px;
-}
-.mobile_img {
-  display: none;
-}
-
+/********** pc **********/
 .section02,
 .section03,
 .section04 {
@@ -40,31 +28,9 @@
 }
 .right_box img {
   width: 100%;
-  /* border-radius: 38px 17px 118px 34px; */
-}
-/* section 공통 */
-.main_title {
-  display: none;
-}
-.section_tit {
-  position: relative;
-  font-size: 42px;
-  margin-bottom: 88px;
 }
 .section_tit::after {
-  position: absolute;
-  content: "";
-  width: 120px;
-  height: 4px;
   background-color: #66d8e0;
-  left: 0;
-  bottom: -40px;
-  border-radius: 1.65em;
-}
-
-.section_tit--small {
-  font-size: 24px;
-  color: #686868;
 }
 .section_txt {
   font-size: 24px;
@@ -97,53 +63,18 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.info_list dt {
-}
-.info_list dd {
-}
 
 /********************************** tablet *******************************/
 @media all and (max-width: 1279px) {
-  #wrap {
-    background: none;
-  }
-  #header {
-    border-bottom: 1px solid #d2d2d2;
-  }
-  #front17_container {
-    margin-top: 2.14em;
-    width: 86.97vw;
-  }
   .pc_title {
     display: none;
   }
-  .section_tit {
-    font-size: 2.6vw;
-    margin: 1.5em 0 1.5em;
-    /* font-weight: 500; */
-  }
-  .section_tit--small {
-    font-size: 2.6vw;
-    color: #383838;
-    /* font-weight: 500; */
-  }
-  .section_tit::after {
-    width: 11.6766%;
-    height: 12%;
-    bottom: -0.5em;
-  }
   .main_title {
-    display: block;
-    font-size: 3.12vw;
     padding: 1.25em 0 1.25em 1.41em;
-    background: url(../images/tablet/t_06/t_06_img_01.png) no-repeat center right / contain;
+    background-image: url(../images/tablet/t_06/t_06_img_01.png);
     background-color: rgba(102, 216, 224, 0.2);
-    border-radius: 0.41em;
   }
-  .main_title p {
-    font-size: 2.08vw;
-    color: #686868;
-  }
+
   .right_box {
     display: none;
   }
@@ -162,12 +93,7 @@
     margin: 0 auto;
     text-align: center;
   }
-  .mobile_img {
-    display: block;
-  }
-  .mobile_img img {
-    width: 100%;
-  }
+
   .section_txt {
     font-size: 1.95vw;
     color: #686868;
@@ -204,21 +130,14 @@
 
 /********************************** mobile *******************************/
 @media all and (max-width: 719px) {
-  #front17_container {
-    margin-top: 1.42em;
-    width: 91.11vw;
-  }
   .main_title {
-    font-size: 3.88vw;
     padding: 1.25em 0 1.25em 1.41em;
   }
   .section_tit,
   .section_tit--small {
     font-size: 3.88vw;
   }
-  .section_tit::after {
-    width: 15%;
-  }
+
   .section01 h3 {
     font-size: 3.05vw;
   }
