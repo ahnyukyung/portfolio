@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+#header a {
+  color: #383838;
+}
 #wrap {
   background: url(../images/pc/pc_bg_noti_01.svg) no-repeat left top;
 }

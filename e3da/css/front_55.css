@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+#header a {
+  color: #383838;
+}
 .btn_back--m {
   display: none;
 }
