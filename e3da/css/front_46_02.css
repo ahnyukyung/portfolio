@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+#wrap {
+  background: url(../images/pc/pc_bg_noti_01.svg) no-repeat left top;
+}
+#front46_02_container {
+  background: url(../images/pc/pc_bg_noti_02.svg) no-repeat right bottom;
+}
+#front46_02_container h2 {
+  display: flex;
+  align-items: baseline;
+  background: url(../images/pc/pc_img_community_02.png) no-repeat left center;
+  background-size: 22px;
+  padding-left: 42px;
+  width: 1200px;
+  margin: 30px auto 47px;
+}
+#front46_02_container h2 strong {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-right: 20px;
+}
+#front46_02_container h2 span {
+  font-size: 18px;
+  color: #686868;
+}
+.front46_02 h3 {
+  display: none;
+}
+.front46_02 {
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin: 0 auto;
+}
+.front46_02 span {
+  font-size: 26px;
+  font-weight: 500;
+  display: block;
+  margin-top: 140px;
+}
+.front46_02 .info_msg01 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 18px 0 67px;
+}
+.front46_02 .info_msg02 {
+  font-size: 18px;
+  line-height: 26px;
+  display: inline-block;
+  padding: 16px 80px;
+  background-color: #f5fafe;
+  border-radius: 10px;
+  margin-bottom: 145px;
+}
+.m_br {
+  display: none;
+}
+/********************************** tablet *******************************/
+@media all and (max-width: 1279px) {
+  #wrap {
+    background-size: 58.85vw;
+  }
+  #front46_02_container {
+    background: none;
+  }
+  #front46_02_container .front46_02 {
+    width: 86.97vw;
+  }
+  #front46_02_container h2 {
+    display: none;
+  }
+  .front46_02 h3 {
+    display: block;
+    font-size: 4.16vw;
+    padding-top: 1.82vw;
+    text-align: center;
+    font-weight: 500;
+  }
+  .front46_02 span {
+    font-weight: 300;
+    font-size: 4.68vw;
+    margin: 5.41em 0 1.72em;
+  }
+  .front46_02 .info_msg01 {
+    margin: 0;
+    color: #989898;
+    font-size: 3.12vw;
+    line-height: 1.25em;
+  }
+  .front46_02 .info_msg02 {
+    font-size: 3.12vw;
+    padding: 0;
+    margin: 27.16em 0 1.66em;
+    background: none;
+    color: #dd425a;
+    line-height: 1.25em;
+  }
+  .m_br {
+    display: block;
+  }
+}
+/********************************** mobile *******************************/
+@media all and (max-width: 767px) {
+  #front46_02_container .front46_02 {
+    margin-top: 1.42em;
+    width: 91.11vw;
+  }
+}

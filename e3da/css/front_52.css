@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+#wrap {
+  background: url(../images/pc/pc_bg_noti_01.svg) no-repeat left top;
+}
+#front52_container {
+  background: url(../images/pc/pc_bg_noti_02.svg) no-repeat right bottom;
+}
+#front52_container h2 {
+  display: flex;
+  align-items: baseline;
+  background: url(../images/pc/pc_img_community_02.png) no-repeat left center;
+  background-size: 22px;
+  padding-left: 42px;
+  width: 1200px;
+  margin: 30px auto 47px;
+}
+#front52_container h2 strong {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-right: 20px;
+}
+#front52_container h2 span {
+  font-size: 18px;
+  color: #686868;
+}
+#front52_container .front52 {
+  width: 706px;
+  margin: 0 auto;
+}
+.front52 h3 {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+.user_title {
+  display: none;
+}
+.front52 .ic_account {
+  color: #1db4bd;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: #f7f7f7;
+  border-radius: 100%;
+  padding: 8px 0 0 8px;
+  margin-right: 10px;
+}
+.front52 .user_info {
+  margin: 30px 0;
+}
+.front52 .user_info dl {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  height: 52px;
+  margin-bottom: 10px;
+}
+.front52 .user_info dt {
+  width: 160px;
+  font-weight: 500;
+}
+.user_info .password_input {
+  width: 454px;
+  padding: 14px 0 14px 15px;
+  border: 1px solid #d2d2d2;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+.user_info .password_input input {
+  width: 100%;
+  border: none;
+}
+.user_info .btn_password,
+.btn_confirm {
+  width: 100px;
+  padding: 15px 0;
+  background: #989898;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+}
+.btn_password.active {
+  background-color: #1db4bd;
+}
+.front52 .link_withdrawal {
+  text-align: right;
+  padding-bottom: 195px;
+  font-size: 22px;
+}
+.front52 .link_withdrawal a {
+  font-size: inherit;
+  text-decoration: underline;
+  color: #686868;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.change_pw {
+  display: none;
+}
+/********************************** tablet *******************************/
+@media all and (max-width: 1279px) {
+  #front52_container h2 {
+    display: none;
+  }
+  #wrap {
+    background-size: 58.85vw;
+  }
+  #front52_container {
+    background: none;
+  }
+  #front52_container .front52 {
+    width: 86.97vw;
+  }
+  .front52 .ic_account {
+    display: none;
+  }
+  .user_title {
+    display: block;
+    text-align: center;
+  }
+  .user_title .greeting {
+    display: block;
+    font-size: 4.16vw;
+    line-height: 1.46em;
+    margin-top: 1.28em;
+  }
+  .user_title p {
+    font-size: 5.46vw;
+    color: #1db4bd;
+    line-height: 1.47em;
+  }
+  .user_title .user_name {
+    text-decoration: underline;
+  }
+  .front52 h3 {
+    font-size: 3.64vw;
+    border-bottom: 2px solid #989898;
+    padding: 2.67em 0 0.85em 0.35em;
+  }
+  .front52 .user_info {
+    margin: 0;
+  }
+  .front52 .user_info dl {
+    border-bottom: 1px solid #d2d2d2;
+    height: auto;
+    margin-bottom: 0;
+    font-size: 3.125vw;
+    padding: 1.45em 0 1.45em 0.41em;
+  }
+  .front52 .user_info .pw_dl {
+    padding: 0.83em 0 0.83em 0.41em;
+    border: none;
+  }
+  .change_pw {
+    display: block;
+    margin-left: 22.78vw;
+  }
+  .change_pw li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.125vw;
+  }
+  .change_pw li:first-child {
+    border-bottom: 1px solid #d2d2d2;
+    border-top: 1px solid #d2d2d2;
+    padding: 1.45em 0 1.45em 0.8em;
+  }
+  .change_pw li:last-child {
+    padding: 0.83em 0 0.83em 0.8em;
+  }
+  .front52 .user_info dl:last-child {
+    border-bottom: none;
+    border-top: 1px solid #d2d2d2;
+  }
+  .front52 .user_info dt {
+    font-weight: 300;
+    color: #989898;
+    width: 28.1437%;
+  }
+
+  .user_info .password_input {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 3.125vw;
+    width: 50.8582%;
+  }
+  .user_info input {
+    font-size: 3.125vw;
+    border: none;
+    width: 73%;
+  }
+  .user_info .btn_password,
+  .btn_confirm {
+    font-size: 3.125vw;
+    padding: 0.625em 0;
+    width: 16.927vw;
+  }
+  .user_info .btn_password {
+    background-color: #686868;
+  }
+  .change_pw .btn_confirm {
+    background-color: #1db4bd;
+  }
+  .front52 .link_withdrawal {
+    font-size: 3.125vw;
+    padding: 1.25em 0 18.41em;
+  }
+}
+
+/********************************** mobile *******************************/
+@media all and (max-width: 767px) {
+  #front52_container .front52 {
+    margin-top: 1.42em;
+    width: 91.11vw;
+  }
+  .user_info .password_input {
+    width: 58.2317%;
+  }
+}

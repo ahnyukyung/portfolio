@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+#wrap {
+  background: url(../images/pc/pc_bg_noti_01.svg) no-repeat left top;
+}
+#front46_01_container {
+  background: url(../images/pc/pc_bg_noti_02.svg) no-repeat right bottom;
+}
+#front46_01_container h2 {
+  display: flex;
+  align-items: baseline;
+  background: url(../images/pc/pc_img_community_02.png) no-repeat left center;
+  background-size: 22px;
+  padding-left: 42px;
+  width: 1200px;
+  margin: 30px auto 47px;
+}
+#front46_01_container h2 strong {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-right: 20px;
+}
+#front46_01_container h2 span {
+  font-size: 18px;
+  color: #686868;
+}
+#front46_01_container .front46_01 {
+  width: 706px;
+  margin: 0 auto;
+}
+.front46_01 h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.front46_01 .imfo_msg {
+  color: #686868;
+  font-size: 18px;
+  text-align: center;
+  margin: 16px 0 50px;
+}
+.front46_01 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.front46_01 .row span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.email_input {
+  display: inline-block;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  padding: 14px 16px;
+  width: 561px;
+  font-size: 18px;
+  position: relative;
+}
+.email_input input {
+  width: 100%;
+  font-size: 100%;
+  color: #989898;
+  border: none;
+  background: transparent;
+}
+
+/* 버튼 */
+.btn_box {
+  text-align: center;
+  font-size: 18px;
+  padding: 70px 0;
+}
+.btn_box a {
+  display: inline-block;
+  color: #fff;
+  padding: 18px 238px;
+  border-radius: 50px;
+}
+.btn_email {
+  background-color: #1db4bd;
+}
+.m_br {
+  display: none;
+}
+/********************************** tablet *******************************/
+@media all and (max-width: 1279px) {
+  #wrap {
+    background-size: 58.85vw;
+  }
+  #front46_01_container .front46_01 {
+    width: 86.97vw;
+  }
+  #front46_01_container {
+    background: none;
+  }
+  #front46_01_container h2 {
+    display: none;
+  }
+  .front46_01 h3 {
+    font-size: 4.16vw;
+    padding: 1.82vw 0 2.18em;
+  }
+  .front46_01 .imfo_msg {
+    font-size: 3.64vw;
+    margin: 0 0 2.5em 0;
+    color: #383838;
+  }
+  .m_br {
+    display: block;
+  }
+  .front46_01 .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .front46_01 .row span {
+    font-size: 3.125vw;
+    padding: 0 0 0.5em 0.41em;
+  }
+  .front46_01 .row .email_input {
+    width: 100%;
+    padding: 0.79em 0 0.79em 1.25em;
+  }
+  .btn_box {
+    font-size: 3.64vw;
+    padding: 24.92em 0 1.42em;
+  }
+  .btn_box a {
+    width: 100%;
+    padding: 0.64em 0;
+  }
+}
+
+/********************************** mobile *******************************/
+@media all and (max-width: 767px) {
+  #front46_01_container .front46_01 {
+    width: 91.11vw;
+  }
+}

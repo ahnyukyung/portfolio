@@ -1,0 +1,340 @@
+@charset "UTF-8";
+@import url(../css/service.css);
+#wrap {
+  background-image: url(../images/pc/front_28/pc_img_bg_06.png);
+}
+
+/********** container **********/
+/* section 공통 */
+.section_tit::after {
+  background-color: #62baeb;
+}
+
+/* section01 */
+.left_box {
+  width: 736px;
+}
+.left_box .grid_txt {
+  font-size: 24px;
+  line-height: 135%;
+}
+.left_box .info_list--pc {
+  font-size: 22px;
+  line-height: 150%;
+  margin: 46px 0 40px;
+}
+.left_box .info_list--pc li {
+  margin-bottom: 10px;
+  color: #686868;
+  position: relative;
+  padding-left: 30px;
+}
+.left_box .info_list--pc li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #62baeb;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.left_box .info_list--pc li span {
+  font-size: 19px;
+  color: #989898;
+}
+.info_list--m {
+  display: none;
+}
+/* chart_box */
+.chart_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.chart_box {
+  width: 358px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  background-color: #fff;
+}
+.chart_box:nth-child(3),
+.chart_box:nth-child(4) {
+  margin-bottom: 0;
+}
+.chart_tb {
+  display: none;
+}
+
+.chart_info {
+  display: flex;
+  justify-content: space-between;
+}
+.chart_info .chart_tit {
+  font-size: 15px;
+  font-weight: 500;
+}
+.chart_info .caption {
+  position: relative;
+  font-size: 9px;
+  color: #686868;
+}
+.caption .caption_left {
+  position: absolute;
+  left: -55px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 8px;
+}
+.right_box {
+  width: 424px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #fff;
+}
+
+/* grid_info */
+.grid_info {
+}
+.grid_info li {
+  display: flex;
+  align-items: center;
+  background-color: rgba(98, 186, 235, 0.15);
+  border-radius: 217px;
+  padding: 8px 0 8px 32px;
+  margin-bottom: 16px;
+}
+.grid_info li:last-child {
+  margin-bottom: 25px;
+}
+.grid_info i {
+  margin-right: 18px;
+}
+.grid_info p {
+}
+.grid_info .sub_txt {
+  font-size: 16px;
+  line-height: 135%;
+}
+.grid_info .main_txt {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 135%;
+  color: #1384c2;
+}
+/* banner*/
+.banner {
+  background-image: url(../images/pc/front_28/pc_28_img_02.png), linear-gradient(271deg, rgba(184, 232, 242, 1) -24.03%, rgba(221, 240, 249, 1) 100%);
+}
+.btn_link {
+  border: 2px solid #62baeb;
+  color: #62baeb;
+  left: 304px;
+}
+/********************************** tablet *******************************/
+@media all and (max-width: 1279px) {
+  .main_title {
+    background-image: url(../images/tablet/t_09/t_09_img_01.png);
+    background-color: rgba(98, 186, 235, 0.2);
+  }
+  .section_box.chart_section {
+    flex-direction: column;
+  }
+  .left_box,
+  .right_box {
+    width: 100%;
+  }
+
+  .left_box .grid_txt {
+    font-size: 1.95vw;
+    padding-bottom: 2em;
+  }
+  /* chart_box */
+  .chart_wrap .chart_box {
+    width: 48.6526%;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    /* background-color: lawngreen; */
+    margin-bottom: 6.51vw;
+  }
+
+  .chart_tb {
+    display: block;
+  }
+  .chart_pc {
+    display: none;
+  }
+  .chart_info .chart_tit {
+    font-size: 2.34vw;
+    /* background-color: lightblue; */
+    margin-bottom: 2em;
+    padding-left: 0.55em;
+  }
+  .chart_info .caption {
+    font-size: 1.69vw;
+    /* background-color: lightblue; */
+  }
+  .caption .caption_left {
+    display: none;
+  }
+
+  .right_box {
+    box-shadow: none;
+    padding: 0;
+  }
+  .grid_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 97%;
+    padding-top: 5.2vw;
+    border-top: 1px solid #eaeaea;
+  }
+  .grid_info li {
+    width: 49.074%;
+    border-radius: 2.6vw;
+    padding: 3.64vw 0 2.99vw;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1.56vw;
+    background-color: rgba(98, 186, 235, 0.1);
+  }
+  .grid_info li:last-child {
+    margin-bottom: 1.56vw;
+  }
+  .grid_info li i {
+    width: 25.1572%;
+    margin: 0 auto;
+    margin-bottom: 2.86vw;
+  }
+  .grid_iso {
+    width: 77.8443%;
+    margin: 6.25vw auto;
+  }
+  .info_list--pc {
+    display: none;
+  }
+  .info_list--m {
+    display: block;
+    width: 82%;
+    margin: 0 auto;
+    letter-spacing: -0.01em;
+  }
+  .info_list--m li {
+    position: relative;
+    font-size: 2.08vw;
+    margin-bottom: 0.75em;
+    padding-left: 1.62em;
+  }
+  .info_list--m li::before {
+    content: "";
+    width: 0.81em;
+    height: 0.81em;
+    border-radius: 100%;
+    background-color: #62baeb;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .info_list--m li span {
+    color: #989898;
+  }
+  /* banner */
+  .banner {
+    background: none;
+  }
+  .banner h2::after {
+    background-color: #62baeb;
+  }
+  .btn_link {
+    background: #62baeb;
+    border: none;
+    left: 77.6%;
+    color: #fff;
+  }
+}
+
+/********************************** mobile *******************************/
+@media all and (max-width: 767px) {
+  .pc_br {
+    display: block;
+  }
+  .left_box .grid_txt {
+    font-size: 3.05vw;
+  }
+  .chart_wrap {
+    flex-direction: column;
+  }
+  .chart_wrap .chart_box {
+    width: 100%;
+    margin-bottom: 3.88vw;
+    padding-bottom: 3.88vw;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .chart_info {
+  }
+  .chart_info .chart_tit {
+    font-size: 3.33vw;
+    margin-bottom: 0.38em;
+    padding-left: 0;
+  }
+  .chart_info .caption {
+  }
+  .chart_pc {
+    display: block;
+    width: 95.1219%;
+    margin: 0 auto;
+  }
+  .chart_tb {
+    display: none;
+  }
+  .grid_info {
+    width: 100%;
+    border-top: none;
+    padding-top: 0;
+  }
+  .grid_info li {
+    padding: 2.77vw 0;
+  }
+  .grid_info li i {
+    width: 28.5714%;
+    margin-bottom: 1.38vw;
+  }
+  .grid_info .sub_txt {
+    font-size: 3.05vw;
+  }
+  .grid_info .main_txt {
+    font-size: 3.88vw;
+  }
+  .grid_iso {
+    width: 100%;
+    margin: 6.66vw 0;
+  }
+  .info_list--m {
+    width: 100%;
+    color: #686868;
+  }
+  .info_list--m li {
+    font-size: 3.05vw;
+    padding-left: 1.36em;
+  }
+  .info_list--m li::before {
+    width: 0.45em;
+    height: 0.45em;
+  }
+  .info_list--m li:last-child::before {
+    top: 30%;
+  }
+  .btn_link {
+    left: 72%;
+  }
+}

@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+#wrap {
+  background: url(../images/pc/pc_bg_noti_01.svg) no-repeat left top;
+}
+#front47_container {
+  background: url(../images/pc/pc_bg_noti_02.svg) no-repeat right bottom;
+}
+#front47_container h2 {
+  display: flex;
+  align-items: baseline;
+  background: url(../images/pc/pc_img_community_02.png) no-repeat left center;
+  background-size: 22px;
+  padding-left: 42px;
+  width: 1200px;
+  margin: 30px auto 47px;
+}
+#front47_container h2 strong {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-right: 20px;
+}
+#front47_container h2 span {
+  font-size: 18px;
+  color: #686868;
+}
+#front47_container .join_contents {
+  width: 708px;
+  margin: 0 auto;
+  margin-top: 34px;
+}
+/********* join_contents  **********/
+.join_contents .info_msg {
+  text-align: right;
+  font-size: 16px;
+  color: #989898;
+}
+.join_contents .must {
+  color: #dd425a;
+}
+.join_row {
+  display: flex;
+  align-items: center;
+  margin: 34px 0;
+  position: relative;
+}
+.join_row:nth-of-type(1) {
+  margin: 25px 0;
+}
+.join_row .must_msg {
+  position: absolute;
+  left: 145px;
+  bottom: -22px;
+  color: #dd425a;
+  font-size: 13px;
+  /* 경고메세지 보이기 => display:block */
+  display: none;
+}
+.join_row .join_title {
+  width: 145px;
+  font-size: 18px;
+}
+.email_row {
+  display: flex;
+  justify-content: space-between;
+  width: 561px;
+}
+.email_row .user_email {
+  font-size: 18px;
+  padding-left: 16px;
+}
+.email_row .email_confirm {
+  color: #1db4bd;
+}
+
+.join_input {
+  display: inline-block;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  padding: 14px 16px;
+  width: 561px;
+  font-size: 18px;
+  position: relative;
+}
+.join_input input {
+  width: 100%;
+  font-size: 100%;
+  color: #989898;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+}
+.btn_verify {
+  background: #989898;
+  color: #fff;
+  padding: 15px 45px;
+  border-radius: 3px;
+  font-size: 18px;
+  border: none;
+}
+.btn_join {
+  text-align: right;
+  padding: 30px 0;
+}
+.btn_join a {
+  display: inline-block;
+  background-color: #1db4bd;
+  color: #fff;
+  padding: 19px 248px;
+  border-radius: 50px;
+
+  font-size: 18px;
+}
+.ic_eye {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  cursor: pointer;
+}
+.ic_eye svg {
+  fill: #989898;
+  width: 24px;
+  height: 24px;
+}
+
+/* 버튼 */
+.btn_box {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 16px;
+}
+.btn_box a {
+  display: inline-block;
+  color: #fff;
+  padding: 14px 98px;
+  margin: 0 4px;
+  border-radius: 50px;
+}
+.btn_agree {
+  background-color: #1db4bd;
+}
+
+/********************************** tablet *******************************/
+@media all and (max-width: 1279px) {
+  #wrap {
+    background-size: 58.85vw;
+  }
+  #front47_container {
+    background: none;
+  }
+  #front47_container .join_contents {
+    margin-top: 2.14em;
+    width: 86.97vw;
+    position: relative;
+  }
+  #front47_container h2 {
+    background: none;
+    width: 100%;
+    justify-content: center;
+    margin: 1.82vw 0 13.02vw;
+  }
+  #front47_container h2 strong {
+    font-size: 4.16vw;
+  }
+  #front47_container h2 span {
+    display: none;
+  }
+  /********* join_contents  tablet**********/
+  .info_msg {
+    display: none;
+  }
+  .join_row {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .join_row .join_title {
+    font-size: 2.86vw;
+    padding: 0 0 0.45em 0.45em;
+    width: 100%;
+  }
+  .join_input {
+    width: 100%;
+    font-size: 2.6vw;
+    padding: 0.95em 1.5em 0.8em;
+    border-radius: 0.2em;
+    margin-bottom: 2.5em;
+  }
+  .email_row {
+    width: 100%;
+    font-size: 2.6vw;
+    padding: 0.95em 1.5em 0.8em;
+    border-radius: 0.2em;
+    margin-bottom: 1em;
+    border: 1px solid #d2d2d2;
+  }
+  .email_row .user_email {
+    padding-left: 0;
+    font-size: 2.6vw;
+  }
+  .join_row:nth-of-type(1) {
+    margin: 0;
+  }
+  .join_row .must_msg {
+    position: absolute;
+    left: 0.62em;
+    bottom: 1.25em;
+    font-size: 2.08vw;
+  }
+  .btn_verify {
+    font-size: 2.6vw;
+    padding: 0.9em 3em;
+    background: #1db4bd;
+    border-radius: 0.2em;
+  }
+  .btn_join {
+    padding: 34.89vw 0 5.2vw;
+  }
+  .btn_join a {
+    font-size: 3.64vw;
+    width: 100%;
+    text-align: center;
+    padding: 0.64em 0;
+  }
+  .ic_eye {
+    display: none;
+  }
+}
+
+/********************************** mobile *******************************/
+@media all and (max-width: 767px) {
+  #wrap {
+    background-size: 51.38vw;
+  }
+  #front47_container .join_contents {
+    margin-top: 1.42em;
+    width: 91.11vw;
+  }
+  #front47_container h2 {
+    margin-bottom: 13.05vw;
+  }
+  #front47_container h2 strong {
+    font-size: 4.44vw;
+  }
+  .join_row .join_title {
+    font-size: 3.05vw;
+  }
+  .email_row {
+    font-size: 3.05vw;
+    margin-bottom: 1.27em;
+  }
+  .join_input {
+    font-size: 3.05vw;
+    padding: 0.81em 1.09em;
+    margin-bottom: 2.9em;
+  }
+  .join_row .must_msg {
+    bottom: 2em;
+  }
+  .btn_verify {
+    font-size: 3.05vw;
+    padding: 0.81em 3.45em;
+    background: #1db4bd;
+  }
+  .btn_join {
+    padding: 18.61vw 0 8.33vw;
+  }
+}

@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+.btn_back--m {
+  display: none;
+}
+#wrap {
+  background: url(../images/pc/pc_bg_noti_01.svg) no-repeat left top;
+}
+#front55_container {
+  background: url(../images/pc/pc_bg_noti_02.svg) no-repeat right bottom;
+}
+#front55_container h2 {
+  display: flex;
+  align-items: baseline;
+  background: url(../images/pc/pc_img_community_02.png) no-repeat left center;
+  background-size: 22px;
+  padding-left: 42px;
+  width: 1200px;
+  margin: 30px auto 47px;
+}
+#front55_container h2 strong {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-right: 20px;
+}
+#front55_container h2 span {
+  font-size: 18px;
+  color: #686868;
+}
+#front55_container .front55 {
+  width: 683px;
+  margin: 0 auto;
+}
+.front55 h3 {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+.front55 .ic_account {
+  color: #1db4bd;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: #f7f7f7;
+  border-radius: 100%;
+  padding: 8px 0 0 8px;
+  margin-right: 10px;
+}
+
+.withdrawal_info .withdrawal_tit {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 35px 0 40px;
+}
+
+.withdrawal_info .info_msg {
+  display: flex;
+  align-items: center;
+}
+.withdrawal_info .info_msg .txt {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.withdrawal_info .alert_msg {
+  color: #dd425a;
+}
+.alert_msg--m {
+  display: none;
+}
+.withdrawal_info .sub_info {
+  font-size: 16px;
+  color: #989898;
+  margin: 10px 0 50px 32px;
+  letter-spacing: -0.01em;
+  line-height: 24px;
+}
+.withdrawal_email {
+  margin-left: 32px;
+}
+.withdrawal_email .user_email {
+  font-size: 18px;
+  color: #1db4bd;
+  display: inline-block;
+  margin: 10px 0 16px;
+  letter-spacing: -0.01em;
+}
+.m_title {
+  display: none;
+}
+.withdrawal_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 32px;
+  font-size: 16px;
+}
+.withdrawal_input {
+  display: inline-block;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  padding: 14px 16px;
+  width: 536px;
+  position: relative;
+}
+.withdrawal_input input {
+  width: 100%;
+  font-size: 100%;
+  color: #989898;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+}
+.btn_confirm {
+  background: #989898;
+  color: #fff;
+  padding: 15px 35px;
+  border-radius: 3px;
+  border: none;
+  font-size: 100%;
+}
+.ic_check {
+  width: 22px;
+  height: 22px;
+}
+.ic_check svg {
+  width: 100%;
+  height: 100%;
+}
+.front55 .btn_box .btn {
+  text-align: center;
+  font-size: 18px;
+  padding: 30px 0 92px;
+}
+.front55 .btn_box .btn a {
+  display: inline-block;
+  font-size: inherit;
+  color: #fff;
+  font-weight: 500;
+  background-color: #686868;
+  padding: 13px 54px;
+  border-radius: 50px;
+}
+.btn_cancel {
+  display: none;
+}
+.m_br {
+  display: none;
+}
+
+/********************************** tablet *******************************/
+@media all and (max-width: 1279px) {
+  #front55_container h2 {
+    display: none;
+  }
+  #wrap {
+    background-size: 58.85vw;
+  }
+  #front55_container {
+    background: none;
+  }
+  #front55_container .front55 {
+    width: 86.97vw;
+    margin: 0 auto;
+  }
+  .front55 h3 {
+    justify-content: center;
+    font-size: 4.44vw;
+    margin: 0.43em 0 2.56em;
+  }
+  .front55 .ic_account {
+    display: none;
+  }
+  .withdrawal_info {
+    background-color: #f7f7f7;
+    padding: 5.46vw 0 7.55vw 6.25vw;
+  }
+  .withdrawal_info .withdrawal_tit {
+    font-size: 3.125vw;
+    margin: 0 0 2.79em;
+  }
+  .withdrawal_info .info_msg .txt {
+    font-size: 2.86vw;
+  }
+  .withdrawal_info .alert_msg--pc {
+    display: none;
+  }
+  .withdrawal_info .alert_msg--m {
+    display: block;
+    font-size: 2.6vw;
+    margin: 0.8em 0 0 2em;
+  }
+  .withdrawal_info .sub_info {
+    font-size: 2.6vw;
+    margin: 0.8em 0 2.75em 2em;
+    line-height: 1.5em;
+  }
+  .ic_check {
+    width: 3.9vw;
+    height: 3.9vw;
+  }
+  .withdrawal_email {
+    margin-left: 0.45em;
+  }
+  .m_title {
+    display: inline-block;
+    font-size: 2.86vw;
+    font-weight: 500;
+  }
+  .withdrawal_email .user_email {
+    font-size: 2.86vw;
+    margin: 2.22em 0 1.27em 1.36em;
+  }
+  .withdrawal_form {
+    margin-left: 0;
+    font-size: 3.125vw;
+  }
+  .withdrawal_input {
+    padding: 0.79em 1.25em;
+    border-radius: 0.16em;
+    width: 76.4705%;
+  }
+  .btn_confirm {
+    padding: 0.79em 2.16em;
+    background: #1db4bd;
+  }
+  .front55 .btn_box {
+    margin: 27.86vw 0 5.72vw;
+  }
+  .front55 .btn_box .btn {
+    font-size: 3.64vw;
+    margin: 0.71em 0;
+    padding: 0;
+  }
+  .front55 .btn_box .btn a {
+    width: 100%;
+    padding: 0.64em 0;
+    background-color: #989898;
+  }
+  .front55 .btn_box .btn_cancel {
+    display: block;
+  }
+  .front55 .btn_box .btn_cancel a {
+    background-color: #1db4bd;
+  }
+  .m_br {
+    display: block;
+  }
+  #header {
+    display: none;
+  }
+  .btn_back--m {
+    display: block;
+  }
+  .btn_back--m {
+    height: 80px;
+    padding: 30px 0 0 30px;
+  }
+  .btn_back--m a {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+}
+/********************************** mobile *******************************/
+@media all and (max-width: 767px) {
+  #wrap {
+    background-size: 51.38vw;
+  }
+  #front55_container .front55 {
+    width: 91.11vw;
+  }
+  .withdrawal_info .withdrawal_tit {
+    font-size: 3.33vw;
+  }
+  .withdrawal_info .info_msg .txt {
+    font-size: 3.05vw;
+    margin-left: 0.45em;
+  }
+  .withdrawal_info .sub_info,
+  .withdrawal_info .alert_msg--m {
+    font-size: 2.77vw;
+  }
+  .btn_back--m {
+    padding: 16px 0 0 16px;
+    height: 48px;
+  }
+  .btn_back--m a {
+    width: 24px;
+    height: 24px;
+  }
+}

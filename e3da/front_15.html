@@ -69,7 +69,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href="front_28.html">
                         <div class="gnb_icon">
                           <img src="images/pc/lnb/pc_img_lnb_05.png" style="width: 106px" alt="" />
                         </div>
@@ -272,12 +272,7 @@
                 <span class="deco_underline">제주 스마트 시티 챌린지</span> 입니다.
               </p>
               <div class="video_box">
-                <video src="images/pc/front_15/smart_city.mp4" id="video" muted loop poster="images/pc/front_15/pc_front_15_play.png">해당 브라우저는 video 태그를 지원하지 않습니다.</video>
-                <div class="player_controls">
-                  <button class="btn_play" id="btnPlay">
-                    <img src="images/ic_play.svg" alt="재생버튼" style="width: 100%" />
-                  </button>
-                </div>
+                <iframe src="https://www.youtube.com/embed/OBQ0slhT71g" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
               </div>
             </div>
           </section>
@@ -337,16 +332,5 @@
       </footer>
     </div>
     <script src="js/common.js"></script>
-    <script>
-      // 확인용
-      function playVideo() {
-        const btnPlay = document.getElementById("btnPlay");
-        const video = document.getElementById("video");
-        video.play();
-        video.setAttribute("controls", true);
-        this.style.display = "none";
-      }
-      btnPlay.addEventListener("click", playVideo);
-    </script>
   </body>
 </html>
