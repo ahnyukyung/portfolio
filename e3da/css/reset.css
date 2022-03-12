@@ -199,7 +199,7 @@ table {
 
 legend,
 caption,
-.blind {
+.hidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -230,5 +230,9 @@ caption,
   color: #bbb !important;
 } /* IE10+ */
 
-input:focus { outline: none; }
-textarea:focus {outline:none;}
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}

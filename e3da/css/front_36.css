@@ -1,0 +1,210 @@
+@charset "UTF-8";
+#wrap {
+  background: url(../images/pc/pc_bg_noti_01.svg) no-repeat left top;
+}
+#front36_container {
+  background: url(../images/pc/pc_bg_noti_02.svg) no-repeat right bottom;
+}
+#front36_container .container_inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+#front36_container h2 {
+  display: flex;
+  align-items: baseline;
+  background: url(../images/pc/pc_img_community_01.png) no-repeat left center;
+  background-size: 22px;
+  padding-left: 42px;
+  margin: 30px auto 47px;
+  text-align: center;
+}
+#front36_container h2 strong {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-right: 20px;
+}
+#front36_container h2 span {
+  font-size: 18px;
+  color: #686868;
+}
+#front36_container h3 {
+  display: none;
+}
+.faq_tab {
+  display: flex;
+}
+.faq_tab li {
+  background: #eaeaea;
+  width: 50%;
+  line-height: 50px;
+}
+.faq_tab a {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #383838;
+  display: block;
+}
+.faq_tab li.active a {
+  background: #fff;
+  color: #1db4bd;
+  border-top: 3px solid #1db4bd;
+}
+
+.faq_category {
+  display: flex;
+  width: 25.8333%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  padding: 40px 0;
+}
+.faq_category li.active a {
+  text-decoration: underline;
+}
+
+/*faq_list*/
+.faq_list {
+  border-top: 2px solid #989898;
+  padding-bottom: 30px;
+}
+.faq_list .question,
+.faq_list .answer {
+  font-size: 16px;
+  padding: 10px 24px;
+  border-bottom: 1px solid #eaeaea;
+  color: #686868;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.faq_list .question {
+  background-color: #fff;
+}
+.faq_list .answer {
+  background-color: #f7f7f7;
+  /* display: none; */
+}
+.faq_list .answer_txt,
+.faq_list .question_txt {
+  width: 92.5%;
+}
+.faq_list .question::before,
+.faq_list .answer::before {
+  width: 38px;
+  height: 38px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+}
+.faq_list .question::before {
+  content: "Q";
+  background: #989898;
+}
+.faq_list .answer::before {
+  content: "A";
+  background: #1db4bd;
+}
+.faq_list .question.active::before {
+  background: #1db4bd;
+}
+.faq_list .question::after {
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 100 100' style='fill:%23383838;' fill='%23383838;' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M69.125 35.791L50 54.8743L30.875 35.791L25 41.666L50 66.666L75 41.666L69.125 35.791Z' fill='%23383838;'/%3E%3C/svg%3E%0A")
+    no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.faq_list .question.active::after {
+  background: url(../images/ic_expand_up.svg) no-repeat;
+}
+/********************************** tablet *******************************/
+@media all and (max-width: 1279px) {
+  #wrap {
+    background-size: 58.85vw;
+  }
+  #front36_container {
+    background: none;
+  }
+  #front36_container .container_inner {
+    width: 94.79vw;
+  }
+  #front36_container h2 {
+    display: none;
+  }
+  #front36_container h3 {
+    display: block;
+    text-align: center;
+    font-size: 4.16vw;
+    font-weight: 500;
+    margin-top: 0.5em;
+  }
+  .faq_tab {
+    display: none;
+  }
+  .faq_category {
+    width: 83.8626%;
+    margin: auto;
+    font-size: 3.125vw;
+    padding: 2.5em 0;
+    justify-content: flex-start;
+  }
+  .faq_category li:first-child {
+    margin-right: 4.66em;
+  }
+  .faq_category li:last-child {
+    margin-left: 5em;
+  }
+  .faq_list {
+    border-top: 1px solid #d2d2d2;
+  }
+  .faq_list .question,
+  .faq_list .answer {
+    font-size: 2.86vw;
+    padding: 1.36em 0.5em;
+    align-items: baseline;
+  }
+  .faq_list .question {
+    font-weight: 500;
+    border-bottom: none;
+  }
+  .faq_list .question::before,
+  .faq_list .answer::before {
+    font-size: 2.6vw;
+    width: 2.45em;
+    height: 2.45em;
+    margin-right: 2.3em;
+  }
+  .faq_list .question::before {
+    background-color: #383838;
+  }
+  .faq_list .answer_txt,
+  .faq_list .question_txt {
+    width: 71.5%;
+  }
+  .faq_list .question::after {
+    display: none;
+  }
+}
+/********************************** mobile *******************************/
+@media all and (max-width: 767px) {
+  #wrap {
+    background-size: 50vw;
+  }
+  #front36_container .container_inner {
+    width: 91.11vw;
+  }
+  .faq_box {
+    width: 100%;
+  }
+}

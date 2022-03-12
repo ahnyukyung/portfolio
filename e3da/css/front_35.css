@@ -1,0 +1,227 @@
+@charset "UTF-8";
+#wrap {
+  background: url(../images/pc/pc_bg_noti_01.svg) no-repeat left top;
+}
+#front35_container {
+  background: url(../images/pc/pc_bg_noti_02.svg) no-repeat right bottom;
+}
+#front35_container .container_inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+#front35_container h2 {
+  display: flex;
+  align-items: baseline;
+  background: url(../images/pc/pc_img_community_01.png) no-repeat left center;
+  background-size: 22px;
+  padding-left: 42px;
+  margin: 30px auto 47px;
+  text-align: center;
+}
+#front35_container h2 strong {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-right: 20px;
+}
+#front35_container h2 span {
+  font-size: 18px;
+  color: #686868;
+}
+#front35_container h3 {
+  display: none;
+}
+#front35_container .board_wrap {
+  padding-bottom: 260px;
+}
+.board_wrap .board_tit_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 16px 28px 40px;
+  background: #f7f7f7;
+  border-top: 2px solid #989898;
+}
+.board_tit_box .board_tit {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.board_tit_box .board_tit .board_fix {
+  background-color: #686868;
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+.board_tit_box .board_info {
+  font-size: 16px;
+  color: #686868;
+  display: flex;
+  line-height: 1;
+}
+.board_tit_box .board_info dt {
+}
+
+.board_tit_box .board_info dd {
+  margin-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #d2d2d2;
+}
+.board_tit_box .board_info dd:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+.board_wrap .board_txt_box {
+  padding: 26px 10px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #d2d2d2;
+}
+.board_txt_box .board_txt {
+  font-size: 16px;
+  color: #686868;
+  line-height: 26px;
+  margin-bottom: 158px;
+}
+.board_txt_box .board_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.board_cont .file_box {
+  display: flex;
+  align-items: center;
+}
+.board_cont .file_box .file_name {
+  color: #1db4bd;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.board_cont .btn_download,
+.board_cont .btn_list {
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  width: 76px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.board_cont .file_box .btn_download {
+  background-color: #1db4bd;
+  margin-left: 10px;
+}
+.board_cont .btn_list {
+  background-color: #989898;
+}
+
+/********************************** tablet *******************************/
+@media all and (max-width: 1279px) {
+  #wrap {
+    background-size: 58.85vw;
+  }
+  #front35_container {
+    background: none;
+  }
+  #front35_container .container_inner {
+    width: 94.79vw;
+  }
+  #front35_container h2 {
+    display: none;
+  }
+  #front35_container h3 {
+    display: block;
+    text-align: center;
+    font-size: 4.16vw;
+    font-weight: 500;
+    margin: 0.5em 0 2.21em;
+  }
+  .board_wrap .board_tit_box {
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #d2d2d2;
+    background-color: #fff;
+    padding: 2.6vw 1.04vw 2.6vw 1.95vw;
+  }
+  .board_tit_box .board_tit {
+    font-size: 2.86vw;
+  }
+  .board_tit_box .board_tit .board_fix {
+    font-size: 2.34vw;
+    margin-right: 0.8em;
+    padding: 0.33em 1em;
+  }
+  .board_tit_box .board_info {
+    margin-left: auto;
+    color: #989898;
+    font-size: 2.34vw;
+    margin-top: 1.27em;
+  }
+  .board_info dd,
+  .board_info dt {
+    display: none;
+  }
+  .board_tit_box .board_info dd.info_m {
+    display: block;
+    margin-right: 0.5em;
+    padding-right: 0.5em;
+  }
+  .board_tit_box .board_info dd.info_m:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 0;
+  }
+  .board_wrap .board_txt_box {
+    padding: 4.16vw 8.41vw 3.9vw 2.08vw;
+  }
+  .board_txt_box .board_txt {
+    color: #686868;
+    font-size: 2.6vw;
+    line-height: 1.6em;
+    margin-bottom: 11.55em;
+  }
+  .board_cont .file_box .file_name {
+    font-size: 2.86vw;
+  }
+  .board_cont .btn_download,
+  .board_cont .btn_list {
+    display: none;
+  }
+}
+
+/********************************** mobile *******************************/
+@media all and (max-width: 767px) {
+  #wrap {
+    background-size: 50vw;
+  }
+  #front35_container .container_inner {
+    width: 91.11vw;
+  }
+  .board_wrap .board_tit_box {
+    border-top: 1px solid #989898;
+    padding: 3.88vw 0 2.77vw;
+  }
+  .board_tit_box .board_tit {
+    font-size: 3.33vw;
+  }
+  .board_tit_box .board_info {
+    font-size: 2.77vw;
+    margin-top: 1em;
+  }
+  .board_tit_box .board_tit .board_fix {
+    font-size: 2.77vw;
+  }
+  .board_wrap .board_txt_box {
+    padding: 3.88vw 0;
+  }
+  .board_txt_box .board_txt {
+    font-size: 2.77vw;
+    margin-bottom: 10.5em;
+  }
+}

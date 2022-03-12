@@ -10,7 +10,6 @@
   position: relative;
   z-index: 99999;
 }
-
 .header_inner {
   width: 93.0208%;
   margin: 0 auto;
@@ -54,12 +53,14 @@
   text-align: center;
   display: flex;
 }
+
 .gnb .gnb_tit {
   display: block;
-  color: #fff;
   font-size: 15px;
 }
-
+#header.main .gnb .gnb_tit {
+  color: #fff;
+}
 /* pc gnb background */
 .gnb_bg {
   width: 100%;
@@ -107,14 +108,14 @@
 }
 
 /* gnb hover시 적용*/
-.header_inner.open .gnb .gnb_tit {
+#header .header_inner.open .gnb .gnb_tit {
   color: #383838;
 }
 .header_inner.open .gnb .depth02 {
   display: block;
 }
 .header_inner.open .btn_login {
-  color: #383838;
+  color: #383838 !important;
 }
 .header_inner.open .gnb_bg {
   display: block;
@@ -166,11 +167,16 @@
   display: flex;
   align-items: center;
   margin-left: 100px;
+}
+#header.main .btn_login {
   color: #fff;
 }
-.btn_login.open {
+/* #header .btn_login.open {
   color: #383838;
 }
+#header.main .btn_login.open {
+  color: #383838;
+} */
 .btn_login span {
   margin-left: 7px;
 }
@@ -188,9 +194,14 @@
     width: 40px;
     height: 40px;
     position: relative;
-    fill: #fff;
     background-color: transparent;
     border: none;
+  }
+  #header.main .gnb_open {
+    fill: #fff;
+  }
+  .gnb_open {
+    fill: #989898;
   }
   .gnb_open svg {
     width: 100%;
@@ -284,6 +295,7 @@
   }
   .m_depth02 li a {
     color: #989898;
+    display: block;
   }
 }
 
@@ -293,12 +305,8 @@
   }
   .m_header {
     height: 48px;
-    border-color: #1db4bd;
   }
-  #header {
-    border-bottom: 1px solid #1db4bd;
-    border-color: #1db4bd !important;
-  }
+
   #header.header_change {
     background-color: #fff;
   }
@@ -335,7 +343,7 @@
   color: #fff;
 }
 .footer_inner {
-  width: 86.45vw;
+  width: 86.45%;
   margin: 0 auto;
   padding: 191px 0 50px;
   display: flex;

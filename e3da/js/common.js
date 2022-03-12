@@ -5,7 +5,9 @@ $(".gnb >li > a")
   })
   .on("mouseleave", function () {
     $(".header_inner").removeClass("open");
-    $(".header_inner h1 img").attr("src", "images/logo_01.svg");
+    if ($(this).parents("#header").hasClass("main")) {
+      $(".header_inner h1 img").attr("src", "images/logo_01.svg");
+    }
   });
 $(".depth02 a")
   .on("mouseenter", function () {

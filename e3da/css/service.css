@@ -4,13 +4,7 @@
   background-position: center top;
   background-size: cover;
 }
-/********** header **********/
-#header a {
-  color: #383838;
-}
-.gnb_open {
-  fill: #989898;
-}
+
 /********** pc container **********/
 section {
   margin-top: 260px;
@@ -251,13 +245,16 @@ section {
 
 /********************************** mobile *******************************/
 @media all and (max-width: 719px) {
+  #header {
+    border-bottom: 1px solid #1db4bd;
+  }
   .service_container {
     margin-top: 1.42em;
     width: 91.11vw;
   }
   .main_title {
     font-size: 4.44vw;
-    padding: 1.26em 11.41em 1.26em 1.41em;
+    padding: 1.26em 0em 1.26em 1.41em;
   }
   section {
     margin-top: 2.71em;
