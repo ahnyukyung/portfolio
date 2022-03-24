@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E-3DA INDEX</title>
+    <style type="text/css">
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+      }
+
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        color: #333;
+      }
+      html {
+        -webkit-text-size-adjust: none;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: auto;
+      }
+      * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:active,
+      a:focus {
+        outline: none;
+        border: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      a:link {
+        outline: none;
+        border: none;
+      }
+
+      #wrap {
+        min-width: 1200px;
+      }
+      #header {
+        background: #1db4bd;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 60px;
+        padding-bottom: 50px;
+      }
+      #container {
+        height: 100%;
+      }
+      #container > .contents {
+        margin-top: 2%;
+        padding-bottom: 100px;
+      }
+      #container > .contents table {
+        width: 85%;
+        border-collapse: collapse;
+        text-align: center;
+        margin: auto;
+      }
+      #container > .contents table thead {
+        border-top: 2px solid #bababa;
+        border-bottom: 1px solid #ddd;
+      }
+      #container > .contents table thead tr th {
+        background: #f6f6f6;
+        height: 50px;
+        vertical-align: middle;
+        font-size: 1em;
+        font-weight: 700;
+        color: #333;
+      }
+      #container > .contents table tbody tr td {
+        height: 50px;
+        vertical-align: middle;
+        font-size: 1em;
+        border-bottom: 1px solid #ddd;
+        color: #333;
+      }
+      #container > .contents table tbody tr .nt03,
+      #container > .contents table tbody tr .nt04 {
+        text-align: left;
+        padding-left: 3em;
+      }
+      #container > .contents table tbody tr .nt05 {
+        text-align: left;
+      }
+      .process_circle span {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 35px;
+        font-size: 0.8em;
+        background: #9a64d4;
+        color: #fff;
+      }
+      .info_msg {
+        color: rgb(255, 101, 55);
+        font-size: 0.7em;
+        padding-left: 1em;
+      }
+      .new {
+        width: 35px;
+        height: 35px;
+        margin-left: 6px;
+        border-radius: 35px;
+        display: inline-block;
+        background-color: #ff0000;
+        font-weight: bold;
+        text-align: center;
+        line-height: 35px;
+        color: #fff;
+        font-size: 0.8em;
+      }
+      .modify {
+        color: #ff0000 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <div class="header_in">
+          <h1>
+            <span>e-3da</span>
+          </h1>
+        </div>
+      </div>
+
+      <div id="container">
+        <div class="contents">
+          <style>
+            #tabs ul:after {
+              content: "";
+              display: block;
+              clear: both;
+            }
+            #tabs ul {
+              width: 90%;
+              margin: 0 auto;
+            }
+            #tabs ul li {
+              float: left;
+              margin-left: 10px;
+            }
+            #tabs ul li:first-child {
+              margin-left: 0;
+            }
+            #tabs ul li a {
+              width: 100%;
+              height: 100%;
+              font-size: 20px;
+              font-weight: bold;
+              display: inline-block;
+            }
+            .btn_set {
+              width: 120px;
+              height: 50px;
+              line-height: 50px;
+              background: #f6f6f6;
+              border-top-right-radius: 20px;
+              border-top-left-radius: 20px;
+              text-align: center;
+              cursor: pointer;
+              cursor: hand;
+            }
+            .btn_set:hover {
+              color: #fff;
+              background-color: #9a64d4;
+              -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+              filter: alpha(opacity=50);
+              opacity: 0.5;
+            }
+            .btn_set.ui-state-active {
+              color: #fff;
+              background-color: #9a64d4;
+            }
+          </style>
+          <div id="tabs">
+            <ul>
+              <!-- <li class="btn_set"><a href="#tabs-1">모바일 웹</a></li> -->
+              <!--<li class="btn_set"><a href="#tabs-2">모바일</a></li>-->
+            </ul>
+
+            <div id="tabs-1">
+              <table>
+                <colgroup>
+                  <col width="15%" />
+                  <col width="35%" />
+                  <col width="*" />
+                  <col width="*" />
+                </colgroup>
+                <thead>
+                  <th scope="col">페이지</th>
+                  <th scope="col">보기<span class="info_msg">&#45; 아래 링크를 클릭하시면 해당 페이지로 이동합니다.</span></th>
+                  <th scope="col">설명</th>
+                  <th scope="col">진행률</th>
+                  <th scope="col">퍼블 담당자</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Greego 소개</td>
+                    <td class="nt04"><a href="greego_guide.html" target="_blank">greego_guide</a></td>
+                    <td class="nt05">Greego 소개</td>
+                    <td>40%</td>
+                    <td>박세리</td>
+                  </tr>
+                  <tr>
+                    <td>이메일 폼</td>
+                    <td class="nt04"><a href="email_form.html" target="_blank">email_form</a></td>
+                    <td class="nt05">이메일 폼</td>
+                    <td>100%</td>
+                    <td>박세리</td>
+                  </tr>
+                  <tr>
+                    <td>이메일 폼</td>
+                    <td class="nt04"><a href="email_form_2.html" target="_blank">email_form_2</a></td>
+                    <td class="nt05">이메일 폼</td>
+                    <td>100%</td>
+                    <td>박세리</td>
+                  </tr>
+                  <tr>
+                    <td>HOME</td>
+                    <td class="nt04"><a href="index.html" target="_blank">front_10</a></td>
+                    <td class="nt05">메인페이지</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>서비스</td>
+                    <td class="nt04"><a href="front_15.html" target="_blank">front_15</a></td>
+                    <td class="nt05">제주 스마트 시티 챌린지란?</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>서비스</td>
+                    <td class="nt04"><a href="front_17.html" target="_blank">front_17</a></td>
+                    <td class="nt05">E-3DA 란 ?</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>서비스</td>
+                    <td class="nt04"><a href="front_20.html" target="_blank">front_20</a></td>
+                    <td class="nt05">스마트허브란 ?</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>서비스</td>
+                    <td class="nt04"><a href="front_25.html" target="_blank">front_25</a></td>
+                    <td class="nt05">GreeGo란 ?</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>서비스</td>
+                    <td class="nt04"><a href="front_28.html" target="_blank">front_28</a></td>
+                    <td class="nt05">Grid+란 ?</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>서비스</td>
+                    <td class="nt04"><a href="front_30.html" target="_blank">front_30</a></td>
+                    <td class="nt05">E-3DA 플랫폼 현황 ?</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>서비스</td>
+                    <td class="nt04"><a href="front_32.html" target="_blank">front_32</a></td>
+                    <td class="nt05">리빙랩이란 ?</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>공지사항</td>
+                    <td class="nt04"><a href="front_34.html" target="_blank">front_34</a></td>
+                    <td class="nt05">공지사항 목록</td>
+                    <td class="modify">100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>공지사항</td>
+                    <td class="nt04"><a href="front_35.html" target="_blank">front_35</a></td>
+                    <td class="nt05">공지사항 내용</td>
+                    <td class="modify">100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>FAQ</td>
+                    <td class="nt04"><a href="front_36.html" target="_blank">front_36</a></td>
+                    <td class="nt05">FAQ 목록</td>
+                    <td class="modify">100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>문의</td>
+                    <td class="nt04"><a href="front_37.html" target="_blank">front_37</a></td>
+                    <td class="nt05">문의(로그아웃 화면)</td>
+                    <td class="modify">100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>문의</td>
+                    <td class="nt04"><a href="front_38.html" target="_blank">front_38</a></td>
+                    <td class="nt05">문의사항 목록(문의사항 있을시)</td>
+                    <td class="modify">pc 100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>문의</td>
+                    <td class="nt04"><a href="front_39.html" target="_blank">front_39,front_39_2</a></td>
+                    <td class="nt05">문의사항 내용(답변 없을시)</td>
+                    <td class="modify">0%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>문의</td>
+                    <td class="nt04"><a href="front_39_03.html" target="_blank">front_39_3</a></td>
+                    <td class="nt05">문의사항 내용(답변 있을시)</td>
+                    <td class="modify">0%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>문의</td>
+                    <td class="nt04"><a href="front_39_04.html" target="_blank">front_39_4</a></td>
+                    <td class="nt05">문의사항 작성</td>
+                    <td class="modify">수정중</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>문의</td>
+                    <td class="nt04"><a href="front_40.html" target="_blank">front_40</a></td>
+                    <td class="nt05">문의사항 목록(문의사항 없을시)</td>
+                    <td class="modify">100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>보도자료</td>
+                    <td class="nt04"><a href="front_41.html" target="_blank">front_41</a></td>
+                    <td class="nt05">보도자료</td>
+                    <td class="modify">100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>로그인</td>
+                    <td class="nt04"><a href="front_42.html" target="_blank">front_42</a></td>
+                    <td class="nt05">회원 로그인</td>
+                    <td>100%</td>
+                    <td>박세리</td>
+                  </tr>
+                  <tr>
+                    <td>로그인</td>
+                    <td class="nt04"><a href="front_43.html" target="_blank">front_43</a></td>
+                    <td class="nt05">로그인 팝업</td>
+                    <td>100%</td>
+                    <td>박세리</td>
+                  </tr>
+                  <tr>
+                    <td>로그인</td>
+                    <td class="nt04"><a href="front_42.html" target="_blank">front_44</a></td>
+                    <td class="nt05">로그인 팝업</td>
+                    <td>100%</td>
+                    <td>박세리</td>
+                  </tr>
+                  <tr>
+                    <td>로그인</td>
+                    <td class="nt04"><a href="front_42.html" target="_blank">front_45</a></td>
+                    <td class="nt05">로그인 팝업</td>
+                    <td>100%</td>
+                    <td>박세리</td>
+                  </tr>
+                  <tr>
+                    <td>회원가입</td>
+                    <td class="nt04"><a href="front_46.html" target="_blank">front_46</a></td>
+                    <td class="nt05">회원가입 약관 동의</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>회원가입</td>
+                    <td class="nt04"><a href="front_46_01.html" target="_blank">front_46_01</a></td>
+                    <td class="nt05">이메일 인증</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>회원가입</td>
+                    <td class="nt04"><a href="front_46_02.html" target="_blank">front_46_02</a></td>
+                    <td class="nt05">메일발송 완료</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>회원가입</td>
+                    <td class="nt04"><a href="front_47.html" target="_blank">front_47</a></td>
+                    <td class="nt05">회원정보 기입</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>회원가입</td>
+                    <td class="nt04"><a href="front_50.html" target="_blank">front_50</a></td>
+                    <td class="nt05">회원가입 완료 페이지</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>마이페이지</td>
+                    <td class="nt04"><a href="front_52.html" target="_blank">front_52</a></td>
+                    <td class="nt05">회원정보</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>마이페이지</td>
+                    <td class="nt04"><a href="front_55.html" target="_blank">front_55</a></td>
+                    <td class="nt05">회원탈퇴</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>이용 약관</td>
+                    <td class="nt04"><a href="front_48.html" target="_blank">front_48</a></td>
+                    <td class="nt05">이용 약관</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>개인정보처리방침</td>
+                    <td class="nt04"><a href="front_49.html" target="_blank">front_49</a></td>
+                    <td class="nt05">개인정보처리방침</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>서비스 준비중</td>
+                    <td class="nt04"><a href="prepare.html" target="_blank">prepare</a></td>
+                    <td class="nt05">서비스 준비중 페이지</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>404 ERROR</td>
+                    <td class="nt04"><a href="front_56.html" target="_blank">front_56</a></td>
+                    <td class="nt05">404 ERROR 페이지</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>시스템 점검 안내</td>
+                    <td class="nt04"><a href="front_57.html" target="_blank">front_57</a></td>
+                    <td class="nt05">시스템 점검 안내 페이지</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                  <tr>
+                    <td>로딩 페이지</td>
+                    <td class="nt04"><a href="spinner.html" target="_blank">spinner</a></td>
+                    <td class="nt05">로딩중 페이지</td>
+                    <td>100%</td>
+                    <td>안유경</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

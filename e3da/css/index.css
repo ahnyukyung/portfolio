@@ -1,24 +1,21 @@
 @charset "UTF-8";
 #wrap {
-  /* max-width: 1920px;
-  margin: 0 auto; */
   background: url(../images/pc/front_10/b_type/pc_img_bg_01_b.png) no-repeat top center / 1920px;
   position: relative;
-  /* height: 5367px; */
   overflow-x: hidden;
 }
 
 /* main_container */
-.main_bg {
+/*.main_bg {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
   width: 1920px;
-  height: 875px;
+   height: 875px; 
   min-width: 1280px;
-}
+}*/
 #main_container {
   position: relative;
   z-index: 300;
@@ -57,11 +54,9 @@
   margin-top: -150px;
   background: url(../images/pc/front_10/b_type/pc_img_bg_02_c.png) no-repeat top center / cover;
 }
-
 .section_wrap section {
   width: 554px;
 }
-
 .section_title h3 {
   font-size: 42px;
   color: #404050;
@@ -79,11 +74,9 @@
 }
 .section_title .btn_more {
   display: inline-block;
-  /* width: 130px; */
   line-height: 32px;
   border-radius: 20px;
   color: #fff;
-  /* text-align: center; */
   padding: 0 33px 0 18px;
   font-size: 17px;
   background: url(../images/ic_page_open.svg) no-repeat 98px 2px / 26px;
@@ -97,47 +90,38 @@
 }
 .left_box {
   text-align: right;
-  right: 51.875vw;
+  right: 51.875%;
 }
-
 .right_box {
   text-align: left;
-  left: 51.875vw;
+  left: 51.875%;
 }
 .section01 {
   position: absolute;
-  /* width: 476px; */
-  /* top: 1600px; */
   top: 455px;
 }
 .section02 {
   position: absolute;
-  /* top: 2124px; */
   top: 979px;
 }
 .section03 {
   position: absolute;
-  /* top: 2596px; */
   top: 1451px;
 }
 .section04 {
   position: absolute;
-  /* top: 3124px; */
   top: 1979px;
 }
 .section05 {
   position: absolute;
-  /* top: 3624px; */
   top: 2479px;
 }
 .section06 {
   position: absolute;
-  /* top: 4124px; */
   top: 2979px;
 }
 .section07 {
   position: absolute;
-  /* top: 4596px; */
   top: 3451px;
 }
 
@@ -224,22 +208,13 @@
     padding: 0.5em 0;
   }
 }
-@media all and (max-width: 719px) {
-  /* html {
-    overflow: hidden;
-  } */
+@media all and (max-width: 767px) {
   #wrap {
     background: url(../images/mobile/m_01/m_01_img_00_b.png) no-repeat top center/ contain;
   }
-  /* #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 48px;
-  } */
+
   .main_title {
-    padding: 10.66vw 0 25vw;
+    padding: 16.66vw 0 25vw;
   }
   .main_title h2 {
     padding: 0.22em 0 0.33em;
@@ -247,10 +222,6 @@
   .main_contents {
     height: 100vh;
   }
-  /* .main_iso {
-    width: 150vw;
-    overflow-x: scroll;
-  } */
   .section_wrap {
     display: none;
   }
@@ -284,7 +255,6 @@
     text-align: center;
     height: 100vh;
     position: relative;
-    /* margin-bottom: 20px; */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center 40%;
@@ -312,7 +282,6 @@
   }
   .m_section_title {
     font-size: 5.55vw;
-    /* padding-top: 4.6em; */
     padding-top: 14.93vh;
   }
   .m_section_contents {
@@ -328,7 +297,6 @@
   .m_section_contents p {
     font-size: 3.05vw;
     margin: 0 auto;
-    /* width: auto; */
     padding: 0.72em 0 2.36em;
     color: #989898;
   }

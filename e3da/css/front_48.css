@@ -1,0 +1,122 @@
+@charset "UTF-8";
+#wrap {
+  background: url(../images/pc/pc_bg_noti_01.svg) no-repeat left top;
+}
+#front48_container {
+  background: url(../images/pc/pc_bg_noti_02.svg) no-repeat right bottom;
+}
+#front48_container .m_logo {
+  display: none;
+}
+#front48_container .container_inner {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 34px;
+  padding-bottom: 87px;
+}
+#front48_container h2 {
+  display: flex;
+  align-items: baseline;
+  background: url(../images/pc/pc_img_community_02.png) no-repeat left center;
+  background-size: 22px;
+  padding-left: 42px;
+  height: 50px;
+  margin-bottom: 47px;
+}
+#front48_container h2 strong {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+}
+#front48_container h2 span {
+  font-size: 18px;
+  color: #686868;
+  padding-left: 20px;
+}
+.terms_msg {
+  font-size: 16px;
+  color: #1db4bd;
+  text-align: right;
+  letter-spacing: -0.01em;
+  margin-bottom: 27px;
+}
+.service_terms {
+  font-size: 16px;
+  color: #686868;
+  padding-right: 15px;
+  height: 740px;
+  overflow-y: auto;
+  word-break: keep-all;
+}
+.service_terms::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.service_terms::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.service_terms::-webkit-scrollbar:vertical {
+  width: 5px;
+}
+.service_terms::-webkit-scrollbar-thumb {
+  background-color: #d2d2d2;
+  border-radius: 10px;
+}
+
+/********************************** tablet *******************************/
+@media all and (max-width: 1279px) {
+  /********* layout tablet**********/
+  #wrap,
+  #front48_container {
+    background: none;
+  }
+  #front48_container .m_logo {
+    display: block;
+    text-align: center;
+  }
+  #front48_container .m_logo img {
+    width: 26.69vw;
+  }
+  #front48_container .container_inner {
+    margin-top: 0;
+    width: 84.63vw;
+    position: relative;
+  }
+  #front48_container h2 {
+    background: none;
+    padding-left: 0;
+    justify-content: center;
+    margin-bottom: 0;
+    height: auto;
+  }
+  #front48_container h2 span {
+    display: none;
+  }
+  #front48_container h2 strong {
+    font-size: 4.16vw;
+    line-height: 1;
+    font-weight: 500;
+    margin: 2em 0 1.5em;
+  }
+  .terms_msg {
+    display: none;
+  }
+  .service_terms {
+    padding-right: 0;
+    overflow-y: visible;
+    height: auto;
+    font-size: 2.6vw;
+  }
+}
+
+/********************************** mobile *******************************/
+@media all and (max-width: 767px) {
+  #front48_container .container_inner {
+    width: 91.11vw;
+  }
+  #front48_container h2 strong {
+    font-size: 4.44vw;
+  }
+  .service_terms {
+    font-size: 2.7vw;
+  }
+}
