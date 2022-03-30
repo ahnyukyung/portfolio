@@ -140,7 +140,6 @@
   align-items: center;
   justify-content: center;
   height: 94px;
-  margin-bottom: 8px;
 }
 
 .depth02 li:first-child a {
@@ -162,6 +161,7 @@
   left: 50%;
   width: 100%;
   transform: translateX(-50%);
+  height: 103px;
 }
 .btn_login {
   display: flex;
@@ -171,12 +171,7 @@
 #header.main .btn_login {
   color: #fff;
 }
-/* #header .btn_login.open {
-  color: #383838;
-}
-#header.main .btn_login.open {
-  color: #383838;
-} */
+
 .btn_login span {
   margin-left: 7px;
 }
