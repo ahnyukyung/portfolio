@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* status_bar style S*/
+.status_bar {
+  width: 839px;
+  position: fixed;
+  top: 37px;
+  left: 50%;
+  transform: translateX(-45%);
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  border-radius: 50px;
+  padding: 13px 27px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+  /* justify-content: space-around; */
+}
+.status_bar li {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #e0e0e0;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+.status_bar li:last-child {
+  border: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+.status_bar .weather dl,
+.status_bar .weather .temp_box {
+  display: flex;
+  align-items: center;
+}
+
+.status_bar strong,
+.status_bar .weather dd {
+  font-weight: 700;
+  margin-left: 2px;
+}
+.status_bar .weather dt {
+  font-weight: 300;
+  color: #4f5866;
+  padding-left: 20px;
+  position: relative;
+}
+.status_bar .weather dt::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #e0e0e0;
+  top: 8px;
+  left: 7px;
+}
+.status_bar .temp_info,
+.status_bar .ic_status,
+.status_bar .date .time {
+  margin-left: 7px;
+}
+/* status_bar style E*/
