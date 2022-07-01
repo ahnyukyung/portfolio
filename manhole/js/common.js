@@ -3,5 +3,8 @@ $(function () {
   // $(".panel_box").not(".panel_box:nth-child(1)").hide();
   // $(".panel_box .sub_panel").hide();
 
-  $("#sidebar .navibar_list li").click(function () {});
+  // $("#sidebar .navibar_list li").click(function () {});
+  $(".btn_slide").click(function () {
+    $(this).parent().toggleClass("hide");
+  });
 });

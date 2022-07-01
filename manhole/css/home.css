@@ -121,9 +121,52 @@
   position: fixed;
   top: 0;
   left: 435px; */
-  border: 5px solid #0051c7;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: opacity 0.2s;
+  transition: width 0.5s;
 }
-
+.panel_box .sub_panel.hide {
+  width: 0;
+  opacity: 0;
+}
+.sub_panel .sub_tit {
+  font-size: 22px;
+  font-weight: 700;
+}
+.panel_box.home .sub_panel .sub_info li {
+  border-top: 1px solid #f2f2f2;
+}
+.panel_box.home .sub_panel .sub_info li:last-child {
+  border-bottom: 1px solid #f2f2f2;
+}
+.panel_box.home .sub_panel .sub_info li a {
+  display: block;
+  padding: 15px 17px;
+}
+.sub_info li a .address_status {
+  display: flex;
+  align-items: center;
+}
+.address_status .status {
+  font-size: 11px;
+  width: 40px;
+  line-height: 16px;
+  border-radius: 3px;
+  text-align: center;
+  margin-right: 7px;
+}
+.address_status .add {
+  font-size: 12px;
+  margin-right: 7px;
+}
+.address_status .ic_status {
+  width: 16px;
+}
+.address_status .ic_status img {
+  width: 100%;
+}
 .btn_slide {
   position: absolute;
   top: 512px;
