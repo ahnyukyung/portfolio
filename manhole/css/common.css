@@ -111,3 +111,28 @@ table tbody tr {
   background-color: rgba(79, 88, 102, 0.2);
   border-radius: 10px;
 }
+/* checkbox 공통 */
+.chk_box {
+  padding-left: 38px;
+}
+.chk_box label {
+  position: relative;
+  font-size: 15px;
+}
+.chk_box label::before {
+  position: absolute;
+  left: -38px;
+  top: -1px;
+  content: "";
+  width: 28px;
+  height: 28px;
+  border: 1px solid #4f5866;
+  border-radius: 2px;
+}
+.chk_box input[type="checkbox"]:checked + label::before {
+  background: url(../images/ic_chk_wh.svg) no-repeat center center;
+  background-size: 17px;
+  background-color: #0051c7;
+  border: 1px solid #0051c7;
+  border-radius: 2px;
+}

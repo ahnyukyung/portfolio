@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>스마트 맨홀 IoT 관제시스템</title>
     <!-- reset Style Sheet -->
-    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <!-- Common Style Sheet -->
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/home.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   </head>
   <body>
@@ -17,7 +17,7 @@
       <nav id="sidebar">
         <h1 class="logo_box">
           <div class="logo">
-            <img src="../images/logo.svg" alt="" />
+            <img src="./images/logo.svg" alt="" />
           </div>
           <span class="logo_txt primary_bl"
             >스마트 <br />
@@ -112,13 +112,13 @@
           <li class="location">
             <strong>경기도 의정부시 호원1동</strong>
             <div class="ic_status">
-              <img src="../images/ic_status_warning.svg" alt="" />
+              <img src="./images/ic_status_warning.svg" alt="" />
             </div>
           </li>
           <li class="weather">
             <span class="temp_box">
               <span class="ic_weather">
-                <img src="../images/ic_weather.svg" alt="" />
+                <img src="./images/ic_weather.svg" alt="" />
               </span>
               <span class="temp_info">
                 <strong class="temp">22℃</strong>
@@ -145,7 +145,7 @@
         </ul>
 
         <div class="panel_wrap">
-          <div class="panel_box home">
+          <!-- <div class="panel_box home">
             <div class="main_panel scroll">
               <header class="bg_primary_bl txt_wh">
                 <div class="tit_wrap">
@@ -163,10 +163,6 @@
                   <li>
                     <span class="status">이상감지</span>
                     <a href="" class="number">3</a>
-                  </li>
-                  <li>
-                    <span class="status">뚜껑열림</span>
-                    <a href="" class="number">150</a>
                   </li>
                   <li>
                     <span class="status">정상동작</span>
@@ -190,7 +186,7 @@
                       <td>일산화탄소</td>
                       <td>100</td>
                       <td>
-                        <span class="status">3</span>
+                        <span class="status warning">3</span>
                       </td>
                       <td>
                         <span class="status">3</span>
@@ -200,7 +196,7 @@
                       <td>일산화탄소</td>
                       <td>100</td>
                       <td>
-                        <span class="status">3</span>
+                        <span class="status critical">3</span>
                       </td>
                       <td>
                         <span class="status">3</span>
@@ -235,37 +231,37 @@
                   <li>
                     <span class="date">5.27</span>
                     <span class="ic_status">
-                      <img src="../images/ic_status_critical.svg" alt="" />
+                      <img src="./images/ic_status_critical.svg" alt="" />
                     </span>
-                    <span class="status">위험</span>
+                    <span>위험</span>
                   </li>
                   <li>
                     <span class="date">5.27</span>
                     <span class="ic_status">
-                      <img src="../images/ic_status_warning.svg" alt="" />
+                      <img src="./images/ic_status_warning.svg" alt="" />
                     </span>
-                    <span class="status">주의</span>
+                    <span>주의</span>
                   </li>
                   <li>
                     <span class="date">5.27</span>
                     <span class="ic_status">
-                      <img src="../images/ic_status_safety.svg" alt="" />
+                      <img src="./images/ic_status_safety.svg" alt="" />
                     </span>
-                    <span class="status">안전</span>
+                    <span>안전</span>
                   </li>
                   <li>
                     <span class="date">5.27</span>
                     <span class="ic_status">
-                      <img src="../images/ic_status_safety.svg" alt="" />
+                      <img src="./images/ic_status_safety.svg" alt="" />
                     </span>
-                    <span class="status">안전</span>
+                    <span>안전</span>
                   </li>
                   <li>
                     <span class="date">5.27</span>
                     <span class="ic_status">
-                      <img src="../images/ic_status_safety.svg" alt="" />
+                      <img src="./images/ic_status_safety.svg" alt="" />
                     </span>
-                    <span class="status">안전</span>
+                    <span>안전</span>
                   </li>
                 </ul>
                 <button type="button" class="btn_more txt_wh bg_primary_bl">날짜별 예측정보 자세히보기</button>
@@ -285,14 +281,14 @@
                       <td>유해가스</td>
                       <td>106</td>
                       <td>
-                        <span class="status">3</span>
+                        <span class="status warning">3</span>
                       </td>
                     </tr>
                     <tr>
                       <td>유해가스</td>
                       <td>106</td>
                       <td>
-                        <span class="status">3</span>
+                        <span class="status critical">3</span>
                       </td>
                     </tr>
                     <tr>
@@ -319,14 +315,14 @@
                   </tbody>
                 </table>
               </section>
-              <button type="button" class="btn_slide">
-                <img src="../images/ic_slideUpDown.svg" alt="" />
+              <button type="button" class="btn_slide bg_primary_bl">
+                <img src="./images/ic_slideUpDown.svg" alt="" />
               </button>
             </div>
             <div class="sub_panel scroll">
               <header>
                 <span class="primary_gr">맨홀 정보</span>
-                <p class="sub_tit">뚜껑열림(3)</p>
+                <p class="sub_tit">이상감지(3)</p>
               </header>
               <ul class="sub_info">
                 <li>
@@ -335,7 +331,7 @@
                       <span class="status txt_wh bg_primary_bl">작업중</span>
                       <span class="add">경기 의정부시 호원1동</span>
                       <span class="ic_status">
-                        <img src="../images/ic_status_safety.svg" alt="" />
+                        <img src="./images/ic_status_safety.svg" alt="" />
                       </span>
                     </p>
                     <span class="manhole_no">AZ040_206008</span>
@@ -347,7 +343,7 @@
                       <span class="status txt_wh bg_primary_gr">예정</span>
                       <span class="add">경기 의정부시 호원1동</span>
                       <span class="ic_status">
-                        <img src="../images/ic_status_safety.svg" alt="" />
+                        <img src="./images/ic_status_safety.svg" alt="" />
                       </span>
                     </p>
                     <span class="manhole_no">AZ040_206008</span>
@@ -358,7 +354,7 @@
                     <p class="address_status">
                       <span class="add">경기 의정부시 호원1동</span>
                       <span class="ic_status">
-                        <img src="../images/ic_status_warning.svg" alt="" />
+                        <img src="./images/ic_status_warning.svg" alt="" />
                       </span>
                     </p>
                     <span class="manhole_no">AZ040_206008</span>
@@ -366,21 +362,21 @@
                 </li>
               </ul>
               <button type="button" class="btn_slide">
-                <img src="../images/ic_slideUpDown.svg" alt="" />
+                <img src="./images/ic_slideUpDown.svg" alt="" />
               </button>
             </div>
-          </div>
-          <!-- <div class="panel_box search">
+          </div> -->
+          <div class="panel_box search">
             <div class="main_panel">
               main_panel 2
               <button type="button" class="btn_slide">
-                <img src="../images/ic_slideUpDown.svg" alt="" />
+                <img src="./images/ic_slideUpDown.svg" alt="" />
               </button>
             </div>
             <div class="sub_panel">
               sub_panel 2
               <button type="button" class="btn_slide">
-                <img src="../images/ic_slideUpDown.svg" alt="" />
+                <img src="./images/ic_slideUpDown.svg" alt="" />
               </button>
             </div>
           </div>
@@ -395,7 +391,7 @@
           <div class="panel_box">
             <div class="main_panel">main_panel 5</div>
             <div class="sub_panel">sub_panel 5</div>
-          </div> -->
+          </div>
         </div>
         <div class="map_box"></div>
       </div>
