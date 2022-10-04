@@ -1,6 +1,6 @@
-@import url('common.css');
-@import url('layout.css');
-@import url('reset.css');
+@import url("common.css");
+@import url("layout.css");
+@import url("reset.css");
 .section_1 {
   width: 1230px;
   height: 550px;
@@ -52,14 +52,14 @@
   height: 400px;
 }
 .section_2::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background: url('../images/main_bg.png') center bottom / cover no-repeat fixed;
+  background: url("../images/main_bg.png") center bottom / cover no-repeat fixed;
   z-index: -1;
 }
 .section_2 .main_tit {
@@ -81,7 +81,7 @@
   font-size: 15px;
   font-weight: 700;
   display: block;
-  background: url('../images/wave_btn.png') 0px 60px no-repeat;
+  background: url("../images/wave_btn.png") 0px 60px no-repeat;
   transition: background-position 0.5s linear 0s;
   text-align: center;
   margin: 0px auto;
@@ -109,8 +109,11 @@
   position: relative;
   width: 290px;
   border-radius: 60px;
-  box-shadow: rgba(0, 0, 0, 0.08) 4px 6px 10px;
+  box-shadow: rgba(0, 0, 0, 0.03) 4px 6px 10px;
   transition: all 1s ease 0s;
+}
+.section_3 .content_box:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 4px 6px 10px;
 }
 .section_3 .content_box_1 {
   transform: translateX(-100px);
@@ -155,13 +158,13 @@
   /* background-size: contain; */
 }
 .content .icon_1 {
-  background: url('../images/brewing_icon_1.png') 0% 0% / cover no-repeat;
+  background: url("../images/brewing_icon_1.png") 0% 0% / cover no-repeat;
 }
 .content .icon_2 {
-  background: url('../images/brewing_icon_2.png') 0% 0% / cover no-repeat;
+  background: url("../images/brewing_icon_2.png") 0% 0% / cover no-repeat;
 }
 .content .icon_3 {
-  background: url('../images/brewing_icon_3.png') 0% 0% / cover no-repeat;
+  background: url("../images/brewing_icon_3.png") 0% 0% / cover no-repeat;
 }
 .content .content_tit {
   font-size: 20px;
@@ -192,10 +195,10 @@
   left: 0px;
 }
 .new_wrap_bg1 {
-  background: url('../images/new_bg.png') 0% 0% / cover no-repeat;
+  background: url("../images/new_bg.png") 0% 0% / cover no-repeat;
 }
 .new_wrap_bg2 {
-  background: url('../images/new_bg_2.png') 0% 0% / cover no-repeat;
+  background: url("../images/new_bg_2.png") 0% 0% / cover no-repeat;
 }
 .none {
   display: none;
@@ -362,7 +365,7 @@
   font-size: 20px;
   color: rgb(0, 200, 212);
   font-weight: 700;
-  background: url('../images/youtube_btn_arrrow.png') 0% 0% / 250px 27px no-repeat;
+  background: url("../images/youtube_btn_arrrow.png") 0% 0% / 250px 27px no-repeat;
   width: 125px;
   height: 27px;
   padding-bottom: 5px;
@@ -402,8 +405,8 @@
   position: relative;
 }
 .section_6::after {
-  content: '';
-  background: url('../images/map_bg.png') 0% 0% / cover no-repeat;
+  content: "";
+  background: url("../images/map_bg.png") 0% 0% / cover no-repeat;
   position: absolute;
   opacity: 0.2;
   width: 100%;
@@ -565,7 +568,7 @@
   display: inline-block;
   width: 40px;
   height: 38px;
-  background: url('../images/icon_arrow_readMore_white.png') left center no-repeat rgb(112, 112, 112);
+  background: url("../images/icon_arrow_readMore_white.png") left center no-repeat rgb(112, 112, 112);
   border-radius: 100%;
   vertical-align: middle;
   margin: 0px 0px 10px 10px;
