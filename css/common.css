@@ -1,0 +1,76 @@
+@charset "utf-8";
+/****************reset*****************/
+body,
+header,
+div,
+ul,
+li,
+a,
+span,
+section,
+h1,
+h2,
+h3,
+dl,
+dt,
+dd,
+p,
+footer {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+section,
+header,
+footer {
+  display: block;
+}
+body,
+input,
+button {
+  font-size: 16px;
+  font-family: "Montserrat", "Noto Sans JP", "나눔스퀘어", "NanumSquare", "맑은 고딕", "malgun gothic", "Apple SD Gothic Neo", sans-serif;
+  font-weight: 300;
+  color: #1f1e3e;
+}
+img {
+  border: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+::selection {
+  background-color: #f6f8c5;
+  color: #6f7d8f;
+}
+.clearfix {
+  content: "";
+  clear: both;
+  display: block;
+}
+.txt_yellow {
+  color: #f6f8c5;
+}
+.txt_white {
+  color: #fff;
+}
+.txt_gray {
+  color: #6f7d8f;
+}
+/*************common****************/
+/*.gnb_tit:after { position: absolute; bottom: 0; left: 0; right: 0; margin: auto; width: 0%; content: "."; color: rgba(0, 0, 0, 0); background: #00c8d4; height: 5px; border-radius: 100%; } 
+.gnb_tit:after { transition: all 0.5s; } 
+.gnb_tit:hover:after { width: 60%; } */

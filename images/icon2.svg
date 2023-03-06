@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="209" height="110" viewBox="0 0 209 110">
+  <g id="그룹_1" data-name="그룹 1" transform="translate(-1282 -279)">
+    <g id="사각형_2" data-name="사각형 2" transform="translate(1291 289)" fill="none" stroke="#6f7d8f" stroke-width="4">
+      <rect width="200" height="100" stroke="none"/>
+      <rect x="2" y="2" width="196" height="96" fill="none"/>
+    </g>
+    <g id="사각형_3" data-name="사각형 3" transform="translate(1282 279)" fill="none" stroke="#6f7d8f" stroke-width="4">
+      <rect width="200" height="100" stroke="none"/>
+      <rect x="2" y="2" width="196" height="96" fill="none"/>
+    </g>
+    <text id="AYK" transform="translate(1326 354)" fill="#6f7d8f" font-size="60" font-family="PFDinStencil-Regular, PF Din Stencil" letter-spacing="0.15em"><tspan x="0" y="0">AYK</tspan></text>
+  </g>
+</svg>
