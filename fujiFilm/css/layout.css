@@ -88,7 +88,7 @@
   color: #d9d9d9;
 }
 .over::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 5px;
@@ -255,7 +255,7 @@
   position: absolute;
   left: 0;
   bottom: -8px;
-  content: '';
+  content: "";
   width: 80px;
   height: 5px;
   background: #029570;
@@ -278,7 +278,7 @@
 }
 
 .product_tab li a.on {
-  content: '';
+  content: "";
   height: 5px;
   background: #029570;
 }
@@ -302,7 +302,11 @@
   width: 23%;
   height: 250px;
   background: rgb(131, 131, 131);
-  background: radial-gradient(circle, rgba(131, 131, 131, 0.10717790534182425) 6%, rgba(255, 255, 255, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(131, 131, 131, 0.10717790534182425) 6%,
+    rgba(255, 255, 255, 1) 100%
+  );
   margin: 20px 0 0 20px;
   text-align: center;
   position: relative;
@@ -375,6 +379,9 @@
 }
 
 /* section05 */
+.section05 {
+  overflow: hidden;
+}
 .pickup_wrap {
   height: 600px;
   background: url(../images/bg_main_vod.jpg) no-repeat;
