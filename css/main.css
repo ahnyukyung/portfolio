@@ -212,6 +212,10 @@
   background: url("../images/git.ico") left center / contain no-repeat;
   padding-left: 25px;
 }
+.intro_info .blog a {
+  background: url("../images/velog.jpg") left center / contain no-repeat;
+  padding-left: 25px;
+}
 .info_group {
   width: 86%;
   margin: 0px auto;
